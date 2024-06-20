@@ -48,10 +48,10 @@ const AboutUsSection:React.FC<whowe> = ({id}) => {
       </div>
     </div>
       {/* --------------------- */}
-    <div className="bg-neutral-50 dark:bg-neutral-950 flex flex-col md:flex-row items-center" id={id}>
+    <div className="bg-neutral-50 dark:bg-neutral-950 flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 p-6">
         <h3 className="text-md font-medium text-green-600 dark:text-green-400 uppercase mb-2">Our Mission</h3>
-        <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">we want see you success 😊</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">we want to see you success 😊</h2>
         <p className="text-neutral-600 dark:text-neutral-400 mb-6">
         Our mission is to bridge the gap between creativity and technology by delivering custom web solutions that drive growth and foster strong, lasting relationships. We are committed to excellence, innovation, and ensuring our clients satisfaction.
         </p>

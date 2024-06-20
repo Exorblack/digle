@@ -4,7 +4,7 @@ interface services{
   id:string
 }
 const Words:React.FC<services> = ({id}) => {
-  const words = ["awesome", "great", "beautiful", "modern"];
+  const words = ["awesome", "great", "beautiful", "modern","customized"];
 
   return (
     <div className=" py-10 flex justify-center items-center px-4" id={id}>

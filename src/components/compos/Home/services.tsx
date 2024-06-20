@@ -9,7 +9,7 @@ export function BentoServices() {
           Features
         </h3>
         <h2 className="mb-4 text-2xl font-bold lg:text-4xl text-neutral-800 dark:text-neutral-100">
-          Explore Our Services
+          explore our Services
         </h2>
         <p className="mx-auto max-w-lg text-neutral-500 dark:text-neutral-400">
         Our team designs websites that reflect your brands unique identity, ensuring a visually engaging and user-friendly experience.
@@ -104,14 +104,14 @@ export function BentoServices() {
                   className=""
                 />
                 <a
-                  href="#"
+                  href="/"
                   className="mr-4 text-xs font-bold cursor-pointer text-neutral-700 dark:text-neutral-200"
                 >
                   Digle <br /> agency
                 </a>
               </div>
               <a
-                href="#"
+                href="/"
                 className="text-sm font-bold cursor-pointer text-neutral-700 dark:text-neutral-200"
               >
                   Digle.org

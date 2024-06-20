@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { DollarSignIcon, Home } from 'lucide-react'
+import { Home } from 'lucide-react'
 import { ModeToggle } from '@/components/compos/dark'
 
 const Navcont = () => {
@@ -22,11 +22,6 @@ const Navcont = () => {
                 <Link href={'/'}>
                 <button className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
                      <Home className="w-5 h-5" /> <span>Home</span>
-                </button>
-                </Link>
-                <Link href={'/pricing'}>
-                <button className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
-                     <DollarSignIcon className="w-5 h-5" /> <span>Pricing</span>
                 </button>
                 </Link>
                 </div>
