@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from 'sonner';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics/>
+        <SpeedInsights/>
         <Toaster position="top-center" richColors/>
       </ThemeProvider>
       </body>
