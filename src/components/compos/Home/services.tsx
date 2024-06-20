@@ -12,7 +12,7 @@ export function BentoServices() {
           Explore Our Services
         </h2>
         <p className="mx-auto max-w-lg text-neutral-500 dark:text-neutral-400">
-        Our team designs websites that reflect your brand's unique identity, ensuring a visually engaging and user-friendly experience.
+        Our team designs websites that reflect your brands unique identity, ensuring a visually engaging and user-friendly experience.
         </p>
       </div>
       <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3">
@@ -59,7 +59,7 @@ export function BentoServices() {
             <h4 className="mb-2 font-medium text-neutral-700 dark:text-neutral-200">
               Comprehensive Support
             </h4>
-            <span className="text-green-700">"Here for You, Always"</span>
+            <span className="text-green-700">&quot;Here for You, Always&quot;</span>
             <p className="text-center max-w-sm mx-auto text-base font-normal leading-7 text-neutral-500 dark:text-neutral-400">
             Our dedicated support team is available to assist you with any issues, ensuring your website remains at its optimal performance 
             These services are designed to keep client websites up-to-date, secure, and running smoothly, while freeing clients from the hassle of managing their website themselves.

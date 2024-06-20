@@ -20,7 +20,7 @@ import React from "react"
           <AccordionTrigger>How do I get started with Digle?</AccordionTrigger>
           <AccordionContent>
           Getting started with Digle is easy! Simply contact us through our website.
-           We’ll discuss your needs, provide a detailed proposal,
+           We will discuss your needs, provide a detailed proposal,
            and start the journey to creating a powerful digital presence for your business.
           </AccordionContent>
         </AccordionItem>
@@ -51,7 +51,7 @@ import React from "react"
         <AccordionItem value="item-5">
           <AccordionTrigger>I have another question!</AccordionTrigger>
           <AccordionContent>
-          No problem! Send us an email at digle@digle.org and we'll get back to you with an answer.
+          No problem! Send us an email at digle@digle.org and we will get back to you with an answer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

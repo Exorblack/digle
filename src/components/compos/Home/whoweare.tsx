@@ -53,7 +53,7 @@ const AboutUsSection:React.FC<whowe> = ({id}) => {
         <h3 className="text-md font-medium text-green-600 dark:text-green-400 uppercase mb-2">Our Mission</h3>
         <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">we want see you success 😊</h2>
         <p className="text-neutral-600 dark:text-neutral-400 mb-6">
-        Our mission is to bridge the gap between creativity and technology by delivering custom web solutions that drive growth and foster strong, lasting relationships. We are committed to excellence, innovation, and ensuring our clients' satisfaction.
+        Our mission is to bridge the gap between creativity and technology by delivering custom web solutions that drive growth and foster strong, lasting relationships. We are committed to excellence, innovation, and ensuring our clients satisfaction.
         </p>
       </div>
       <div className="md:w-1/2 p-6">

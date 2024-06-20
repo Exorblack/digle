@@ -12,7 +12,7 @@ export const Contact = () => {
           We would love to hear from you! Whether you have a question, feedback, or just want to say hello, our team is here to listen and assist you.
         </p>
         <p className="text-base text-neutral-600 dark:text-neutral-400 mb-8">
-          Feel free to reach out using the form on our contact page. We're committed to providing you with the best support and answering all your queries promptly.
+          Feel free to reach out using the form on our contact page. We are committed to providing you with the best support and answering all your queries promptly.
         </p>
         <Link href="/contact">
           <button className="inline-block px-8 py-3 text-lg font-semibold text-white bg-green-700 dark:bg-green-500 rounded-full shadow-md hover:bg-green-600 dark:hover:bg-green-400 transition-colors duration-300">

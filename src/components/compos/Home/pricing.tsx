@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';  
@@ -21,7 +22,13 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <div className="flex items-center justify-center mb-4">
-            <img src="/star-gold-orange-svgrepo-com.svg" alt="Gold icon" className="w-12 h-12 mr-2" /> 
+            <Image 
+              height={30}
+              width={30} 
+              src="/star-gold-orange-svgrepo-com.svg" 
+              alt="Gold icon" 
+              className="w-12 h-12 mr-2" 
+            /> 
             <h3 className="text-2xl font-semibold text-orange-600 dark:text-orange-400">Gold</h3>
           </div>
           <h4 className="text-xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">$300</h4>
@@ -55,7 +62,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you're 100% happy
+              Unlimited changes until you are 100% happy
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
@@ -70,7 +77,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           className="m-4 p-6 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-600 rounded-lg shadow-lg transform scale-105 max-w-sm"
         >
           <div className="flex items-center justify-center mb-4">
-            <img src="/diamond-svgrepo-com.svg" alt="Diamond icon" className="w-12 h-12 mr-2" />  
+            <Image height={30} width={30} src="/diamond-svgrepo-com.svg" alt="Diamond icon" className="w-12 h-12 mr-2" />  
             <h3 className="text-2xl font-semibold text-cyan-600 dark:text-cyan-400">Diamond</h3>
           </div>
           <h4 className="text-3xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">$700</h4>
@@ -104,7 +111,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you're 100% happy
+              Unlimited changes until you are 100% happy
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
@@ -121,7 +128,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <div className="flex items-center justify-center mb-4">
-            <img src="/platenum.png" alt="Platinum icon" className="w-12 h-12 mr-2" />  
+            <Image height={30} width={30} src="/platenum.png" alt="Platinum icon" className="w-12 h-12 mr-2" />  
             <h3 className="text-2xl font-semibold text-slate-600 dark:text-slate-400">Platinum</h3>
           </div>
           <h4 className="text-2xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">Custom</h4>
@@ -171,7 +178,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you're 100% happy
+              Unlimited changes until you are 100% happy
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
