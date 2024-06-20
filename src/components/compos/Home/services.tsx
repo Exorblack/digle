@@ -104,14 +104,14 @@ export function BentoServices() {
                   className=""
                 />
                 <a
-                  href="/"
+                  href="https://www.digle.org"
                   className="mr-4 text-xs font-bold cursor-pointer text-neutral-700 dark:text-neutral-200"
                 >
                   Digle <br /> agency
                 </a>
               </div>
               <a
-                href="/"
+                href="https://www.digle.org"
                 className="text-sm font-bold cursor-pointer text-neutral-700 dark:text-neutral-200"
               >
                   Digle.org
