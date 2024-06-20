@@ -12,14 +12,14 @@ const Terms = () => {
 
           <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Definitions</h2>
           <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-            "Digle" or "we" or "us" refers to Digle, a web design and development agency, including its officers, directors, employees, agents, and affiliates.<br/>
-            "Website" refers to Digle's website located at digle.com, including any subdomains, mobile versions, and related content and functionality.<br/>
-            "Services" refers to the web design, development, SEO, maintenance, security, and other services provided by Digle, as well as any related software, documentation, and other materials provided by Digle through your use of the Website’s contact form.
+          &quot;Digle&quot; or &quot;we&quot; or &quot;us&quot; refers to Digle, a web design and development agency, including its officers, directors, employees, agents, and affiliates.<br/>
+          &quot;Website&quot; refers to Digle website located at digle.com, including any subdomains, mobile versions, and related content and functionality.<br/>
+          &quot;Services&quot; refers to the web design, development, SEO, maintenance, security, and other services provided by Digle, as well as any related software, documentation, and other materials provided by Digle through your use of the Website’s contact form.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">General</h2>
           <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-            These Terms of Use ("Terms") govern your access to and use of our Website, and ordering of services and products, provided by Digle ("Services"). By accessing or using our Services, you agree to be bound by these Terms.<br/>
+            These Terms of Use (&quot;Terms&quot;) govern your access to and use of our Website, and ordering of services and products, provided by Digle (&quot;Services&quot;). By accessing or using our Services, you agree to be bound by these Terms.<br/>
             Please read these Terms carefully. If you do not agree to these Terms, you must not access or use our Services through our Website.
           </p>
 
@@ -41,7 +41,7 @@ const Terms = () => {
             <li className="mb-2">Engage in any conduct that interferes with or disrupts the Website, including but not limited to distributing viruses, creating an unreasonable load on the Website, or using any automated means to access or collect data from the Website;</li>
             <li className="mb-2">Use any robot, spider, scraper, or other automated means to access or collect data from the Website for any purpose without our express written permission;</li>
             <li className="mb-2">Attempt to gain unauthorized access to any portion of the Website, other accounts, computer systems, or networks connected to the Website, through hacking, password mining, or any other means;</li>
-            <li className="mb-2">Use any manual or automated software, devices, or other processes to "crawl" or "spider" any page of the Website;</li>
+            <li className="mb-2">Use any manual or automated software, devices, or other processes to &quot;crawl&quot; or &quot;spider&quot; any page of the Website;</li>
             <li className="mb-2">Introduce any viruses, Trojan horses, worms, time bombs, cancelbots, or other computer programming routines that may damage, interfere with, intercept, or expropriate any system, data, or personal information;</li>
             <li className="mb-2">Modify, adapt, translate, or create derivative works based on the Website or any portion thereof;</li>
             <li className="mb-2">Remove, obscure, or alter any copyright, trademark, or other proprietary rights notice or legends that appear on the Website; or</li>
@@ -62,7 +62,7 @@ const Terms = () => {
 
           <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Disclaimer of Warranties</h2>
           <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-            The Website is provided "as is" and "as available" without warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement. Digle does not warrant that the Services will be uninterrupted, error-free, secure, or free from viruses or other harmful components. <br/>
+            The Website is provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement. Digle does not warrant that the Services will be uninterrupted, error-free, secure, or free from viruses or other harmful components. <br/>
             WE EXPRESSLY DISCLAIM ANY AND ALL CONDITIONS, REPRESENTATIONS, WARRANTIES OR OTHER TERMS, WHETHER EXPRESS OR IMPLIED. YOU ACKNOWLEDGE THAT WE DO NOT WARRANT THAT THE WEBSITE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE AND YOU FURTHER ACKNOWLEDGE THAT WE DO NOT WARRANT THAT THE ACCESS TO THE SERVICE(S), WHICH IS PROVIDED OVER INTERNET AND VARIOUS TELECOMMUNICATIONS NETWORKS, ALL OF WHICH ARE BEYOND OUR CONTROL, WILL BE UNINTERRUPTED, TIMELY, SECURE, ERROR-FREE OR FREE FROM VIRUSES OR OTHER MALICIOUS SOFTWARE.
           </p>
 

@@ -13,14 +13,14 @@ const Privacy = () => {
         
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Definitions</h2>
         <ul className="list-disc pl-6 text-neutral-700 dark:text-neutral-300 mb-4">
-          <li className="mb-2"><strong>"Controller"</strong> means Digle, the organization that determines the purposes and means of processing Personal Data.</li>
-          <li className="mb-2"><strong>"Processor"</strong> means any third party that processes Personal Data on behalf of the Controller.</li>
-          <li className="mb-2"><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person, such as name, email address, phone number, IP address, or other online identifier, as well as any other information that is linked or linkable to an identified or identifiable natural person.</li>
+          <li className="mb-2"><strong>&quot;Controller&quot;</strong> means Digle, the organization that determines the purposes and means of processing Personal Data.</li>
+          <li className="mb-2"><strong>&quot;Processor&quot;</strong> means any third party that processes Personal Data on behalf of the Controller.</li>
+          <li className="mb-2"><strong>&quot;Personal Data&quot;</strong> means any information relating to an identified or identifiable natural person, such as name, email address, phone number, IP address, or other online identifier, as well as any other information that is linked or linkable to an identified or identifiable natural person.</li>
         </ul>
         
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">General</h2>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-          At Digle, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and protect your personal information in connection with our website, services, products, and any related software, documentation, and other materials provided by us (collectively, the "Services"). We collect personal information from you when you submit a request for services through our website or email, based on our legitimate interest in providing our services, improving our services.
+          At Digle, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and protect your personal information in connection with our website, services, products, and any related software, documentation, and other materials provided by us (collectively, the &quot;Services&quot;). We collect personal information from you when you submit a request for services through our website or email, based on our legitimate interest in providing our services, improving our services.
         </p>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
           By using our Services, you consent to the collection, use, disclosure, and protection of your personal information in accordance with this Privacy Policy. If you do not agree with any of the terms of this Privacy Policy, please do not use our Services.
@@ -48,7 +48,7 @@ const Privacy = () => {
           <li className="mb-2">For any other purpose with your consent.</li>
         </ul>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-          We may also use your contact information to send you marketing materials about our products, services, and promotions. If you do not wish to receive these materials, you can unsubscribe at any time by clicking the "unsubscribe" link in the email or by contacting us.
+          We may also use your contact information to send you marketing materials about our products, services, and promotions.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Disclosure of Personal Information</h2>
@@ -92,7 +92,7 @@ const Privacy = () => {
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Changes to This Privacy Policy</h2>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-          We may update this Privacy Policy from time to time in response to changing legal, technical, or business developments. When we update this Privacy Policy, we will revise the "Last updated" date at the top of this document. If we make significant changes to this Privacy Policy, we will provide notice through our Services or by other means.
+          We may update this Privacy Policy from time to time in response to changing legal, technical, or business developments. When we update this Privacy Policy, we will revise the &quot;Last updated&quot; date at the top of this document. If we make significant changes to this Privacy Policy, we will provide notice through our Services or by other means.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">General Data Protection Regulation (GDPR)</h2>
@@ -132,7 +132,7 @@ const Privacy = () => {
           If you have any questions or concerns about our privacy practices or your rights under the CCPA, please contact us using the contact information provided below.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Children's Online Privacy Protection Act (COPPA)</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Childrens Online Privacy Protection Act (COPPA)</h2>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
           Our Services are not directed to children under the age of 13, and we do not knowingly collect personal information from children under the age of 13. If you are under 13 years of age, do not use or provide any information on our Services or provide any personal information about yourself to us.
         </p>
@@ -140,7 +140,7 @@ const Privacy = () => {
           If we learn that we have collected personal information from a child under the age of 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at the address provided below.
         </p>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-          We encourage parents and legal guardians to monitor their children's internet usage and to help enforce our Privacy Policy by instructing their children to never provide personal information on our Services without their permission.
+          We encourage parents and legal guardians to monitor their childrens internet usage and to help enforce our Privacy Policy by instructing their children to never provide personal information on our Services without their permission.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Contact Us</h2>
