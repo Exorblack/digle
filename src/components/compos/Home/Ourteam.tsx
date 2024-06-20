@@ -76,13 +76,13 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
         <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
             <Image
-                src="/users/mahmed.jpg"
+                src="/users/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
                 width={300}
                 height={300}
                 alt="Jordan Michael"
                 className="rounded-lg object-cover mb-4"
               />
-              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Mohamed Ahmed</h4>
+              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">emma stone</h4>
               <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">System Administrator</p>
               <div className="flex space-x-4 pt-3">
                 <a href="#" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
