@@ -27,7 +27,7 @@ import React from "react"
         <AccordionItem value="item-2">
           <AccordionTrigger>What makes Digle different from other web design agencies?</AccordionTrigger>
           <AccordionContent>
-          At Digle, we blend creativity with advanced technology to deliver customized web solutions that meet our clients' unique needs.
+          At Digle, we blend creativity with advanced technology to deliver customized web solutions that meet our clients unique needs.
            Our client-centric approach ensures we work closely with you to bring your vision to life. Additionally, our comprehensive packages,
            unlimited revisions, and dedicated support set us apart from the competition.
           </AccordionContent>
