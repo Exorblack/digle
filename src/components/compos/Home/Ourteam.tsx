@@ -14,7 +14,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 dark:text-neutral-200">The Team</h2>
           <p className="text-neutral-600 dark:text-neutral-400 mt-4">
-            This is the paragraph where you can write more details about your team. Keep your user engaged by providing meaningful information.
+            meet our team 
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -60,15 +60,15 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
               <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Ziad Emad</h4>
               <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">UI/UX Designer</p>
               <div className="flex space-x-4 pt-3">
-                <a href="#" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
-                  <FaLinkedin size={25}/>
+                <a href="https://x.com/blaxhill" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
+                  <BsTwitterX size={25} />
                 </a>
                 <a href="https://www.instagram.com/boredblax/" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
                   <FaInstagramSquare size={25} />
                 </a>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400 mt-4 mb-4">
-                Artist is a term applied to a person who engages in an activity deemed to be an art.
+                graphic designer and digital marketing expert
               </p>
             </div>
           </div>
@@ -76,14 +76,14 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
         <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
             <Image
-                src="/users/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                src="/users/mahmed.jpg"
                 width={300}
                 height={300}
                 alt="Jordan Michael"
                 className="rounded-lg object-cover mb-4"
               />
-              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Ryan Samuel</h4>
-              <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">Financial Examiner</p>
+              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Mohamed Ahmed</h4>
+              <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">System Administrator</p>
               <div className="flex space-x-4 pt-3">
                 <a href="#" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
                   <FaLinkedin size={25}/>
@@ -91,12 +91,9 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
                 <a href="#" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
                   <BsTwitterX size={25} />
                 </a>
-                <a href="#" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
-                  <FaInstagramSquare size={25}/>
-                </a>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400 mt-4 mb-4">
-                Today you are you! That is truer than true! There is no one alive who is you-er than you!
+                our cybersecurity guy
               </p>
             </div>
           </div>

@@ -107,8 +107,8 @@ export default function Sidebar() {
                 <div className="border-b-2 pt-4"></div>
                 {/* <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('testimonials-section')}><MessagesSquare className="w-8 h-8 hover:text-neutral-700" /></button></div>
                 <div className="border-b-2 pt-4"></div> */}
-                <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('portfolio-section')}><FileStack className="w-8 h-8 hover:text-neutral-700" /></button></div>
-                <div className="border-b-2 pt-4"></div>
+                {/* <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('portfolio-section')}><FileStack className="w-8 h-8 hover:text-neutral-700" /></button></div>
+                <div className="border-b-2 pt-4"></div> */}
                 <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('pricing-section')}><DollarSign className="w-8 h-8 hover:text-neutral-700" /></button></div>
                 <div className="border-b-2 pt-4"></div>
                 <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('our-team-section')}><Users className="w-8 h-8 hover:text-neutral-700" /></button></div>
