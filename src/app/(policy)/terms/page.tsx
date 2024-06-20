@@ -25,7 +25,7 @@ const Terms = () => {
 
           <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Eligibility</h2>
           <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-            You must be at least 18 years of age to use our Services, unless you are between the ages of 14 and 18 (or the age of majority established by law in the user's jurisdiction) and are under the supervision of a parent or legal guardian who has agreed to these Terms. Individuals under the age of 14 are prohibited from requesting our Services. By accessing or using our Services, you represent and warrant that you meet the above requirements and are capable of entering into a legally binding agreement.
+            You must be at least 18 years of age to use our Services, unless you are between the ages of 14 and 18 (or the age of majority established by law in the user&apos;s jurisdiction) and are under the supervision of a parent or legal guardian who has agreed to these Terms. Individuals under the age of 14 are prohibited from requesting our Services. By accessing or using our Services, you represent and warrant that you meet the above requirements and are capable of entering into a legally binding agreement.
           </p>
 
           <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">License to Use the Website</h2>
