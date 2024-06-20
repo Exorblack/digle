@@ -3,14 +3,14 @@ import { Contact } from "@/components/compos/Home/Contact";
 import Footer from "@/components/compos/Home/Footer";
 import Herosec from "@/components/compos/Home/Herosec";
 import Ourteam from "@/components/compos/Home/Ourteam";
-import Testimonials from "@/components/compos/Home/Testimonials";
+//import Testimonials from "@/components/compos/Home/Testimonials";
 import Words from "@/components/compos/Home/Words";
 import Nav from "@/components/compos/Home/Nav";
 import PricingSection from "@/components/compos/Home/pricing"; // Updated import path
 import BentoServieces from "@/components/compos/Home/services";
 import Whoweare from "@/components/compos/Home/whoweare";
 import Sidebar from "@/components/compos/sidebar";
-import Portfolio from "@/components/compos/Home/Portofilio";
+//import Portfolio from "@/components/compos/Home/Portofilio";
 
 export default function Home() {
   return (
