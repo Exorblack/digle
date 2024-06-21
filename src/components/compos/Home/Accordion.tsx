@@ -51,7 +51,7 @@ import React from "react"
         <AccordionItem value="item-5">
           <AccordionTrigger>I have another question!</AccordionTrigger>
           <AccordionContent>
-          No problem! Send us an email at contact@digle.org and we will get back to you with an answer.
+          No problem! Send us an email at <span className="text-green-700 font-bold dark:text-green-500">contact@digle.org</span> and we will get back to you with an answer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

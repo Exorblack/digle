@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaGithub, FaInstagram } from "react-icons/fa6";
+import { FaDribbble , FaInstagram } from "react-icons/fa6";
 import { BsTwitterX } from 'react-icons/bs';
 
 const Footer = () => {
@@ -40,7 +40,7 @@ const Footer = () => {
 
         <li>
           <a href="https://github.com/Exorblack" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
-            <FaGithub className='text-2xl' />
+            <FaDribbble className='text-2xl' />
             <span className="sr-only">GitHub</span>
           </a>
         </li>
@@ -52,7 +52,7 @@ const Footer = () => {
     <p className=" text-center text-sm text-neutral-500 dark:text-neutral-400 pt-5">
       © Copyright 2024 Digle - All rights reserved.
     </p>
-    <p className=" text-center text-sm text-neutral-500 dark:text-neutral-400 pt-2">
+    <p className=" text-center text-sm text-green-500 dark:text-green-400 pt-2 font-bold">
       contact@digle.org
     </p>
   </div>

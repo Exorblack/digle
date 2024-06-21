@@ -9,7 +9,7 @@ const Privacy = () => {
     <div>
     <div className="bg-neutral-100 dark:bg-neutral-950 min-h-screen py-10 px-6 lg:px-20">
       <div className="max-w-4xl mx-auto bg-white dark:bg-neutral-900 shadow-lg rounded-lg p-8 lg:p-16">
-        <h1 className="text-3xl font-bold mb-6 text-neutral-900 dark:text-neutral-100">Privacy Policy</h1>
+        <h1 className="text-3xl font-bold mb-10 text-green-700 dark:text-green-500 flex justify-center">Privacy Policy</h1>
         
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Definitions</h2>
         <ul className="list-disc pl-6 text-neutral-700 dark:text-neutral-300 mb-4">
@@ -145,7 +145,7 @@ const Privacy = () => {
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Contact Us</h2>
         <p className="text-neutral-700 dark:text-neutral-300 mb-4">
-          If you have any questions or concerns about this Privacy Policy, please contact us at contact@digle.org.
+          If you have any questions or concerns about this Privacy Policy, please contact us at <span className='text-green-700 dark:text-green-500'>contact@digle.org</span>
         </p>
 
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Pricing</h2>

@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram , FaDribbble } from "react-icons/fa";
+
 
 interface Navo{
   id:string
@@ -32,7 +33,7 @@ const nav:React.FC<Navo> = ({id}) => {
 
         <li>
           <a href="https://github.com/Exorblack" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
-            <FaGithub className='text-2xl' />
+            <FaDribbble className='text-2xl' />
             <span className="sr-only">GitHub</span>
           </a>
         </li>

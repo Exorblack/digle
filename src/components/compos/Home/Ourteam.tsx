@@ -2,7 +2,7 @@ import React from 'react';
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from 'react-icons/fa6';
 import Image from 'next/image';
-import { FaInstagramSquare } from 'react-icons/fa';
+import { FaInstagram, FaInstagramSquare } from 'react-icons/fa';
 interface Ourteam{
   id:string
 }
@@ -38,7 +38,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
                 <BsTwitterX size={25} />
                 </a>
                 <a href="https://www.instagram.com/mohassan.99/" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
-                  <FaInstagramSquare size={25}/>
+                  <FaInstagram size={25}/>
                 </a>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400 mt-4 mb-4">
@@ -64,7 +64,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
                   <BsTwitterX size={25} />
                 </a>
                 <a href="https://www.instagram.com/boredblax/" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
-                  <FaInstagramSquare size={25} />
+                  <FaInstagram size={25} />
                 </a>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400 mt-4 mb-4">
