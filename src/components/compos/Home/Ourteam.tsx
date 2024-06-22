@@ -2,7 +2,7 @@ import React from 'react';
 import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedin } from 'react-icons/fa6';
 import Image from 'next/image';
-import { FaInstagram, FaInstagramSquare } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 interface Ourteam{
   id:string
 }
