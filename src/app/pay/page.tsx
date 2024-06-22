@@ -153,7 +153,7 @@ const Pay = () => {
                     type="submit"
                     className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-green-700 dark:hover:bg-green-800 transition duration-300 ease-in-out transform hover:scale-105"
                   >
-                    Pay Now 🔒
+                    Buy 🔒
                   </Button>
                 </div>
               </form>
