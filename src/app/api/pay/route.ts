@@ -16,8 +16,8 @@ export async function POST(req: Request) {
     const { name, email, message , pkg } = paySchema.parse(body);
 
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: ['exorblack@gmail.com'],
+      from: 'customer@digle.org',
+      to: ['contact@digle.org'],
       subject: `Message from ${name}`,
       text: `email: ${email}\n pkg: ${pkg} \n Message: \n ${message}`,
     });
