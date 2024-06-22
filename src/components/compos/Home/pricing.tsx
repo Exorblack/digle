@@ -33,7 +33,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           </div>
           <h4 className="text-xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">$300</h4>
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">Ideal for small businesses and startups.</p>
-          <a href='/contact'><button className="w-full px-6 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition duration-300 mb-6">Get Started</button></a>
+          <a href='/pay'><button className="w-full px-6 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition duration-300 mb-6">Get Started</button></a>
           <ul className="text-left text-neutral-700 dark:text-neutral-300 mb-6 space-y-2">
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
@@ -82,7 +82,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           </div>
           <h4 className="text-3xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">$700</h4>
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">Perfect for growing businesses needing more robust features.</p>
-          <a href="/contact"><button className="w-full px-6 py-2 bg-cyan-600 text-white rounded-lg shadow-md hover:bg-cyan-700 transition duration-300 mb-6">Get Started</button></a>
+          <a href="/pay"><button className="w-full px-6 py-2 bg-cyan-600 text-white rounded-lg shadow-md hover:bg-cyan-700 transition duration-300 mb-6">Get Started</button></a>
           <ul className="text-left text-neutral-700 dark:text-neutral-300 mb-6 space-y-2">
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
