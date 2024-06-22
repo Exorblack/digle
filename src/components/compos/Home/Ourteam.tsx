@@ -73,7 +73,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
             </div>
           </div>
         {/* Team Member 3 */}
-        <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
+        {/* <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
             <Image
                 src="/users/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
@@ -96,7 +96,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
                 our cybersecurity guy
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Add more team members in the same way */}
         </div>

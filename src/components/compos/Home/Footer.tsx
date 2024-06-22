@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaDribbble , FaInstagram } from "react-icons/fa6";
-import { BsTwitterX } from 'react-icons/bs';
+import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -25,23 +25,23 @@ const Footer = () => {
 
     <ul className="mt-3 flex justify-center gap-6 md:gap-8">
     <li>
-          <a href="https://www.instagram.com/mohassan.99" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+          <a href="https://www.instagram.com/digle_agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
             <FaInstagram className='text-2xl' />
             <span className="sr-only">Instagram</span>
           </a>
         </li>
 
         <li>
-          <a href="https://www.x.com/exorbla" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
-            <BsTwitterX className='text-2xl' />
-            <span className="sr-only">Twitter</span>
+          <a href="https://www.tiktok.com/@digle_agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <AiFillTikTok className='text-2xl' />
+            <span className="sr-only">tiktok</span>
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/Exorblack" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+          <a href="https://dribbble.com/digle-agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
             <FaDribbble className='text-2xl' />
-            <span className="sr-only">GitHub</span>
+            <span className="sr-only">Dribble</span>
           </a>
         </li>
     </ul>
