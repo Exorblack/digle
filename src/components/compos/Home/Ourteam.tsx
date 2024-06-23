@@ -48,7 +48,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
           </div>
 
           {/* Team Member 2 */}
-          <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
+          {/* <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
               <Image
                 src="/users/ziad.webp"
@@ -71,7 +71,7 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
                 graphic designer and digital marketing expert
               </p>
             </div>
-          </div>
+          </div> */}
         {/* Team Member 3 */}
         {/* <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">

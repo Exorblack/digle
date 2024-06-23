@@ -12,8 +12,7 @@ const nav:React.FC<Navo> = ({id}) => {
   return (
     <>
     <div className= "border-b-2 p-4" id={id}>
-       <div className="flex justify-between items-end">
-          {/* <div className="font-bold">Email : contact@digle.org</div> */}
+       <div className="flex justify-between items-center">
       <ul className=" flex justify-center gap-6 md:gap-8">
     <li>
           <a href="https://www.instagram.com/digle_agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
@@ -36,6 +35,7 @@ const nav:React.FC<Navo> = ({id}) => {
           </a>
         </li>
     </ul>
+    {/* <div className="font-bold text-green-600">contact@digle.org</div> */}
           <ModeToggle/>
        </div>
     </div>
