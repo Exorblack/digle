@@ -91,6 +91,11 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2 text-3xl" />
+              Custom Web Design : custom bespoke website designed to tell your unique story.
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
+            <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2 text-3xl" />
               Advanced Technical and on-page SEO to increase your leads and search engine rankings
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />

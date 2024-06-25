@@ -1,19 +1,23 @@
 import React from "react";
 import Image from 'next/image';
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function BentoServices() {
   return (
     <section className="lg:py-10 px-8">
       <div className="mx-auto mb-10 text-center lg:mb-20">
-        <h3 className="mb-2 font-bold uppercase text-neutral-700 dark:text-neutral-200">
-          Features
-        </h3>
-        <h2 className="mb-4 text-2xl font-bold lg:text-4xl text-neutral-800 dark:text-neutral-100">
-          explore our Services
-        </h2>
-        <p className="mx-auto max-w-lg text-neutral-500 dark:text-neutral-400">
+        <h1 className=" text-2xl mb-5 font-bold uppercase text-neutral-700 dark:text-neutral-200">
+          OUR SERVICES
+        </h1>
+        <p className="mx-auto mb-3 max-w-lg text-neutral-500 dark:text-neutral-400">
         Our team designs websites that reflect your brands unique identity, ensuring a visually engaging and user-friendly experience.
         </p>
+        <div className="pt-3">
+        <Link href={"/our-services"}>
+        <Button className="bg-green-700 hover:bg-green-800 text-white">All Services</Button>
+        </Link>
+        </div>
       </div>
       <div className="container mx-auto grid lg:gap-x-8 gap-y-8 grid-cols-1 lg:grid-cols-3">
         <div className="col-span-1 bg-neutral-100 dark:bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
@@ -57,7 +61,7 @@ export function BentoServices() {
         <div className="col-span-2 bg-neutral-50 dark:bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
           <div className="text-center p-8">
             <h4 className="mb-2 font-medium text-neutral-700 dark:text-neutral-200">
-              Comprehensive Support
+            Website Maintenance and Support
             </h4>
             <span className="text-green-700">&quot;Here for You, Always&quot;</span>
             <p className="text-center max-w-sm mx-auto text-base font-normal leading-7 text-neutral-500 dark:text-neutral-400">
@@ -66,10 +70,10 @@ export function BentoServices() {
             </p>
             <div className="flex justify-center mt-16">
               <Image
-                src="/maintance.svg"
+                src="/support.svg"
                 alt="laptop"
-                width={350}
-                height={350}
+                width={250}
+                height={250}
                 className="transition-transform duration-300 transform hover:scale-105"
               />
             </div>
@@ -78,19 +82,19 @@ export function BentoServices() {
         <div className="col-span-1 bg-neutral-100 dark:bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
           <div className="text-center p-8">
             <h4 className="mb-2 font-medium text-neutral-700 dark:text-neutral-200">
-            Website Maintenance and Security
+            Custom Design
             </h4>
             <h6 className="mb-3 text-sm text-neutral-700 dark:text-neutral-200">
             </h6>
             <p className="text-center max-w-xs mx-auto text-base font-normal leading-7 text-neutral-500 dark:text-neutral-400">
-            Keep your website secure and running smoothly with our comprehensive maintenance services, keeping your website updated, secure, pretty.
+            All designs crafted by Digle are custom and unique. Stand apart from your competition with a custom bespoke website designed to tell your unique story.
             </p>
             <div className="flex items-center -space-x-4 justify-center ">
               <Image 
-                src="/support.svg"
+                src="/maintance.svg"
                 alt={""}
-                height={250}
-                width={250}
+                height={200}
+                width={200}
                 className="my-10 transition-transform duration-300 transform hover:scale-105" 
               />
             </div>

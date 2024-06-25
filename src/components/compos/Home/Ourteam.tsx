@@ -48,30 +48,30 @@ const OurTeam:React.FC<Ourteam> = ({id}) => {
           </div>
 
           {/* Team Member 2 */}
-          {/* <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
+          <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
               <Image
-                src="/users/ziad.webp"
+                src="/users/mark.jpg"
                 width={500}
                 height={500}
-                alt="Jordan Michael"
+                alt="Mark Karchkov"
                 className="rounded-lg object-cover mb-4"
               />
-              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Ziad Emad</h4>
+              <h4 className="text-lg font-bold text-neutral-800 dark:text-neutral-200">Mark Karchkov</h4>
               <p className="text-sm font-medium text-neutral-600 dark:text-neutral-400">UI/UX Designer</p>
               <div className="flex space-x-4 pt-3">
-                <a href="https://x.com/blaxhill" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
-                  <BsTwitterX size={25} />
+                <a href="https://www.linkedin.com/in/mark-karchkov-0167982b2" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
+                  <FaLinkedin size={25} />
                 </a>
-                <a href="https://www.instagram.com/boredblax/" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
+                <a href="https://www.instagram.com/mar4iikk/" target='_blank' className="text-neutral-600 dark:text-neutral-400 hover:text-green-600 dark:hover:text-green-400">
                   <FaInstagram size={25} />
                 </a>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400 mt-4 mb-4">
-                graphic designer and digital marketing expert
+              Middle-Senior UX/UI Designer. WordPress developer. Google ads analytics. SEO analytics.
               </p>
             </div>
-          </div> */}
+          </div>
         {/* Team Member 3 */}
         {/* <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6">
             <div className="flex flex-col items-center">
