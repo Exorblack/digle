@@ -587,7 +587,7 @@ const Services = () => {
                 </a>
 
                 <p className="mt-2 text-sm/relaxed text-neutral-200">
-                Effective calls to action (CTAs) are essential for guiding visitors to achieve your business goals. Whether you want visitors to sign up for your mailing list, purchase a product, contact you, or request a callback, the CTAs must be clear and simple. We design your website to ensure your CTAs align with both your goals and the visitors' expectations, making it easy for them to take action.
+                Effective calls to action (CTAs) are essential for guiding visitors to achieve your business goals. Whether you want visitors to sign up for your mailing list, purchase a product, contact you, or request a callback, the CTAs must be clear and simple. We design your website to ensure your CTAs align with both your goals and the visitors expectations, making it easy for them to take action.
                 </p>
               </div>
             </div>
@@ -843,7 +843,7 @@ const Services = () => {
         <AccordionItem value="item-4">
           <AccordionTrigger>What is Web Hosting?</AccordionTrigger>
           <AccordionContent>
-          Web hosting is the service that allows your website to be accessible on the internet. It involves storing your website's files on a server. Web hosting services typically require a monthly or annual fee.
+          Web hosting is the service that allows your website to be accessible on the internet. It involves storing your website&apos;s files on a server. Web hosting services typically require a monthly or annual fee.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
