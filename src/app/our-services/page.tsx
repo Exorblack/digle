@@ -374,7 +374,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>SEO Competitor Analysis</CardTitle>
-              <CardDescription>Insights into your competitors' strategies to stay ahead.</CardDescription>
+              <CardDescription>Insights into your competitors strategies to stay ahead.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 3 */}
@@ -420,7 +420,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Link-Building Services</CardTitle>
-              <CardDescription>Building high-quality backlinks to improve your site's authority.</CardDescription>
+              <CardDescription>Building high-quality backlinks to improve your site&apos;s authority.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 5 */}
@@ -542,9 +542,10 @@ const Services = () => {
     <div>
 
         <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-          <img
+          <Image
             alt="contact"
             src="/serv/act/contsec1.jpg"
+            layout='fill'
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -557,7 +558,7 @@ const Services = () => {
                 <p className="mt-2 text-sm/relaxed text-neutral-200">
                 Including vital contact information on your website is crucial.
                  This includes your location (with a map), phone number, email address,
-                  and a contact form. This information should be prominently placed "above the fold" on your home page the area visible without scrolling.
+                  and a contact form. This information should be prominently placed &quot;above the fold&quot; on your home page the area visible without scrolling.
                    We also add details specific to your business, such as business hours, social media links, 
                    and other locations.
                 </p>
@@ -572,8 +573,9 @@ const Services = () => {
         <div>
 
         <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-          <img
-            alt=""
+          <Image
+            alt="actions"
+            layout='fill'
             src="/serv/act/actionsec2.jpg"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -599,8 +601,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="Reviews"
+    layout='fill'
     src="/serv/act/sec3.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -627,8 +630,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="security"
+    layout='fill'
     src="/serv/act/sec4.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -654,8 +658,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="shopping cart"
+    layout='fill'
     src="/serv/act/sec5.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -681,8 +686,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="items"
+    layout='fill'
     src="/serv/act/sec9.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -694,7 +700,7 @@ const Services = () => {
         </a>
 
         <p className="mt-2 text-sm/relaxed text-neutral-200">        
-        The "Related Items" feature enhances user engagement by suggesting additional products that may interest your customers. This feature not only increases sales but also signals to buyers that your store understands their preferences, creating a personalized shopping experience.
+        The &quot;Related Items&quot; feature enhances user engagement by suggesting additional products that may interest your customers. This feature not only increases sales but also signals to buyers that your store understands their preferences, creating a personalized shopping experience.
         </p>
       </div>
     </div>
@@ -710,8 +716,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="blog"
+    layout='fill'
     src="/serv/act/sec6.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -737,8 +744,9 @@ const Services = () => {
         <div>
 
 <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-  <img
-    alt=""
+  <Image
+    alt="email"
+    layout='fill'
     src="/serv/act/sec7.jpg"
     className="absolute inset-0 h-full w-full object-cover"
   />
@@ -763,8 +771,9 @@ const Services = () => {
   <div>
 
     <article className="relative overflow-hidden rounded-xl shadow transition hover:shadow-2xl dark:shadow-lg dark:hover:shadow-neutral-800 duration-300 ease-in transform hover:scale-105">
-      <img
-        alt=""
+      <Image
+        alt="team"
+        layout='fill'
         src="/serv/act/sec8.jpg"
         className="absolute inset-0 h-full w-full object-cover"
       />
