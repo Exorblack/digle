@@ -14,7 +14,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ id }) => {
           <p className='flex justify-center pt-3 text-sm'>see some of our works 
           </p>
         </div>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3'>
           <div>
           <CardContainer className="inter-var">
             <CardBody className="bg-neutral-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-neutral-950 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
