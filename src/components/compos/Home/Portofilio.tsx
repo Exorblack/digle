@@ -54,7 +54,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ id }) => {
                 translateZ="50"
                 className="text-xl font-bold text-neutral-800 dark:text-white"
               >
-                Greatest animation's website with best UI/UX design
+                Greatest animation&apos;s website with best UI/UX design
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
