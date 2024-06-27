@@ -494,7 +494,6 @@ const Services = () => {
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
         Using the collected data, we develop tailored strategies for your website.
         We draft multiple plans and evaluate them to identify the best approach for your needs.
-        We also prepare a backup plan to ensure smooth execution and adaptability.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
@@ -503,8 +502,8 @@ const Services = () => {
           Implementation
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          This is the most extensive phase of our process.
-          We meticulously implement the chosen plan,
+          This is the longest step in our work.
+          We Careful implement the chosen plan,
           continuously testing and refining each element.
           Our goal is to perfect the final product,
           ensuring it meets all your requirements and exceeds your expectations.
@@ -833,11 +832,10 @@ const Services = () => {
         <AccordionItem value="item-3">
           <AccordionTrigger>How does the whole process work?</AccordionTrigger>
           <AccordionContent className=''>
-          <div>1. Approve the Quote: Start by approving the quote we provide for your project.</div><br/>
-          <div>2. Discuss the Project: We will have an in-depth discussion to understand your vision and requirements.</div><br/>
-          <div>4. Provide Business Information: Share your business concept, logo, social media links, and any other materials that help us learn more about your business.</div><br/>
-          <div>5. Submit Content: Provide all the content you want to include on your website.</div><br/>
-          <div>6. Down Payment: Make an initial payment of at least 60% to kickstart the project.</div><br/>
+          <div>1. Discuss the Project: We will have an in-depth discussion to understand your vision and requirements.</div><br/>
+          <div>2. Provide Business Information: Share your business concept, logo, social media links, and any other materials that help us learn more about your business.</div><br/>
+          <div>3. Submit Content: Provide all the content you want to include on your website.</div><br/>
+          <div>4. Down Payment: Make an initial payment of at least 60% to kickstart the project.</div><br/>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">

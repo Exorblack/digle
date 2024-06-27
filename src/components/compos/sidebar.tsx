@@ -52,9 +52,9 @@ export default function Sidebar() {
               {/* <button onClick={() => handleScrollToSection('testimonials-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
                 <MessagesSquare className="w-5 h-5" /> <span>Testimonials</span>
               </button> */}
-              {/* <button onClick={() => handleScrollToSection('portfolio-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
+              <button onClick={() => handleScrollToSection('portfolio-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
                 <FileStack className="w-5 h-5" /> <span>Portfolio</span>
-              </button> */}
+              </button>
                 <button onClick={() => handleScrollToSection('pricing-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
                   <DollarSign className="w-5 h-5" /> <span>Pricing</span>
                 </button>
@@ -107,8 +107,8 @@ export default function Sidebar() {
                 <div className="border-b-2 pt-4"></div>
                 {/* <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('testimonials-section')}><MessagesSquare className="w-8 h-8 hover:text-neutral-700" /></button></div>
                 <div className="border-b-2 pt-4"></div> */}
-                {/* <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('portfolio-section')}><FileStack className="w-8 h-8 hover:text-neutral-700" /></button></div>
-                <div className="border-b-2 pt-4"></div> */}
+                <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('portfolio-section')}><FileStack className="w-8 h-8 hover:text-neutral-700" /></button></div>
+                <div className="border-b-2 pt-4"></div>
                 <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('pricing-section')}><DollarSign className="w-8 h-8 hover:text-neutral-700" /></button></div>
                 <div className="border-b-2 pt-4"></div>
                 <div className="flex justify-center pt-5"><button onClick={() => handleScrollToSection('our-team-section')}><Users className="w-8 h-8 hover:text-neutral-700" /></button></div>

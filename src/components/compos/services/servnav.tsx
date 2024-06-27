@@ -39,11 +39,11 @@ const Servnav = () => {
             />
           </a>
           <div className="hidden md:flex gap-10">
-            <Link href={'/'}>
+            <a href={'/'}>
             <button className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <Home className="w-5 h-5" /> <span>Home</span>
             </button>
-            </Link>
+            </a>
             <button onClick={() => handleScrollToSection('ecommerce-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <FaCartShopping className="w-5 h-5" /> <span>eCommerce</span>
             </button>
@@ -66,11 +66,11 @@ const Servnav = () => {
         </div>
         {menuOpen && (
           <div className="md:hidden flex flex-col gap-4 mt-4">
-            <Link href={'/'}>
+            <a href={'/'}>
             <button className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <Home className="w-5 h-5" /> <span>Home</span>
             </button>
-            </Link>
+            </a>
 
             <button onClick={() => handleScrollToSection('ecommerce-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <FaCartShopping className="w-5 h-5" /> <span>eCommerce</span>

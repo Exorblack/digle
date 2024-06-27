@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaDribbble , FaInstagram } from "react-icons/fa6";
+import { FaBehance, FaDribbble , FaInstagram } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
@@ -39,8 +39,8 @@ const Footer = () => {
         </li>
 
         <li>
-          <a href="https://dribbble.com/digle-agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
-            <FaDribbble className='text-2xl' />
+          <a href="https://www.behance.net/337ba9b6" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <FaBehance className='text-2xl' />
             <span className="sr-only">Dribble</span>
           </a>
         </li>

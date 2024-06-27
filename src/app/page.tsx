@@ -10,7 +10,7 @@ import PricingSection from "@/components/compos/Home/pricing"; // Updated import
 import BentoServieces from "@/components/compos/Home/services";
 import Whoweare from "@/components/compos/Home/whoweare";
 import Sidebar from "@/components/compos/sidebar";
-//import Portfolio from "@/components/compos/Home/Portofilio";
+import Portfolio from "@/components/compos/Home/Portofilio";
 
 export default function Home() {
   return (
@@ -32,8 +32,8 @@ export default function Home() {
               <Whoweare id="who-we-are-section"/>
               {/* <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
               <Testimonials id="testimonials-section"/> */}
-              {/* <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
-              <Portfolio id="portfolio-section"/> */}
+              <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
+              <Portfolio id="portfolio-section"/>
               <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
               <PricingSection id="pricing-section"/>
               <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>

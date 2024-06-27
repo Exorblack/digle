@@ -3,6 +3,7 @@ import {ModeToggle} from "@/components/compos/dark";
 import React from "react";
 import { FaInstagram , FaDribbble } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import { FaBehance } from "react-icons/fa6";
 
 
 interface Navo{
@@ -29,8 +30,8 @@ const nav:React.FC<Navo> = ({id}) => {
         </li>
 
         <li>
-          <a href="https://dribbble.com/digle-agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
-            <FaDribbble className='text-2xl' />
+          <a href="https://www.behance.net/337ba9b6" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <FaBehance className='text-2xl' />
             <span className="sr-only">Dribble</span>
           </a>
         </li>
