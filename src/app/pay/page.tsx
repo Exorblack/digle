@@ -139,7 +139,7 @@ const Pay = () => {
                   {errors.pkg && (<span className="text-red-500 text-xs">{errors.pkg?.message}</span>)}
                 </div>
                 <div>
-                  <Label className="block text-neutral-700 dark:text-neutral-300 mb-2" htmlFor="message">Message</Label>
+                  <Label className="block text-neutral-700 dark:text-neutral-300 mb-2" htmlFor="message">Say Something😊</Label>
                   <Textarea 
                     id="message" 
                     className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200 transition duration-300 ease-in-out transform hover:scale-105" 
@@ -153,7 +153,7 @@ const Pay = () => {
                     type="submit"
                     className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-green-700 dark:hover:bg-green-800 transition duration-300 ease-in-out transform hover:scale-105"
                   >
-                    Buy 🔒
+                    Pay Now (first 60%)🔒
                   </Button>
                 </div>
               </form>

@@ -9,7 +9,7 @@ const Navcont = () => {
     <>
     <div>
         <div className= "border-b-2 p-4">
-            <div className="flex justify-between items-end">
+            <div className="flex justify-between items-end ">
                 <a href="/">
                 <Image
                     src={"/logo-no-background.svg"}

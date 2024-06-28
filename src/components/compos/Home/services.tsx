@@ -10,12 +10,12 @@ export function BentoServices() {
         <h1 className=" text-2xl mb-5 font-bold uppercase text-neutral-700 dark:text-neutral-200">
           OUR SERVICES
         </h1>
-        <p className="mx-auto mb-3 max-w-lg text-neutral-500 dark:text-neutral-400">
+        <p className="mx-auto mb-1 max-w-lg text-neutral-500 dark:text-neutral-400">
         Our team designs websites that reflect your brands unique identity, ensuring a visually engaging and user-friendly experience.
         </p>
-        <div className="pt-3">
+        <div className="pt-1">
         <Link href={"/our-services"}>
-        <Button className="bg-green-700 hover:bg-green-800 text-white">All Services</Button>
+        <Button variant={"link"} className="text-2xl text-green-600 hover:text-green-700">All Services</Button>
         </Link>
         </div>
       </div>
