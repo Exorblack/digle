@@ -839,15 +839,23 @@ const Services = () => {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
+          <AccordionTrigger>I Already Have a Website! Can I Redesign or Update It?</AccordionTrigger>
+          <AccordionContent>
+          Absolutely! If you already have a website, we can help redesign or update it to better meet your needs.
+          Whether you're looking for a fresh new look, enhanced functionality,
+          or improved performance, our team can work with you to develop a solution that aligns with your goals. 
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-5">
           <AccordionTrigger>What is Web Hosting?</AccordionTrigger>
           <AccordionContent>
           Web hosting is the service that allows your website to be accessible on the internet. It involves storing your website&apos;s files on a server. Web hosting services typically require a monthly or annual fee.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value="item-5">
+        <AccordionItem value="item-6">
           <AccordionTrigger>I have another question!</AccordionTrigger>
           <AccordionContent>
-          No problem! Send us an email at <span className="text-green-700 font-bold dark:text-green-500">contact@digle.org</span> and we will get back to you with an answer.
+          No problem! Send us an email at <span className="text-green-700 font-bold dark:text-green-500">contact@digle.org</span> or send message on any social media platform and we will get back to you with an answer.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

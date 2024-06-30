@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from 'sonner';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Tawk from "@/components/compos/tawk";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           defaultTheme="dark"
       >
         {children}
+        <Tawk/>
         <Analytics/>
         <SpeedInsights/>
         <Toaster position="top-center" richColors/>
