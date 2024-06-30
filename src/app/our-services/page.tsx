@@ -842,7 +842,7 @@ const Services = () => {
           <AccordionTrigger>I Already Have a Website! Can I Redesign or Update It?</AccordionTrigger>
           <AccordionContent>
           Absolutely! If you already have a website, we can help redesign or update it to better meet your needs.
-          Whether you're looking for a fresh new look, enhanced functionality,
+          Whether you&apos;re looking for a fresh new look, enhanced functionality,
           or improved performance, our team can work with you to develop a solution that aligns with your goals. 
           </AccordionContent>
         </AccordionItem>
