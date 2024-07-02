@@ -415,15 +415,20 @@ const Questionnaire = () => {
       <div>
         <div className=" bg-neutral-50 dark:bg-neutral-950">
           <div className="flex items-center justify-center py-12">
-            <div className="mx-auto grid w-[350px] gap-6">
+            <div className="mx-auto grid w-[550px] gap-6">
               <div className="grid gap-2 text-center">
                 <h1 className="text-3xl font-bold text-green-700 dark:text-green-500">Make a Questionnaire</h1>
                 <p className="text-balance text-muted-foreground">
                   Thank you for choosing Digle! We truly appreciate your business and are excited to provide you with top-notch service.<br/>
                   <span className='flex justify-center pt-3'>To help us better understand your needs, please fill out the form below.</span>
                   Your responses will enable us to tailor our solutions specifically to your requirements.<br />
-                  <span className='flex justify-center pt-3'>Facing any issues? Contact us</span>
-                  <span className='flex justify-center font-bold text-green-700'>contact@digle.org</span>
+                </p>
+                <p className='text-balance text-muted-foreground'>
+                We understand that some questions might require more thought or may not be applicable to your current situation. Feel free to skip any questions that you don't have an answer for. You can always reach out to us for any clarification or assistance.
+                </p>
+                <p>
+                <span className='flex justify-center pt-3'>Facing any issues? Contact us</span>
+                <span className='flex justify-center font-bold text-green-700'>contact@digle.org</span>
                 </p>
               </div>
               <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
