@@ -424,7 +424,7 @@ const Questionnaire = () => {
                   Your responses will enable us to tailor our solutions specifically to your requirements.<br />
                 </p>
                 <p className='text-balance text-muted-foreground'>
-                We understand that some questions might require more thought or may not be applicable to your current situation. Feel free to skip any questions that you don't have an answer for. You can always reach out to us for any clarification or assistance.
+                We understand that some questions might require more thought or may not be applicable to your current situation. Feel free to skip any questions that you don&apos;t have an answer for. You can always reach out to us for any clarification or assistance.
                 </p>
                 <p>
                 <span className='flex justify-center pt-3'>Facing any issues? Contact us</span>
