@@ -47,7 +47,7 @@ const Questionnaire = () => {
 
     const res = await fetch("/api/quest", opt);
     if (res.ok) {
-      toast.success('Your message has been sent successfully. Redirecting to the payment gateway...');
+      toast.success('Your message has been sent successfully.');
     } else {
       toast.error('Something went wrong', {
         duration: 2000
