@@ -63,7 +63,7 @@ const Questionnaire = () => {
 
   const renderAdditionalQuestions = () => {
     switch (selectedPackage) {
-      
+
       case 'gold-Diamond':
         return (
           <>
@@ -140,7 +140,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ10">10.What specific features do you need on your website? (e.g., e-commerce, booking system, contact forms, chat support)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ10">10.What specific features do you need on your website? (e.g. booking system, contact forms)</Label>
               <Textarea
                 id="goldQ10" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -413,7 +413,7 @@ const Questionnaire = () => {
     <div>
       <div><Navcont /></div>
       <div>
-        <div className=" bg-neutral-50 dark:bg-neutral-950">
+        <div className="bg-neutral-50 dark:bg-neutral-950">
           <div className="flex items-center justify-center py-12">
             <div className="mx-auto grid w-[550px] gap-6">
               <div className="grid gap-2 text-center">

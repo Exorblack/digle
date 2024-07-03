@@ -35,7 +35,8 @@ import React from "react"
         <AccordionItem value="item-3">
           <AccordionTrigger>How long does it take to build a website?</AccordionTrigger>
           <AccordionContent>
-          The timeline for building a website depends on the complexity and specific requirements of the project. 
+          The timeline for building a website depends on the complexity and specific requirements of the project.
+          <div className="py-2"><span className="text-green-500 font-bold">Gold Package :</span> Your website will be completed in less than a week, providing a fast solution for your business needs.</div>
           A standard business website typically takes 1-2 weeks, while more complex sites or SaaS projects can take 4-8 weeks or longer.
            We will provide a detailed timeline during our initial consultation.
           </AccordionContent>

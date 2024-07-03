@@ -32,7 +32,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <h3 className="text-2xl font-semibold text-orange-600 dark:text-orange-400">Gold</h3>
           </div>
           <h4 className="text-xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">$300</h4>
-          <p className="text-neutral-600 dark:text-neutral-400 mb-6">Ideal for small businesses and startups.</p>
+          <p className="text-neutral-600 dark:text-neutral-400 mb-6">Fast, ideal Solutions for Small Businesses and Startups</p>
           <a href='/contact'><button className="w-full px-6 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-600 transition duration-300 mb-6">Get Started</button></a>
           <ul className="text-left text-neutral-700 dark:text-neutral-300 mb-6 space-y-2">
             <li className="flex items-center">
@@ -92,11 +92,6 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
               Professional, tailored design to fit your brand.
-            </li>
-            <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2 text-md" />
-              Custom web design to tell your unique story.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">

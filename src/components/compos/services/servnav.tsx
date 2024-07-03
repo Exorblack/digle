@@ -48,7 +48,7 @@ const Servnav = () => {
               <FaCartShopping className="w-5 h-5" /> <span>eCommerce</span>
             </button>
             <button onClick={() => handleScrollToSection('seo-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
-              <IoRoseSharp className="w-5 h-5" /> <span>Seo</span>
+              <IoRoseSharp className="w-5 h-5" /> <span>Seo/Marketing</span>
             </button>
             <button onClick={() => handleScrollToSection('process-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <GiProcessor className="w-5 h-5" /> <span>Our Process</span>
@@ -76,7 +76,7 @@ const Servnav = () => {
               <FaCartShopping className="w-5 h-5" /> <span>eCommerce</span>
             </button>
             <button onClick={() => handleScrollToSection('seo-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
-              <IoRoseSharp className="w-5 h-5" /> <span>Seo</span>
+              <IoRoseSharp className="w-5 h-5" /> <span>Seo/Marketing</span>
             </button>
             <button onClick={() => handleScrollToSection('process-section')} className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
               <GiProcessor className="w-5 h-5" /> <span>Our Process</span>

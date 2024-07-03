@@ -753,6 +753,158 @@ const Services = () => {
           </Card>
         </div>
 
+      {/* Website Maintenance and Support */}
+
+        <div className="border-b-2 border-neutral-300 dark:border-neutral-700 pt-20"></div>
+
+      
+        <div className='text-center mt-10' id='seo-section'>
+          <h1 className='text-green-600 uppercase font-bold text-3xl'>Website Maintenance and Support</h1>
+          <p className='text-sm pt-5 max-w-3xl mx-auto'>
+          Maintaining your website boosts your business reputation, keeps it secure, and helps you gain more leads and sales. Let Digle Agency handle your website maintenance to ensure everything runs smoothly.
+          </p>
+        </div>
+        <div className='pt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+          {/* Card 1 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/fst.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dfst.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Fast Support</CardTitle>
+              <CardDescription>1-3 business days turnaround time for addressing issues.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 2 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/upds.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dupds.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Monthly Updates</CardTitle>
+              <CardDescription>Up to 3 hours of design or development time each month.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 3 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/serc.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dserc.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Daily Security Scans</CardTitle>
+              <CardDescription>Regular checks to keep your site safe from threats.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 4 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/ops.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dops.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Quarterly WordPress Updates</CardTitle>
+              <CardDescription>Regular updates and security patches for WordPress sites.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 5 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/cops.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dcops.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Content Updates</CardTitle>
+              <CardDescription>Keep your site content fresh and relevant.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 6 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/cms.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dcms.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>CMS Support</CardTitle>
+              <CardDescription>Ensuring your content management system is up to date.</CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+
 
         {/* proccess */}
 
