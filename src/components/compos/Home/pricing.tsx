@@ -51,8 +51,8 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Ensures your website looks great on all devices.
+              <FaCheckCircle className="text-green-500 mr-2 text-2xl" />
+              Responsive design ensuring your website looks great on all devices.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
@@ -62,7 +62,12 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you are 100% happy
+              Hosting and domain for $49/month (first month free).
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
+            <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2" />
+              Unlimited changes until you are 100% satisfied.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
@@ -90,8 +95,8 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2 text-3xl" />
-              Custom Web Design : custom bespoke website designed to tell your unique story.
+              <FaCheckCircle className="text-green-500 mr-2 text-md" />
+              Custom web design to tell your unique story.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
@@ -110,13 +115,18 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Ensures your website looks great on all devices.
+              <FaCheckCircle className="text-green-500 mr-2 text-2xl" />
+              Responsive design ensuring your website looks great on all devices.
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
+            <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2 text-lg" />
+              Hosting and domain for $49/month (first month free).
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you are 100% happy
+              Unlimited changes until you are 100% satisfied.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
@@ -147,8 +157,8 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2 text-3xl" />
-              Custom Web Design : custom bespoke website designed to tell your unique story.
+              <FaCheckCircle className="text-green-500 mr-2 text-md" />
+              Custom web design to tell your unique story.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
@@ -177,13 +187,28 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2 text-2xl" />
+              Responsive design ensuring your website looks great on all devices.
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
+            <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2 text-md" />
+              Branding and digital marketing.
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
+            <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2 text-xl" />
-              Ensures your website looks great on all devices.
+              Content creation and social media management.
+            </li>
+            <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
+            <li className="flex items-center">
+              <FaCheckCircle className="text-green-500 mr-2 text-md" />
+              Hosting and domain included for 1 year.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Unlimited changes until you are 100% happy
+              Unlimited changes until you are 100% satisfied.
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">

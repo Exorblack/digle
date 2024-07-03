@@ -45,7 +45,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Interactive Features</CardTitle>
-              <CardDescription>Engaging elements to enhance user interaction and experience.</CardDescription>
+              <CardDescription>Engage your visitors with interactive elements that enhance user interaction and experience.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 2 */}
@@ -67,8 +67,8 @@ const Services = () => {
                   className='hidden dark:block'
                 />
               </div>
-              <CardTitle>High Speed Performance</CardTitle>
-              <CardDescription>Fast loading times to keep your visitors happy.</CardDescription>
+              <CardTitle>High-Speed Performance</CardTitle>
+              <CardDescription>Ensure fast loading times to keep your visitors happy</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 3 */}
@@ -91,7 +91,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>User-Friendly Design</CardTitle>
-              <CardDescription>Easy-to-navigate interfaces that keep your visitors engaged.</CardDescription>
+              <CardDescription>Create easy-to-navigate interfaces that keep your visitors engaged and coming back.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 4 */}
@@ -136,8 +136,8 @@ const Services = () => {
                   className='hidden dark:block'
                 />
               </div>
-              <CardTitle>100% SEO Optimized</CardTitle>
-              <CardDescription>Ensuring your site ranks well on search engines.</CardDescription>
+              <CardTitle>SEO Optimized</CardTitle>
+              <CardDescription>Optimize your site for search engines to improve visibility and attract more traffic.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 6 */}
@@ -160,7 +160,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Mobile Optimization</CardTitle>
-              <CardDescription>Seamless performance across all devices.</CardDescription>
+              <CardDescription> seamless performance across all devices, ensuring a smooth user experience on smartphones and tablets.</CardDescription>
             </CardHeader>
           </Card>
         </div>
@@ -198,7 +198,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Payment Integrations</CardTitle>
-              <CardDescription>Support for multiple payment gateways to make transactions easy.</CardDescription>
+              <CardDescription>Support for multiple payment gateways to make transactions easy and secure.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 2 */}
@@ -221,7 +221,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Highly Secure Checkout</CardTitle>
-              <CardDescription>Advanced security measures to protect customer information.</CardDescription>
+              <CardDescription>Implement advanced security measures to protect customer information during transactions.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 3 */}
@@ -244,7 +244,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>User-Friendly Design</CardTitle>
-              <CardDescription>Intuitive navigation that makes shopping a breeze.</CardDescription>
+              <CardDescription>Develop intuitive navigation that makes shopping a breeze for your customers.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 4 */}
@@ -267,7 +267,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Interactive Features</CardTitle>
-              <CardDescription>Dynamic elements that engage and retain customers.</CardDescription>
+              <CardDescription>Add dynamic elements that engage and retain customers, enhancing their shopping experience.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 5 */}
@@ -289,8 +289,8 @@ const Services = () => {
                   className='hidden dark:block'
                 />
               </div>
-              <CardTitle>100% SEO Optimized</CardTitle>
-              <CardDescription>Optimized for search engines to attract more customers.</CardDescription>
+              <CardTitle>SEO Optimized</CardTitle>
+              <CardDescription>Optimize your eCommerce site for search engines to attract more customers and boost sales.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 6 */}
@@ -313,7 +313,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Mobile Optimization</CardTitle>
-              <CardDescription>Flawless shopping experience on any device</CardDescription>
+              <CardDescription>Ensure a flawless shopping experience on any device, from desktops to smartphones.</CardDescription>
             </CardHeader>
           </Card>
         </div>
@@ -351,7 +351,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Website Audit</CardTitle>
-              <CardDescription>Comprehensive analysis to identify areas for improvement.</CardDescription>
+              <CardDescription>Conduct a comprehensive analysis to identify areas for improvement and optimize your sites performance.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 2 */}
@@ -373,8 +373,8 @@ const Services = () => {
                   className='hidden dark:block'
                 />
               </div>
-              <CardTitle>SEO Competitor Analysis</CardTitle>
-              <CardDescription>Insights into your competitors strategies to stay ahead.</CardDescription>
+              <CardTitle>Competitor Analysis</CardTitle>
+              <CardDescription>Gain insights into your competitors strategies to stay ahead in the market.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 3 */}
@@ -396,8 +396,8 @@ const Services = () => {
                   className='hidden dark:block'
                 />
               </div>
-              <CardTitle>Extensive Keyword Research</CardTitle>
-              <CardDescription>Identifying the best keywords to attract targeted traffic.</CardDescription>
+              <CardTitle>Keyword Research</CardTitle>
+              <CardDescription>Identify the best keywords to attract targeted traffic and improve your sites search engine ranking.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 4 */}
@@ -420,7 +420,7 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Link-Building Services</CardTitle>
-              <CardDescription>Building high-quality backlinks to improve your site&apos;s authority.</CardDescription>
+              <CardDescription>Build high-quality backlinks to improve your site&apos;s authority and search engine performance.</CardDescription>
             </CardHeader>
           </Card>
           {/* Card 5 */}
@@ -443,7 +443,312 @@ const Services = () => {
                 />
               </div>
               <CardTitle>Business Profile Listings</CardTitle>
-              <CardDescription>Enhancing your online presence with accurate and optimized business profiles.</CardDescription>
+              <CardDescription>Enhance your online presence with accurate and optimized business profiles across various platforms.</CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+
+
+      {/* Branding and Digital Marketing */}
+
+        <div className="border-b-2 border-neutral-300 dark:border-neutral-700 pt-20"></div>
+
+      
+        <div className='text-center mt-10' id='seo-section'>
+          <h1 className='text-green-600 uppercase font-bold text-3xl'>Branding and Digital Marketing</h1>
+          <p className='text-sm pt-5 max-w-3xl mx-auto'>
+          At Digle, we specialize in developing a strong brand identity and implementing effective digital marketing strategies that drive results. Our team works closely with you to understand your unique needs and create customized solutions that resonate with your audience and amplify your online presence.
+          </p>
+        </div>
+        <div className='pt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+          {/* Card 1 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/brand.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dbrand.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Custom Branding</CardTitle>
+              <CardDescription>From logos to color palettes, we create a memorable brand identity that reflects your business.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 2 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/eml.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/deml.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>PPC Advertising</CardTitle>
+              <CardDescription>Drive targeted traffic and increase conversions with pay-per-click campaigns.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 2 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/seo.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dseo.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>SEO</CardTitle>
+              <CardDescription>Enhance your search engine visibility with comprehensive on-page and technical SEO</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 3 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/adss.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dadss.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Email Marketing</CardTitle>
+              <CardDescription>Engage your audience and nurture leads with personalized email campaigns.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 4 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/cont.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dcont.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Content Marketing</CardTitle>
+              <CardDescription>Build authority and attract customers with high quality, relevant content</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 5 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/buss.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/buss.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Analytics and Reporting</CardTitle>
+              <CardDescription>Track your progress and optimize your strategies with detailed performance reports.</CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+
+      {/* CONTENT CREATION AND SOCIAL MEDIA MANAGEMENT */}
+
+        <div className="border-b-2 border-neutral-300 dark:border-neutral-700 pt-20"></div>
+
+      
+        <div className='text-center mt-10' id='seo-section'>
+          <h1 className='text-green-600 uppercase font-bold text-3xl'>Content Creation and Social Media Management</h1>
+          <p className='text-sm pt-5 max-w-3xl mx-auto'>
+          Digle helps you stay ahead in the digital landscape with top-notch content creation and social media management services. We create compelling content and manage your social media accounts to ensure consistent engagement with your audience.
+          </p>
+        </div>
+        <div className='pt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+          {/* Card 1 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/cont.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dcont.svg'}
+                  alt='Interactive Features'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Content Creation</CardTitle>
+              <CardDescription>High quality blog posts, articles, and multimedia content tailored to your brand.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 2 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/media.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/dmedia.svg'}
+                  alt='High Speed Performance'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Social Media Management</CardTitle>
+              <CardDescription>Daily monitoring, 5 posts/week, Monthly Report, Audit & Analysis, and engagement on platforms like Facebook, Instagram, Twitter, LinkedIn, and etc..</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 3 */}
+          <Card className="w-full transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/key.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/key.svg'}
+                  alt='User-Friendly Design'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Ad Campaigns</CardTitle>
+              <CardDescription>Design and manage effective social media ad campaigns to boost your reach and conversions.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 4 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/aud.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/dark/daud.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Audience Engagement</CardTitle>
+              <CardDescription>Respond to comments and messages, fostering a community around your brand.</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 5 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/link.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/link.svg'}
+                  alt='UX & UI Implementation'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Branding Consistency</CardTitle>
+              <CardDescription>Ensure your social media profiles reflect your brand identity with custom covers, profiles, and templates</CardDescription>
+            </CardHeader>
+          </Card>
+          {/* Card 6 */}
+          <Card className="w-full mt-10 md:mt-0 transition duration-300 ease-in transform hover:scale-105">
+            <CardHeader>
+              <div className='mb-2'>
+                <Image 
+                  src={'/serv/buss.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='block dark:hidden'
+                />
+                <Image 
+                  src={'/serv/buss.svg'}
+                  alt='100% SEO Optimized'
+                  width={100}
+                  height={100}
+                  className='hidden dark:block'
+                />
+              </div>
+              <CardTitle>Performance Analytics</CardTitle>
+              <CardDescription>Regular reports and analysis to measure the effectiveness of your social media strategies.</CardDescription>
             </CardHeader>
           </Card>
         </div>

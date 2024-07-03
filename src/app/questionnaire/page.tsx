@@ -6,7 +6,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import React, { useState } from 'react';
-import Image from "next/image";
 import {
   Select,
   SelectContent,
@@ -64,11 +63,12 @@ const Questionnaire = () => {
 
   const renderAdditionalQuestions = () => {
     switch (selectedPackage) {
+      
       case 'gold-Diamond':
         return (
           <>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">1.Please provide a sort description of your Business.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ1">1.Please provide a sort description of your Business.</Label>
               <Textarea
                 id="goldQ1" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -76,7 +76,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">2.why does your Business exist? whats the story behind your Business and the core values that drive you.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ2">2.why does your Business exist? whats the story behind your Business and the core values that drive you.</Label>
               <Textarea
                 id="goldQ2" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -84,7 +84,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">3.why do clients/customers choose you? what sets you apart?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ3">3.why do clients/customers choose you? what sets you apart?</Label>
               <Textarea
                 id="goldQ3" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -92,7 +92,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">4.Who are your main competitors? provide their name and website and/or social media.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ4">4.Who are your main competitors? provide their name and website and/or social media.</Label>
               <Textarea
                 id="goldQ4" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -100,7 +100,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">5.Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ5">5.Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
               <Textarea
                 id="goldQ5" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -108,7 +108,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">6.What are your brand colors and fonts?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ6">6.What are your brand colors and fonts?</Label>
               <Textarea
                 id="goldQ6" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -116,7 +116,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">7.Describe the look and feel you want for your website (e.g., modern, professional, playful, luxury, friendly).</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ7">7.Describe the look and feel you want for your website (e.g., modern, professional, playful, luxury, friendly).</Label>
               <Textarea
                 id="goldQ7" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -124,7 +124,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">8.please provide the content (text, images, videos) for the website?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ8">8.please provide the content (text, images, videos) for the website?</Label>
               <Textarea
                 id="goldQ8" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -132,7 +132,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">9.Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ9">9.Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
               <Textarea
                 id="goldQ9" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -140,7 +140,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">10.What specific features do you need on your website? (e.g., e-commerce, booking system, contact forms, chat support)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ10">10.What specific features do you need on your website? (e.g., e-commerce, booking system, contact forms, chat support)</Label>
               <Textarea
                 id="goldQ10" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -148,7 +148,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">11.Is there a specific deadline for the project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ11">11.Is there a specific deadline for the project?</Label>
               <Textarea
                 id="goldQ11" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -156,7 +156,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">12.Are there any financial constraints or payment preferences we should be aware of?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ12">12.Are there any financial constraints or payment preferences we should be aware of?</Label>
               <Textarea
                 id="goldQ12" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -164,7 +164,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">13.What is your budget range for this project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ13">13.What is your budget range for this project?</Label>
               <Textarea
                 id="goldQ13" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -172,7 +172,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">14.Is there any other information you think would be helpful for us to know?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ14">14.Is there any other information you think would be helpful for us to know?</Label>
               <Textarea
                 id="goldQ14" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -194,7 +194,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">why does your Business exist? whats the story behind your Business and the core values that drive you.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ2">why does your Business exist? whats the story behind your Business and the core values that drive you.</Label>
               <Textarea
                 id="platinumQ2" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -202,7 +202,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">What specific business objectives do you want to achieve with your new website? (e.g., increase sales, generate leads, build brand awareness)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ3">What specific business objectives do you want to achieve with your new website? (e.g., increase sales, generate leads, build brand awareness)</Label>
               <Textarea
                 id="platinumQ3" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -210,7 +210,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">What problems do your target customers face that your business solves?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ4">What problems do your target customers face that your business solves?</Label>
               <Textarea
                 id="platinumQ4" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -218,7 +218,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">why do clients/customers choose you? what sets you apart?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ5">why do clients/customers choose you? what sets you apart?</Label>
               <Textarea
                 id="platinumQ5" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -226,7 +226,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">how are your clients/customers finding you?(social media,referrals,ads?)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ6">how are your clients/customers finding you?(social media,referrals,ads?)</Label>
               <Textarea
                 id="platinumQ6" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -234,7 +234,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">do you have mission statement or tagline?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ7">do you have mission statement or tagline?</Label>
               <Textarea
                 id="platinumQ7" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -242,7 +242,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">what are your goals for your business?(1year,3year,5year)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ8">what are your goals for your business?(1year,3year,5year)</Label>
               <Textarea
                 id="platinumQ8" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -250,7 +250,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Who are your main competitors?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ9">Who are your main competitors?</Label>
               <Textarea
                 id="platinumQ9" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -258,7 +258,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Please list 3 competitors to watch in your industry! provide their name and website and/or social media.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ10">Please list 3 competitors to watch in your industry! provide their name and website and/or social media.</Label>
               <Textarea
                 id="platinumQ10" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -266,7 +266,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">what do you like or dislike about them and explain why?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ11">what do you like or dislike about them and explain why?</Label>
               <Textarea
                 id="platinumQ11" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -274,7 +274,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">what is going to make your ideal client choose you over them?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ12">what is going to make your ideal client choose you over them?</Label>
               <Textarea
                 id="platinumQ12" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -282,7 +282,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ13">Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
               <Textarea
                 id="platinumQ13" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -290,7 +290,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">What are your brand colors and fonts?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ14">What are your brand colors and fonts?</Label>
               <Textarea
                 id="platinumQ14" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -298,7 +298,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Describe the look and feel you want for your website (e.g., modern, professional, playful, luxury, friendly).</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ15">Describe the look and feel you want for your website (e.g., modern, professional, playful, luxury, friendly).</Label>
               <Textarea
                 id="platinumQ15" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -306,7 +306,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Are there any specific websites/typography/logos you admire? Please provide examples and what you like about them.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ16">Are there any specific websites/typography/logos you admire? Please provide examples and what you like about them.</Label>
               <Textarea
                 id="platinumQ16" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -314,7 +314,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">please provide the content (text, images, videos) for the website?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ17">please provide the content (text, images, videos) for the website?</Label>
               <Textarea
                 id="platinumQ17" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -322,7 +322,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ18">Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
               <Textarea
                 id="platinumQ18" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -330,7 +330,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">What specific features do you need on your website? (e.g., e-commerce, booking system, contact forms, chat support)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ19">What specific features do you need on your website? (e.g., e-commerce, booking system, contact forms, chat support)</Label>
               <Textarea
                 id="platinumQ19" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -338,7 +338,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Do you need any integrations with third-party services (e.g., CRM, payment gateways, etc..)?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ20">Do you need any integrations with third-party services (e.g., CRM, payment gateways, etc..)?</Label>
               <Textarea
                 id="platinumQ20" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -346,7 +346,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Do you have any preference for the platform or CMS (e.g., WordPress, Shopify, or custom solution)?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ21">Do you have any preference for the platform or CMS (e.g., WordPress, Shopify, or custom solution)?</Label>
               <Textarea
                 id="platinumQ21" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -354,7 +354,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Are there any specific technical requirements or constraints we should be aware of?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ22">Are there any specific technical requirements or constraints we should be aware of?</Label>
               <Textarea
                 id="platinumQ22" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -362,7 +362,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Is there a specific deadline for the project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ23">Is there a specific deadline for the project?</Label>
               <Textarea
                 id="platinumQ23" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -370,7 +370,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Are there any key milestones or events we should consider?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ24">Are there any key milestones or events we should consider?</Label>
               <Textarea
                 id="platinumQ24" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -378,7 +378,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">What is your budget range for this project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ25">What is your budget range for this project?</Label>
               <Textarea
                 id="platinumQ25" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -386,7 +386,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Are there any financial constraints or payment preferences we should be aware of?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ26">Are there any financial constraints or payment preferences we should be aware of?</Label>
               <Textarea
                 id="platinumQ26" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -394,7 +394,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Is there any other information you think would be helpful for us to know?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ27">Is there any other information you think would be helpful for us to know?</Label>
               <Textarea
                 id="platinumQ27" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
