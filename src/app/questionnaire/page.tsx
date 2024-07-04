@@ -68,7 +68,7 @@ const Questionnaire = () => {
         return (
           <>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ1">1.Please provide a sort description of your Business.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ1">1.Please provide a brief description of your Business.</Label>
               <Textarea
                 id="goldQ1" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -103,6 +103,7 @@ const Questionnaire = () => {
               <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ5">5.Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
               <Textarea
                 id="goldQ5" 
+                value={"upload here => https://forms.gle/poqatYmZsQiPVPtf7"}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.4')}
               />
@@ -124,23 +125,24 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ8">8.please provide the content (text, images, videos) for the website?</Label>
-              <Textarea
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ8">8.do you need website hosting?(yes/no)</Label>
+              <Input
                 id="goldQ8" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.7')}
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ9">9.Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ9">9.please provide the content text, images, videos , login details(hosting - etc..) for the website? or do you need our help with content creation?</Label>
               <Textarea
-                id="goldQ9" 
+                id="gold9" 
+                value={"upload here => https://forms.gle/poqatYmZsQiPVPtf7"}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.8')}
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ10">10.What specific features do you need on your website? (e.g. booking system, contact forms)</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ10">10.Do you need any specific sections or pages (e.g., About Us, Services, Blog, Contact)?</Label>
               <Textarea
                 id="goldQ10" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -148,7 +150,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ11">11.Is there a specific deadline for the project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ11">11.What specific features do you need on your website? (e.g. booking system, contact forms)</Label>
               <Textarea
                 id="goldQ11" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -156,7 +158,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ12">12.Are there any financial constraints or payment preferences we should be aware of?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ12">12.Is there a specific deadline for the project?</Label>
               <Textarea
                 id="goldQ12" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -164,7 +166,7 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ13">13.What is your budget range for this project?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ13">13.Are there any financial constraints or payment preferences we should be aware of?</Label>
               <Textarea
                 id="goldQ13" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -172,11 +174,19 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ14">14.Is there any other information you think would be helpful for us to know?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ14">14.What is your budget range for this project?</Label>
               <Textarea
                 id="goldQ14" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.13')}
+              />
+            </div>
+            <div>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="goldQ15">15.Is there any other information you think would be helpful for us to know?</Label>
+              <Textarea
+                id="goldQ15" 
+                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
+                {...register('additionalQuestions.14')}
               />
             </div>
           </>
@@ -186,7 +196,7 @@ const Questionnaire = () => {
         return (
           <>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Please provide a sort description of your Business.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ1">Please provide a brief description of your Business.</Label>
               <Textarea
                 id="platinumQ1" 
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
@@ -282,9 +292,10 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ13">Do you have an existing logo and brand guidelines? If yes, please provide them.</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ13">Do you have an existing logo and brand guidelines? If yes, please provide them! or do you need our help with branding? </Label>
               <Textarea
                 id="platinumQ13" 
+                value={"upload here => https://forms.gle/poqatYmZsQiPVPtf7"}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.13')}
               />
@@ -314,9 +325,10 @@ const Questionnaire = () => {
               />
             </div>
             <div>
-              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ17">please provide the content (text, images, videos) for the website?</Label>
+              <Label className="block text-neutral-700 dark:text-green-500 mb-2" htmlFor="platinumQ17">please provide the content text, images, videos , login details(hosting - etc..) for the website? or do you need our help with content creation?</Label>
               <Textarea
                 id="platinumQ17" 
+                value={"upload here => https://forms.gle/poqatYmZsQiPVPtf7"}
                 className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-neutral-800 dark:text-neutral-200" 
                 {...register('additionalQuestions.17')}
               />
@@ -410,12 +422,13 @@ const Questionnaire = () => {
   };
 
   return (
-    <div>
+    <>
+    <div className='container'>
       <div><Navcont /></div>
       <div>
-        <div className="bg-neutral-50 dark:bg-neutral-950">
-          <div className="flex items-center justify-center py-12">
-            <div className="mx-auto grid w-[550px] gap-6">
+        <div className=" dark:bg-neutral-950">
+          <div className="flex items-center justify-center py-12 ">
+            <div className="mx-auto grid w-[550px] gap-6  ">
               <div className="grid gap-2 text-center">
                 <h1 className="text-3xl font-bold text-green-700 dark:text-green-500">Make a Questionnaire</h1>
                 <p className="text-balance text-muted-foreground">
@@ -468,9 +481,10 @@ const Questionnaire = () => {
           </div>
         </div>
       </div>
+    </div>
       <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
       <div><Footer /></div>
-    </div>
+      </>
   );
 };
 

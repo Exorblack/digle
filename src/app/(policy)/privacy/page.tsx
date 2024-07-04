@@ -5,10 +5,11 @@ import React from 'react';
 const Privacy = () => {
   return (
     <>
+
+    <div className='container'>
     <div><Navcont/></div>
-    <div>
-    <div className="bg-neutral-100 dark:bg-neutral-950 min-h-screen py-10 px-6 lg:px-20">
-      <div className="max-w-4xl mx-auto bg-white dark:bg-neutral-900 shadow-lg rounded-lg p-8 lg:p-16">
+    <div className=" dark:bg-neutral-950 min-h-screen py-10 px-6 lg:px-20">
+      <div className="max-w-4xl mx-auto bg-neutral-100 dark:bg-neutral-900 shadow-lg rounded-lg p-8 lg:p-16">
         <h1 className="text-3xl font-bold mb-10 text-green-700 dark:text-green-500 flex justify-center">Privacy Policy</h1>
         
         <h2 className="text-2xl font-semibold mb-4 text-neutral-900 dark:text-neutral-100">Definitions</h2>

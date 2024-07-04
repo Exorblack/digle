@@ -62,17 +62,12 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Hosting and domain for $49/month (first month free).
+              Hosting and domain for $39/month (first month free).
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
               Unlimited changes until you are 100% satisfied.
-            </li>
-            <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
-            <li className="flex items-center">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Ongoing aftercare and support
             </li>
           </ul>
           
@@ -116,7 +111,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2 text-lg" />
-              Hosting and domain for $49/month (first month free).
+              Hosting and domain for $39/month (first month free).
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">

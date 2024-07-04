@@ -5,11 +5,10 @@ import React from 'react';
 const Terms = () => {
   return (
     <>
-      <div>
-        <Navcont />
-      </div>
-      <div className="bg-neutral-100 dark:bg-neutral-950 min-h-screen py-10 px-6 lg:px-20">
-        <div className="max-w-4xl mx-auto bg-white dark:bg-neutral-900 shadow-lg rounded-lg p-8 lg:p-16">
+      <div className='container'>
+      <div><Navcont/></div>
+      <div className="dark:bg-neutral-950 min-h-screen py-10 px-6 lg:px-20">
+        <div className="max-w-4xl mx-auto bg-neutral-100 dark:bg-neutral-900 shadow-lg rounded-lg p-8 lg:p-16">
           <h1 className="text-3xl font-bold mb-10 text-green-700 dark:text-green-500 flex justify-center">
             Terms of Use
           </h1>
@@ -135,10 +134,9 @@ const Terms = () => {
           </section>
         </div>
       </div>
-      <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
-      <div>
-        <Footer />
       </div>
+      <div className="border-b-2 border-neutral-300 dark:border-neutral-700"></div>
+      <div><Footer /></div>
     </>
   );
 };
