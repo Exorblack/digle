@@ -49,7 +49,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ id }) => {
           <CardContainer className="inter-var">
             <CardBody className="bg-neutral-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-neutral-950 dark:border-white/[0.2] border-black/[0.1] h-full w-full rounded-xl p-6 border">
               <CardItem translateZ="50" className="text-xl font-bold text-neutral-800 dark:text-white">
-                Greatest animation's website with best UI/UX design
+                Greatest animation&apos;s website with best UI/UX design
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
