@@ -11,7 +11,7 @@ const Words:React.FC<services> = ({id}) => {
       <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         Create 
         <FlipWords words={words} /> <br />
-        websites with Digle
+        websites with <span className="text-green-500">Digle</span>
       </div>
     </div>
   );
