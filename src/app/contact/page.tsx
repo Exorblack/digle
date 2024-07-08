@@ -1,8 +1,14 @@
 import Footer from '@/components/compos/Home/Footer'
 import Cont from '@/components/compos/contact/cont'
 import Navcont from '@/components/compos/contact/navcont'
+import { Metadata } from 'next'
 
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Contact Us | Digle - Where Creativity Meets Code",
+  description: "Digle Innovative web design solutions tailored to your business needs.",
+}
 
 const Contact =() => {
   return (

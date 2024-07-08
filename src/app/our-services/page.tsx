@@ -11,7 +11,13 @@ import Footer from '@/components/compos/Home/Footer';
 import { WobbleCard } from '@/components/ui/wobble-card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Contact from '@/components/compos/Home/Contact';
+import { Metadata } from 'next';
 
+
+export const metadata: Metadata = {
+  title: "Services | Digle - Where Creativity Meets Code",
+  description: "Digle Innovative web design solutions tailored to your business needs.",
+}
 
 const Services = () => {
   return (

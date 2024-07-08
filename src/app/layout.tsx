@@ -10,8 +10,18 @@ import Tawk from "@/components/compos/tawk";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.SITE_URL!),
+  keywords: ["Digle","web design agency","web development"],
   title: "Digle - Where Creativity Meets Code",
   description: "Digle Innovative web design solutions tailored to your business needs.",
+  openGraph:{
+    title: "Digle - Where Creativity Meets Code",
+    description: "Digle Innovative web design solutions tailored to your business needs.",
+    type: "website",
+    locale: "en_US",
+    url: process.env.SITE_URL!,
+    siteName: "Digle"
+  }
 };
 
 export default function RootLayout({
