@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaBehance, FaDribbble , FaInstagram } from "react-icons/fa6";
+import { FaBehance , FaFacebook, FaInstagram } from "react-icons/fa6";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Footer = () => {
@@ -24,10 +24,17 @@ const Footer = () => {
 
 
     <ul className="mt-3 flex justify-center gap-6 md:gap-8">
-    <li>
+        <li>
           <a href="https://www.instagram.com/digle_agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
             <FaInstagram className='text-2xl' />
             <span className="sr-only">Instagram</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61562478531666" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <FaFacebook className='text-2xl' />
+            <span className="sr-only">Facebook</span>
           </a>
         </li>
 
@@ -44,6 +51,7 @@ const Footer = () => {
             <span className="sr-only">Dribble</span>
           </a>
         </li>
+
     </ul>
     <ul className="mt-5 flex flex-wrap justify-center gap-5">
       <a className="transition hover:text-neutral-700/75 dark:hover:text-neutral-200" href="/terms">Terms</a>

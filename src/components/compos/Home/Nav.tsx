@@ -1,9 +1,9 @@
 "use client"
 import {ModeToggle} from "@/components/compos/dark";
 import React from "react";
-import { FaInstagram , FaDribbble } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
-import { FaBehance } from "react-icons/fa6";
+import { FaBehance, FaFacebook } from "react-icons/fa6";
 import Link from "next/link";
 import { Briefcase, Contact } from "lucide-react";
 
@@ -25,6 +25,13 @@ const nav:React.FC<Navo> = ({id}) => {
         </li>
 
         <li>
+          <a href="https://www.facebook.com/profile.php?id=61562478531666" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
+            <FaFacebook className='text-2xl' />
+            <span className="sr-only">Facebook</span>
+          </a>
+        </li>
+        
+        <li>
           <a href="https://www.tiktok.com/@digle_agency" target="_blank" rel="noopener noreferrer" className="text-neutral-700 transition hover:text-neutral-700/75 dark:text-neutral-400 dark:hover:text-neutral-200">
             <AiFillTikTok className='text-2xl' />
             <span className="sr-only">tiktok</span>
@@ -37,6 +44,7 @@ const nav:React.FC<Navo> = ({id}) => {
             <span className="sr-only">Dribble</span>
           </a>
         </li>
+
     </ul>
       <div>
       <ul className=" flex justify-center gap-6 md:gap-8">

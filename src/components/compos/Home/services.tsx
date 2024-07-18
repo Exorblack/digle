@@ -36,7 +36,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
               Responsive Web Design
               </h1>
@@ -61,7 +61,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
                 SEO Optimization
               </h1>
@@ -85,7 +85,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
                 Website Maintenance and Support
               </h1>
@@ -110,7 +110,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
                 Custom Design
               </h1>
@@ -135,7 +135,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
                 Digital Marketing
               </h1>
@@ -159,7 +159,7 @@ export function BentoServices() {
               "transition-all duration-500"
             )}
           >
-            <div className="text relative z-50">
+            <div className="text relative z-40">
               <h1 className="font-bold text-xl md:text-3xl text-neutral-50 relative">
                 Branding
               </h1>
