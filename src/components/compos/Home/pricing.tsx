@@ -62,7 +62,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2" />
-              Hosting and domain for $39/month (first month free).
+              Hosting and domain
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-700" />
             <li className="flex items-center">
@@ -111,7 +111,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
               <FaCheckCircle className="text-green-500 mr-2 text-lg" />
-              Hosting and domain for $39/month (first month free).
+              Hosting and domain
             </li>
             <hr className="my-2 border-neutral-200 dark:border-neutral-600" />
             <li className="flex items-center">
@@ -138,7 +138,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           </div>
           <h4 className="text-2xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">Custom</h4>
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">The ultimate package for businesses seeking a comprehensive and fully customized digital solution.</p>
-          <Link href={'/contact'}><button className="w-full px-6 py-2 bg-[#5f6383] text-white rounded-lg shadow-md hover:bg-[#4b5074] transition duration-300 mb-6">Contact us</button></Link>
+          <a href={'https://calendly.com/exorblack/30min'}><button className="w-full px-6 py-2 bg-[#5f6383] text-white rounded-lg shadow-md hover:bg-[#4b5074] transition duration-300 mb-6">Book a Meeting</button></a>
           
           <ul className="text-left text-neutral-700 dark:text-neutral-300 mb-6 space-y-2">
             <li className="flex items-center">
