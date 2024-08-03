@@ -9,7 +9,7 @@ const Navcont = () => {
     <>
     <div>
         <div className= "border-b-2 p-4">
-            <div className="flex justify-between items-end ">
+            <div className="flex justify-between items-end container">
                 <a href="/">
                 <Image
                     src={"/logo-no-background.svg"}
@@ -18,7 +18,7 @@ const Navcont = () => {
                     alt="digle"
                     />
                 </a>
-                <div className='flex gap-10'>
+                <div className='flex gap-7'>
                 <Link href={'/'}>
                 <button className="hover:bg-green-50 dark:hover:bg-neutral-700 p-2 rounded transition-all flex items-center space-x-2">
                      <Home className="w-5 h-5" /> <span>Home</span>
