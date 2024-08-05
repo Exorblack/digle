@@ -138,7 +138,7 @@ const PricingSection:React.FC<Pricing> = ({id}) => {
           </div>
           <h4 className="text-2xl font-medium text-neutral-800 dark:text-neutral-200 mb-2">Custom</h4>
           <p className="text-neutral-600 dark:text-neutral-400 mb-6">The ultimate package for businesses seeking a comprehensive and fully customized digital solution.</p>
-          <a href={'https://calendly.com/exorblack/30min'}><button className="w-full px-6 py-2 bg-[#5f6383] text-white rounded-lg shadow-md hover:bg-[#4b5074] transition duration-300 mb-6">Book a Meeting</button></a>
+          <a href={'https://calendly.com/digle/30min'}><button className="w-full px-6 py-2 bg-[#5f6383] text-white rounded-lg shadow-md hover:bg-[#4b5074] transition duration-300 mb-6">Book a Meeting</button></a>
           
           <ul className="text-left text-neutral-700 dark:text-neutral-300 mb-6 space-y-2">
             <li className="flex items-center">
