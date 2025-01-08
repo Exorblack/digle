@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code, Smartphone, Palette, Megaphone } from "lucide-react";
+import Image from "next/image";
 interface Services{
   id:string
 }
@@ -86,9 +87,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
         </div>
 
-        <img
+        <Image
           src="/serv/f61f5e483f461ce97fdf6b0781f782f0.png"
           alt="iphone"
+          width={900}
+          height={900}
           className="floating2 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[450px] "
         />
 
@@ -102,7 +105,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <p className="text-lg md:text-xl lg:text-2xl text-blue-200/90 leading-relaxed text-reveal">
             All designs crafted by Digle are custom and unique. We create
             one-of-a-kind designs that make your brand unforgettable. Stand out
-            with a website that's tailored just for you.
+            with a website that&apos;s tailored just for you.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
@@ -144,9 +147,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.05)_1px,transparent_1px)] bg-[size:96px_96px]"></div>
         </div>
 
-        <img
+        <Image
           src="/serv/az6cm1bc9.png"
           alt="iphone"
+          width={900}
+          height={900}
           className="floating2 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[450px]"
         />
         <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-32">
@@ -173,9 +178,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
         </div>
 
-        <img
+        <Image
           src="/serv/b57c904a14cc51ed125fcf13991678cd.png"
           alt="iphone"
+          width={900}
+          height={900}
           className="floating2 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[500px]"
         />
         <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-40">
@@ -203,9 +210,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.05)_1px,transparent_1px)] bg-[size:96px_96px]"></div>
         </div>
 
-        <img
+        <Image
           src="/serv/03df4e2c8b1164ad46f593005078759e.png"
           alt="iphone"
+          width={900}
+          height={900}
           className="floating2 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[500px]"
         />
         <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-10">

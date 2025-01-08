@@ -4,14 +4,15 @@ import { ChevronsRight } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 interface faq{
   id:string
 }
 
 const FAQ:React.FC<faq> = ({id}) => {
-  const [openIndex, setOpenIndex] = useState(null);
-  const toggleFAQ = (index:any) => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleFAQ = (index:number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
   
@@ -56,10 +57,12 @@ const FAQ:React.FC<faq> = ({id}) => {
 
         <div ref={txtsRef} className="sticky top-0 z-20 pb-10">
           <div className="flex justify-center items-center">
-            <img
-              src="kisspng-royalty-free-technical-support-5af1c7e001e935.7019606915257947840078.png"
+            <Image
+              src="/kisspng-royalty-free-technical-support-5af1c7e001e935.7019606915257947840078.png"
               alt="digle-faq"
               className="w-64 h-64"
+              width={900}
+              height={900}
             />
           </div>
           <p className="flex justify-center items-center text-blue-200 text-2xl font-semibold pt-10 px-4 text-center">
@@ -208,9 +211,9 @@ const FAQ:React.FC<faq> = ({id}) => {
                 <p className="text-blue-100 p-4 bg-blue-800/30 rounded-xl">
                   Absolutely! If you already have a website, we can help
                   redesign or update it to better meet your needs. Whether
-                  you're looking for a fresh new look, enhanced functionality,
-                  or improved performance, our team can work with you to develop
-                  a solution that aligns with your goals.
+                  you&apos;re looking for a fresh new look, enhanced
+                  functionality, or improved performance, our team can work with
+                  you to develop a solution that aligns with your goals.
                 </p>
               </div>
             </div>
@@ -240,9 +243,9 @@ const FAQ:React.FC<faq> = ({id}) => {
               >
                 <p className="text-blue-100 p-4 bg-blue-800/30 rounded-xl">
                   Web hosting is the service that allows your website to be
-                  accessible on the internet. It involves storing your website's
-                  files on a server. Web hosting services typically require a
-                  monthly or annual fee.
+                  accessible on the internet. It involves storing your
+                  website&apos;s files on a server. Web hosting services
+                  typically require a monthly or annual fee.
                 </p>
               </div>
             </div>
@@ -306,10 +309,11 @@ const FAQ:React.FC<faq> = ({id}) => {
               >
                 <p className="text-blue-100 p-4 bg-blue-800/30 rounded-xl">
                   The timeline for building a website depends on the complexity
-                  and specific requirements of the project.<br/>
-                  A standard business website typically takes 1-2 weeks, while more complex sites or
-                  SaaS projects can take 4-8 weeks or longer. We will provide a
-                  detailed timeline during our initial consultation.
+                  and specific requirements of the project.
+                  <br />A standard business website typically takes 1-2 weeks,
+                  while more complex sites or SaaS projects can take 4-8 weeks
+                  or longer. We will provide a detailed timeline during our
+                  initial consultation.
                 </p>
               </div>
             </div>
