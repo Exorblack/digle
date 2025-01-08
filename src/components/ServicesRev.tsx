@@ -217,7 +217,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           height={900}
           className="floating2 sm:opacity-70 opacity-50 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[500px]"
         />
-        <div className="text-center text-white mt-10 z-10 max-w-4xl mt-10 mx-auto px-4">
+        <div className="text-center text-white z-10 max-w-4xl sm:mt-40 mt-16 mx-auto px-4">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Megaphone size={48} className="text-blue-400 md:w-12 lg:w-16" />
           </div>
