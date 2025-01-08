@@ -92,10 +92,10 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           alt="iphone"
           width={900}
           height={900}
-          className="floating2 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[450px] "
+          className="floating2 sm:opacity-70 opacity-50 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[450px] "
         />
 
-        <div className="text-center text-white z-10 max-w-4xl mx-auto mt-40">
+        <div className="text-center text-white z-10 max-w-4xl mx-auto sm:mt-40">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Palette size={32} className="text-blue-400 md:w-12 lg:w-16" />
           </div>
@@ -108,7 +108,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             with a website that&apos;s tailored just for you.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 Performance
               </h3>
@@ -116,7 +116,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 Lightning-fast load times
               </p>
             </div>
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 UX & UI
               </h3>
@@ -124,7 +124,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 Thoughtful design to ensure an intuitive user experience.
               </p>
             </div>
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 Modern
               </h3>
@@ -152,9 +152,9 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           alt="iphone"
           width={900}
           height={900}
-          className="floating2 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[450px]"
+          className="floating2 sm:opacity-70 opacity-50 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[450px]"
         />
-        <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-32">
+        <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-10">
           <div className="text-reveal flex justify-center mb-6">
             <Code size={48} className="text-blue-400 md:w-12 lg:w-16" />
           </div>
@@ -183,9 +183,9 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           alt="iphone"
           width={900}
           height={900}
-          className="floating2 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[500px]"
+          className="floating2 sm:opacity-70 opacity-50 absolute md:-top-32 lg:top-20 -top-20 -left-20 md:left-20 lg:left-60 z-0 w-auto h-[500px]"
         />
-        <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-40">
+        <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-10">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Smartphone size={32} className="text-blue-400 md:w-12 lg:w-16" />
           </div>
@@ -200,7 +200,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
       </section>
 
       {/* SEO Optimization Section */}
-      <section className="h-[150vh] border-t-2 border-blue-500 bg-gradient-to-b from-blue-900 via-blue-950 to-blue-900 flex pt-52 relative overflow-hidden">
+      <section className="h-[150vh] border-t-2 border-blue-500 bg-gradient-to-b from-blue-900 via-blue-950 to-blue-900 flex relative overflow-hidden">
         <div className="floating absolute -top-20 left-0 w-full h-40 bg-blue-400/20 blur-lg transform rotate-6"></div>
         <div className="floating absolute top-1/4 -right-20 w-full h-40 bg-blue-400/10 blur-lg transform -rotate-6"></div>
         <div className="floating absolute top-2/4 -left-20 w-full h-40 bg-blue-400/15 blur-lg transform rotate-3"></div>
@@ -215,9 +215,9 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           alt="iphone"
           width={900}
           height={900}
-          className="floating2 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[500px]"
+          className="floating2 sm:opacity-70 opacity-50 absolute md:-top-32 lg:top-20 -top-20 -right-20 md:right-20 lg:right-60 z-0 w-auto h-[500px]"
         />
-        <div className="text-center text-white z-10 max-w-4xl mx-auto px-4 mt-10">
+        <div className="text-center text-white mt-10 z-10 max-w-4xl mt-10 mx-auto px-4">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Megaphone size={48} className="text-blue-400 md:w-12 lg:w-16" />
           </div>
@@ -229,8 +229,8 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             visibility, and boost your search engine rankings and drive organic
             traffic.
           </p>
-          <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+          <div className="mt-2 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 Keyword Research
               </h3>
@@ -238,7 +238,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 Identify the best keywords to attract targeted traffic
               </p>
             </div>
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 Website Audit
               </h3>
@@ -246,7 +246,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 Conduct a comprehensive analysis to identify areas
               </p>
             </div>
-            <div className="p-4 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-blue-400/10 backdrop-blur-lg border border-blue-400/20">
               <h3 className="text-lg md:text-xl font-semibold text-blue-300">
                 Competitor Analysis
               </h3>

@@ -83,23 +83,21 @@ const AboutHoriz:React.FC<about> = ({id}) => {
               alt=""
               width={900}
               height={900}
-              className="floating absoute inset-0 w-[350px] h-[350px] my-20 sm:w-[500px] sm:h-[500px] object-fill"
+              className="floating opacity-50 absoute inset-0 w-[350px] h-[350px] my-20 sm:w-[500px] sm:h-[500px] object-fill"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-blue-300/80">
                 WHO WE ARE
               </h2>
               <p className="text-base md:text-lg mb-3 md:mb-5 text-blue-300/90">
                 &quot;we bring your digital dreams to life&quot;
               </p>
-              <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center text-center p-4 md:px-6">
-                <p className="description text-xl sm:text-2xl w-[95%] md:w-[90%] text-blue-200/75 leading-relaxed">
-                  We combine creativity and the latest technology to help
-                  businesses connect with their audiences in meaningful ways. No
-                  matter the size of your company, we create personalized
-                  digital experiences that make your brand stand out.
-                </p>
-              </div>
+              <p className="description text-xl sm:text-2xl w-[95%] md:w-[90%] text-blue-200/75 leading-relaxed">
+                We combine creativity and the latest technology to help
+                businesses connect with their audiences in meaningful ways. No
+                matter the size of your company, we create personalized digital
+                experiences that make your brand stand out.
+              </p>
             </div>
           </div>
           {/* Slide 2 */}
@@ -110,23 +108,21 @@ const AboutHoriz:React.FC<about> = ({id}) => {
               alt=""
               width={900}
               height={900}
-              className=" floating2 absoute inset-0 w-[300px] h-[300px] my-50 sm:w-[500px] sm:h-[500px] object-fill"
+              className=" floating2 opacity-50 absoute inset-0 w-[300px] h-[300px] my-50 sm:w-[500px] sm:h-[500px] object-fill"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-blue-300/80">
                 WHAT WE DO
               </h2>
               <p className="text-base md:text-lg mb-3 md:mb-5 text-blue-300/90">
                 &quot;We build websites that work for you&quot;
               </p>
-              <div className="absolute bottom-0 left-0 w-full h-72 sm:h-96 bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center text-center p-4 md:px-6">
-                <p className="description text-xl sm:text-2xl w-[95%] md:w-[90%] text-blue-200/75 leading-relaxed">
-                  Our expert web design and development services help businesses
-                  succeed by enhancing how they connect and communicate with
-                  their customers. We also offer emotional, animation website to
-                  ensure your company has a unique and engaging online presence.
-                </p>
-              </div>
+              <p className="description text-xl sm:text-2xl w-[95%] md:w-[90%] text-blue-200/75 leading-relaxed">
+                Our expert web design and development services help businesses
+                succeed by enhancing how they connect and communicate with their
+                customers. We also offer emotional, animation website to ensure
+                your company has a unique and engaging online presence.
+              </p>
             </div>
           </div>
           {/* Slide 3 */}
@@ -136,16 +132,15 @@ const AboutHoriz:React.FC<about> = ({id}) => {
               alt=""
               width={900}
               height={900}
-              className="floating absoute inset-0 w-[300px] h-[300px] my-20 sm:w-[500px] sm:h-[500px] object-fill"
+              className="floating opacity-50 absoute inset-0 w-[300px] h-[300px] my-20 sm:w-[500px] sm:h-[500px] object-fill"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent bg-opacity-50 flex flex-col justify-center items-center text-center text-white p-4 md:px-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4 text-blue-300/80">
                 OUR MISSION
               </h2>
               <p className="text-base md:text-lg mb-3 md:mb-5 text-blue-300/90">
                 &quot;Your success is our priority 😊&quot;
               </p>
-              <div className="absolute bottom-0 left-0 w-full h-80 sm:h-96 bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center text-center p-4 md:px-6">
                 <p className="description text-xl sm:text-2xl w-[95%] md:w-[90%] text-blue-200/75 leading-relaxed">
                   We provide custom web solutions that drive growth and build
                   lasting relationships. At Digle, we blend creativity with
@@ -153,7 +148,6 @@ const AboutHoriz:React.FC<about> = ({id}) => {
                   solutions that ensure your satisfaction and keep you ahead of
                   the competition.
                 </p>
-              </div>
             </div>
           </div>
         </div>
