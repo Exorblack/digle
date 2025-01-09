@@ -13,22 +13,16 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   const handleScrollToSection = (sectionId: string) => {
-    setTimeout(() => {
       const element = document.getElementById(sectionId);
       if (element) {
-                const navHeight = 100;
-                const elementPosition = element.getBoundingClientRect().top;
-                const offsetPosition = elementPosition - navHeight;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "auto",
+        element.scrollIntoView({
+          behavior: "smooth",
         });
 
         if (isOpen) {
           toggleMenu();
         }
       }
-    }, 100);
   };
 
   return (
@@ -42,20 +36,14 @@ const Nav = () => {
               {/* Left Menu Items */}
               <div className="flex items-center gap-10 text-white/80">
                 <li className="hover:text-blue-400 duration-100 font-bold list-none">
-                  <Link
-                    onClick={() => handleScrollToSection("about")}
-                    href={"/"}
-                  >
+                  <button onClick={() => handleScrollToSection("about")}>
                     About
-                  </Link>
+                  </button>
                 </li>
                 <li className="hover:text-blue-400 duration-100 font-bold list-none">
-                  <Link
-                    onClick={() => handleScrollToSection("works")}
-                    href={"/"}
-                  >
+                  <button onClick={() => handleScrollToSection("works")}>
                     Portfolio
-                  </Link>
+                  </button>
                 </li>
               </div>
 
@@ -65,7 +53,7 @@ const Nav = () => {
                   src={"/Dee.png"}
                   width={100}
                   height={100}
-                  alt="Logo"
+                  alt="Digle Logo"
                   priority
                   className="transform hover:scale-110 duration-300"
                 />
@@ -74,17 +62,14 @@ const Nav = () => {
               {/* Right Menu Items */}
               <div className="flex items-center gap-10 text-white/80">
                 <li className="hover:text-blue-400 transition-all duration-100 font-bold list-none">
-                  <Link onClick={() => handleScrollToSection("faq")} href={"/"}>
+                  <button onClick={() => handleScrollToSection("faq")}>
                     FAQ
-                  </Link>
+                  </button>
                 </li>
                 <li className="hover:text-blue-400 transition-all duration-100 font-bold list-none">
-                  <Link
-                    onClick={() => handleScrollToSection("contact")}
-                    href={"/"}
-                  >
+                  <button onClick={() => handleScrollToSection("contact")}>
                     Contact
-                  </Link>
+                  </button>
                 </li>
               </div>
             </div>
@@ -109,7 +94,7 @@ const Nav = () => {
                   onClick={toggleMenu}
                   className="text-white pr-4 hover:text-blue-400 transition-all z-50"
                 >
-                  {isOpen ? <X size={32} /> : <Menu size={32} />}
+                  <Menu size={32} />
                 </button>
               </div>
             </div>
@@ -136,35 +121,33 @@ const Nav = () => {
             {/* Navigation Links */}
             <ul className="flex flex-col gap-8 mb-12">
               <li className="hover:text-blue-400 font-bold text-2xl">
-                <Link onClick={() => handleScrollToSection("about")} href={"/"}>
+                <button onClick={() => handleScrollToSection("about")}>
                   About
-                </Link>
+                </button>
               </li>
               <li className="hover:text-blue-400 font-bold text-2xl">
-                <Link
+                <button
                   onClick={() => handleScrollToSection("services")}
-                  href={"/"}
                 >
                   Services
-                </Link>
+                </button>
               </li>
               <li className="hover:text-blue-400 font-bold text-2xl">
-                <Link href={"/"} onClick={() => handleScrollToSection("works")}>
+                <button onClick={() => handleScrollToSection("works")}>
                   Portfolio
-                </Link>
+                </button>
               </li>
               <li className="hover:text-blue-400 font-bold text-2xl">
-                <Link href={"/"} onClick={() => handleScrollToSection("faq")}>
+                <button onClick={() => handleScrollToSection("faq")}>
                   FAQ
-                </Link>
+                </button>
               </li>
               <li className="hover:text-blue-400 font-bold text-2xl">
-                <Link
-                  href={"/"}
+                <button
                   onClick={() => handleScrollToSection("contact")}
                 >
                   Contact
-                </Link>
+                </button>
               </li>
             </ul>
 
@@ -179,65 +162,65 @@ const Nav = () => {
                   <span className="font-bold">contact@digle.org</span>
                 </button>
                 {/* Social Media */}
-                  <div className="grid grid-cols-4 gap-6 ">
-                    {/* Behance */}
-                    <a
-                      href="https://www.behance.net/337ba9b6"
-                      target="_blank"
-                      className="group relative flex items-center justify-center"
-                    >
-                      <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
-                        <FaBehance className="w-12 h-12 text-blue-200/80 transition-colors duration-500 group-hover:text-blue-300" />
-                        <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                        <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
-                      </div>
-                      <Sparkles className="absolute -top-4 -right-0 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
-                    </a>
+                <div className="grid grid-cols-4 gap-6 ">
+                  {/* Behance */}
+                  <Link
+                    href="https://www.behance.net/337ba9b6"
+                    target="_blank"
+                    className="group relative flex items-center justify-center"
+                  >
+                    <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
+                      <FaBehance className="w-12 h-12 text-blue-200/80 transition-colors duration-500 group-hover:text-blue-300" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                    </div>
+                    <Sparkles className="absolute -top-4 -right-0 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                  </Link>
 
-                    {/* Facebook */}
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61562478531666"
-                      target="_blank"
-                      className="group relative flex items-center justify-center"
-                    >
-                      <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
-                        <FaFacebook className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                        <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                        <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
-                      </div>
-                      <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
-                    </a>
+                  {/* Facebook */}
+                  <Link
+                    href="https://www.facebook.com/profile.php?id=61562478531666"
+                    target="_blank"
+                    className="group relative flex items-center justify-center"
+                  >
+                    <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
+                      <FaFacebook className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                    </div>
+                    <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                  </Link>
 
-                    {/* Instagram */}
-                    <a
-                      href="https://www.instagram.com/digle_agency"
-                      target="_blank"
-                      className="group relative flex items-center justify-center"
-                    >
-                      <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
-                        <FaInstagram className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                        <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                        <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
-                      </div>
-                      <Sparkles className="absolute -top-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
-                    </a>
+                  {/* Instagram */}
+                  <Link
+                    href="https://www.instagram.com/digle_agency"
+                    target="_blank"
+                    className="group relative flex items-center justify-center"
+                  >
+                    <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
+                      <FaInstagram className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                    </div>
+                    <Sparkles className="absolute -top-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                  </Link>
 
-                    {/* TikTok */}
-                    <a
-                      href="https://www.tiktok.com/@digle_agency"
-                      target="_blank"
-                      className="group relative flex items-center justify-center"
-                    >
-                      <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
-                        <FaTiktok className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                        <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                        <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
-                      </div>
-                      <Sparkles className="absolute -bottom-4 right-3 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
-                    </a>
-                  </div>
+                  {/* TikTok */}
+                  <Link
+                    href="https://www.tiktok.com/@digle_agency"
+                    target="_blank"
+                    className="group relative flex items-center justify-center"
+                  >
+                    <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
+                      <FaTiktok className="w-12 h-12 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                    </div>
+                    <Sparkles className="absolute -bottom-4 right-3 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                  </Link>
                 </div>
               </div>
+            </div>
 
             <div className="mt-1 border-t border-blue-500/20 pt-8 w-48 mx-auto">
               <p className="text-sm text-blue-400/90">© 2025 DIGLE</p>
