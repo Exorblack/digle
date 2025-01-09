@@ -63,17 +63,16 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
         </div>
 
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover -z-10 rounded-b-[700px]"
-            loop
-            autoPlay
-            muted
-            playsInline
-            preload="none"
-            ref={heroref}
-          >
-            <source src="/7792630-uhd_4096_2160_25fps.mp4" type="video/mp4" />
-          </video>
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10 rounded-b-[700px]"
+          loop
+          autoPlay
+          muted
+          playsInline
+          ref={heroref}
+        >
+          <source src="/7792630-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+        </video>
 
         {/* hero text */}
         <div className="absolute flex items-center justify-center w-full h-full pt-16">
