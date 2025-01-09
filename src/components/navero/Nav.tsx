@@ -87,9 +87,6 @@ const Nav = () => {
                     className="transform hover:scale-110 duration-300"
                   />
                 </a>
-                <button className="flex items-center justify-center px-5 py-3 bg-blue-900/20 hover:bg-blue-950/30 text-white rounded-3xl border border-blue-400/30 transition-all duration-300">
-                  <span className="font-bold">you alright !</span>
-                </button>
                 <button
                   onClick={toggleMenu}
                   className="text-white pr-4 hover:text-blue-400 transition-all z-50"

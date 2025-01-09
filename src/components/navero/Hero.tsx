@@ -77,10 +77,10 @@ const Hero = () => {
         {/* hero text */}
         <div className="absolute flex items-center justify-center w-full h-full pt-16">
           <div ref={txt} className="text-center">
-            <h1 className=" text-9xl uppercase font-extrabold text-blue-300/50">
+            <h1 className=" text-8xl sm:text-9xl uppercase font-extrabold text-blue-300/50">
               Digle
             </h1>
-            <p className="text-3xl text-blue-100/80">
+            <p className="text-lg sm:text-3xl text-blue-100/80">
               Your Digital Journey Starts with Us, Turning Your Ideas into
               reality
             </p>
