@@ -2,7 +2,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
-import Link from "next/link";
 
 interface works{
   id:string
