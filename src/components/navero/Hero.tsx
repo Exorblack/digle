@@ -69,7 +69,6 @@ const Hero = () => {
           autoPlay
           muted
           playsInline
-          preload="none"
           ref={heroref}
         >
           <source src="/7792630-uhd_4096_2160_25fps.mp4" type="video/mp4" />
