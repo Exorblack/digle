@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter} from "next/font/google";
+import { Playpen_Sans} from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Playpen_Sans({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ["Digle", "web design agency", "web development"],
   metadataBase: new URL(process.env.SITE_URL!),
   openGraph: {
-    title: "Digle - Where Creativity Meets Code",
+    title: "Digle - Your Digital Journey Starts with Us",
     description:
       "Your Digital Journey Starts with Us, We Turning Your Ideas into reality",
     type: "website",

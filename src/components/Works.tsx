@@ -8,15 +8,26 @@ interface works{
 }
 export const DragCards:React.FC<works> = ({id}) => {
   return (
-    <section id={id} className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-blue-950 border-t-2 border-blue-500 ">
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(59,130,246,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.1)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
-      </div>
-        <h2 className="relative text-[20vw] font-black text-blue-200 md:text-[200px]">
-          WORKS<span className="text-blue-500">.</span>
-        </h2>
-        <Cards />
+    <section
+      id={id}
+      className="relative grid min-h-[100dvh] w-full place-content-center overflow-hidden bg-[#219EBC] border-t-2 border-[#023047] "
+    >
+      <svg
+        className="absolute bottom-0 left-0 w-full h-[12dvh]"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#023047"
+          fillOpacity="1"
+          d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <h2 className="relative text-[20vw] font-black text-[#023047] md:text-[200px]">
+        WORKS<span className="text-[#8ECAE6]">.</span>
+      </h2>
+      <Cards />
     </section>
   );
 };

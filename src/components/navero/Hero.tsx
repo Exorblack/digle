@@ -10,7 +10,7 @@ const Hero = () => {
 
   gsap.registerPlugin(useGSAP, ScrollTrigger);
   const txt = useRef<HTMLDivElement>(null);
-  const heroref = useRef<HTMLVideoElement>(null);
+  const heroref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -57,30 +57,20 @@ const Hero = () => {
   return (
     <>
       {/* Background Video */}
-      <div className="relative h-screen bg-blue-300 z-10 ">
-        <div className="absolute inset-0 -z-50">
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(59,130,246,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.1)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
-        </div>
-
-        <video
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10 rounded-b-[700px]"
-          loop
-          autoPlay
-          muted
-          playsInline
+      <div className="relative h-screen bg-[#dddddd] z-10 ">
+        <div
+          className="absolute top-0 left-0 w-full h-full -z-10 bg-[#8ECAE6]/100 rounded-b-3xl"
           ref={heroref}
         >
-          <source src="/7792630-uhd_4096_2160_25fps.mp4" type="video/mp4" />
-        </video>
+        </div>
 
         {/* hero text */}
         <div className="absolute flex items-center justify-center w-full h-full pt-16">
           <div ref={txt} className="text-center">
-            <h1 className=" text-8xl sm:text-9xl uppercase font-extrabold text-blue-300/50">
+            <h1 className=" text-8xl sm:text-9xl uppercase font-extrabold text-[#023047]/100">
               Digle
             </h1>
-            <p className="text-lg sm:text-3xl text-blue-100/80">
+            <p className="text-lg sm:text-3xl text-[#219EBC]/100">
               Your Digital Journey Starts with Us, Turning Your Ideas into
               reality
             </p>
@@ -88,7 +78,7 @@ const Hero = () => {
             <div className="mt-4">
               <button
                 onClick={() => handleScrollToSection("services")}
-                className="px-6 py-3 text-lg font-semibold text-blue-100/80 border border-x-2 hover:bg-gradient-to-b hover:from-blue-200/55 hover:to-blue-900/50 backdrop-blur-md hover:border-blue-500/55 border-b-[0.6rem] border-blue-300/50 bg-gradient-to-b from-blue-400/55 to-blue-950/50 rounded-full shadow-xl duration-75"
+                className="px-6 py-3 text-lg font-semibold text-[#219EBC] border-4 backdrop-blur-md border-[#219EBC] bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-xl duration-75"
               >
                 Discover Our Services
               </button>

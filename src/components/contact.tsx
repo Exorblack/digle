@@ -124,22 +124,17 @@ const Zoomd:React.FC<contact> = ({id}) => {
       <div
         ref={zoomdRef}
         id={id}
-        className="relative h-[300vh] bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950"
+        className="relative h-[300vh] bg-[#dddddd]/95"
       >
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(59,130,246,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.1)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-400/10 to-transparent"></div>
-        </div>
-
         <div
           ref={introTextRef}
-          className="relative h-screen flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
+          className="relative h-[100dvh] flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
         >
           <div className="text-center z-10">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-blue-200/90 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#023047]/90 mb-4">
               are you Ready?
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-blue-200/60 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-[#219EBC] max-w-2xl mx-auto">
               Scroll Down To Get started
             </p>
           </div>
@@ -150,19 +145,19 @@ const Zoomd:React.FC<contact> = ({id}) => {
             className="absolute inset-0 pointer-events-none"
           >
             <div className="absolute top-1/4 left-1/4 ">
-              <Sparkles className="w-12 h-12 text-blue-200/30" />
+              <Sparkles className="w-12 h-12 text-[#219EBC]/50" />
             </div>
             <div className="absolute top-2/3 right-1/4">
-              <Sparkles className="w-12 h-12 text-blue-200/30" />
+              <Sparkles className="w-12 h-12 text-[#219EBC]/50" />
             </div>
             <div className="absolute top-1/3 right-1/3">
-              <Sparkles className="w-12 h-12 text-blue-200/30" />
+              <Sparkles className="w-12 h-12 text-[#219EBC]/50" />
             </div>
             <div className="absolute top-1/3 left-1/3">
-              <Sparkles className="w-24 h-24 text-blue-200/30" />
+              <Sparkles className="w-24 h-24 text-[#219EBC]/50" />
             </div>
             <div className="absolute top-2/3 left-1/4">
-              <Sparkles className="w-24 h-24 text-blue-200/30" />
+              <Sparkles className="w-24 h-24 text-[#219EBC]/50" />
             </div>
           </div>
         </div>
@@ -179,7 +174,7 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 alt="digle"
                 width={900}
                 height={900}
-                className="object-cover mt-72 sm:mt-60 lg:mt-80 ml-4 sm:ml-10 lg:ml-20 opacity-20 lg:opacity-50 xl:opacity-80 md:opacity-20 sm:opacity-20"
+                className="object-cover mt-72 sm:mt-60 lg:mt-80 ml-4 sm:ml-10 lg:ml-20 opacity-20 lg:opacity-50 xl:opacity-90 md:opacity-20 sm:opacity-20"
               />
             </motion.div>
           </div>
@@ -190,18 +185,18 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 ref={starRef}
                 className="absolute -left-2 sm:-left-12 lg:-left-20 -top-8 sm:-top-12"
               >
-                <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-blue-200/30 animate-spin-slow" />
+                <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-[#219EBC]/50 animate-spin-slow" />
               </div>
 
               <div className="mb-8 sm:mb-12 flex justify-center items-center overflow-hidden">
                 <h1 className="text-6xl sm:text-6xl lg:text-8xl font-black tracking-tight space-y-2 sm:space-y-4">
                   <div
                     ref={textRef}
-                    className="bg-gradient-to-r from-blue-200 via-blue-300 to-blue-400 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-[#023047] via-[#023047]/90 to-[#023047]/70 bg-clip-text text-transparent"
                   >
                     Let&apos;s Build
                   </div>
-                  <div ref={textsubRef} className="text-blue-200/80">
+                  <div ref={textsubRef} className="text-[#219EBC]/95">
                     The Future
                   </div>
                 </h1>
@@ -212,12 +207,12 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 {/* Email */}
                 <div
                   ref={contactsRef}
-                  className="group flex items-center cursor-cell justify-center text-2xl sm:text-4xl text-blue-200/70 hover:text-blue-200/90 transition-colors duration-300"
+                  className="group flex items-center cursor-cell justify-center text-2xl sm:text-4xl text-[#023047]/90 hover:text-[#023047]/95 transition-colors duration-300"
                 >
                   <div className="relative flex gap-2 font-semibold ">
                     Contact@digle.org
                     <Mail className="w-8 h-8 sm:w-12 sm:h-12 group-hover:rotate-12 transition-transform duration-300" />
-                    <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-200/50 group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#023047]/50 group-hover:w-full transition-all duration-300"></span>
                   </div>
                 </div>
 
@@ -230,11 +225,11 @@ const Zoomd:React.FC<contact> = ({id}) => {
                     className="group relative flex items-center justify-center"
                   >
                     <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
-                      <FaBehance className="w-12 h-12 sm:w-20 sm:20 text-blue-200/80 transition-colors duration-500 group-hover:text-blue-300" />
-                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                      <FaBehance className="w-12 h-12 text-[#023047]/80 transition-colors duration-500 group-hover:text-[#023047]" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-[#219EBC]/20 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-[#219EBC]/0 rounded-lg group-hover:border-[#219EBC]/50 transition-all duration-300" />
                     </div>
-                    <Sparkles className="absolute -top-4 -right-0 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                    <Sparkles className="absolute -top-4 -right-0 w-6 h-6 text-[#219EBC]/0 group-hover:text-[#219EBC]/40 transition-all duration-300" />
                   </Link>
 
                   {/* Facebook */}
@@ -244,11 +239,11 @@ const Zoomd:React.FC<contact> = ({id}) => {
                     className="group relative flex items-center justify-center"
                   >
                     <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
-                      <FaFacebook className="w-12 h-12 sm:w-20 sm:20 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                      <FaFacebook className="w-12 h-12 text-[#023047]/80 transition-colors duration-300 group-hover:text-[#023047]" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-[#219EBC]/20 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-[#219EBC]/0 rounded-lg group-hover:border-[#219EBC]/50 transition-all duration-300" />
                     </div>
-                    <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                    <Sparkles className="absolute -bottom-2 -left-2 w-6 h-6 text-[#219EBC]/0 group-hover:text-[#219EBC]/40 transition-all duration-300" />
                   </Link>
 
                   {/* Instagram */}
@@ -258,11 +253,11 @@ const Zoomd:React.FC<contact> = ({id}) => {
                     className="group relative flex items-center justify-center"
                   >
                     <div className="relative duration-500 group-hover:scale-110 group-hover:-rotate-12">
-                      <FaInstagram className="w-12 h-12 sm:w-20 sm:20 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                      <FaInstagram className="w-12 h-12 text-[#023047]/80 transition-colors duration-300 group-hover:text-[#023047]" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-[#219EBC]/20 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-[#219EBC]/0 rounded-lg group-hover:border-[#219EBC]/50 transition-all duration-300" />
                     </div>
-                    <Sparkles className="absolute -top-2 -left-2 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                    <Sparkles className="absolute -top-2 -left-2 w-6 h-6 text-[#219EBC]/0 group-hover:text-[#219EBC]/40 transition-all duration-300" />
                   </Link>
 
                   {/* TikTok */}
@@ -272,18 +267,18 @@ const Zoomd:React.FC<contact> = ({id}) => {
                     className="group relative flex items-center justify-center"
                   >
                     <div className="relative duration-500 group-hover:scale-110 group-hover:rotate-12">
-                      <FaTiktok className="w-12 h-12 sm:w-20 sm:20 text-blue-200/80 transition-colors duration-300 group-hover:text-blue-300" />
-                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-blue-400/10 blur-xl transition-all duration-300" />
-                      <div className="absolute -inset-1 border border-blue-200/0 rounded-lg group-hover:border-blue-200/20 transition-all duration-300" />
+                      <FaTiktok className="w-12 h-12 text-[#023047]/80 transition-colors duration-300 group-hover:text-[#023047]" />
+                      <div className="absolute inset-0 bg-blue-400/0 group-hover:bg-[#219EBC]/20 blur-xl transition-all duration-300" />
+                      <div className="absolute -inset-1 border border-[#219EBC]/0 rounded-lg group-hover:border-[#219EBC]/50 transition-all duration-300" />
                     </div>
-                    <Sparkles className="absolute -bottom-4 right-3 w-6 h-6 text-blue-200/0 group-hover:text-blue-200/30 transition-all duration-300" />
+                    <Sparkles className="absolute -bottom-4 right-3 w-6 h-6 text-[#219EBC]/0 group-hover:text-[#219EBC]/40 transition-all duration-300" />
                   </Link>
                 </div>
               </div>
 
               <div ref={btnRef} className="flex justify-center">
                 <Link href="/">
-                  <button className="group relative overflow-hidden px-8 py-4 text-lg font-semibold text-blue-100/80 border border-x-2 hover:bg-gradient-to-b hover:from-blue-200/55 hover:to-blue-900/50 backdrop-blur-md hover:border-blue-500/55 border-b-[0.6rem] border-blue-300/50 bg-gradient-to-b from-blue-400/55 to-blue-950/50 rounded-full shadow-xl duration-75">
+                  <button className="group relative overflow-hidden px-8 py-4 text-lg font-semibold text-[#219EBC] border-4 backdrop-blur-md border-[#219EBC] bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-xl duration-75">
                     <div className="relative z-10 flex items-center gap-2">
                       <MessageSquare className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500" />
                       <span>Start a Conversation</span>
