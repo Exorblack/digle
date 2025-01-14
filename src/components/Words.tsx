@@ -40,7 +40,7 @@ const Words = () => {
 
 
   return (
-    <section className="bg-[#dddddd] relative z-10">
+    <section className="bg-[#dddddd] relative">
       
       <div className="bg-transparent px-2 sm:px-3 md:px-4 max-w-[1550px] mx-auto">
         <div

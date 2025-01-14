@@ -209,8 +209,8 @@ const Nav = () => {
               </div>
             </div>
 
-            <div className="mt-1 border-t border-blue-500/20 pt-8 w-48 mx-auto">
-              <p className="text-sm text-blue-400/90">© 2025 DIGLE</p>
+            <div className="mt-1 border-t border-[#023047]/40 pt-4 w-48 mx-auto">
+              <p className="text-sm text-[#023047]/90">© 2025 DIGLE</p>
             </div>
           </div>
         </div>

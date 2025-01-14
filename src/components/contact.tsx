@@ -121,11 +121,7 @@ const Zoomd:React.FC<contact> = ({id}) => {
 
   return (
     <>
-      <div
-        ref={zoomdRef}
-        id={id}
-        className="relative h-[300vh] bg-[#dddddd]/95"
-      >
+      <div ref={zoomdRef} id={id} className="relative h-[300vh] bg-[#FFB703]">
         <div
           ref={introTextRef}
           className="relative h-[100dvh] flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
@@ -278,7 +274,7 @@ const Zoomd:React.FC<contact> = ({id}) => {
 
               <div ref={btnRef} className="flex justify-center">
                 <Link href="/">
-                  <button className="group relative overflow-hidden px-8 py-4 text-lg font-semibold text-[#219EBC] border-4 backdrop-blur-md border-[#219EBC] bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-xl duration-75">
+                  <button className="group relative overflow-hidden px-8 py-4 text-lg font-semibold text-[#219EBC] border-2 backdrop-blur-md border-[#219EBC] bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-2xl duration-75">
                     <div className="relative z-10 flex items-center gap-2">
                       <MessageSquare className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500" />
                       <span>Start a Conversation</span>

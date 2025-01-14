@@ -9,7 +9,7 @@ interface about {
 }
 const AboutHoriz:React.FC<about> = ({id}) => {
   const cardsRef = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);  
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {

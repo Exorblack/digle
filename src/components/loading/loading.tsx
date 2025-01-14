@@ -22,7 +22,7 @@ const Loading = () => {
     <>
       <div className="fixed inset-0 bg-gradient-to-b from-[#8ECAE6] to-[#8ecae6b7] flex items-center justify-center p-4">
         <div className="w-full max-w-md md:max-w-lg lg:max-w-xl flex flex-col items-center gap-10">
-
+          
           <Image
             src={"/digle-logo.png"}
             width={300}

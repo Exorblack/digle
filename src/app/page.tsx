@@ -9,6 +9,7 @@ import ServicesRev from "@/components/ServicesRev";
 import Nav from "@/components/navero/Nav";
 import Faq from "@/components/faq";
 import Loading from "@/components/loading/loading";
+import FollowCursor from "@/components/mouse/FollowCursor";
 
 
 export default function Home() {
@@ -24,20 +25,23 @@ export default function Home() {
 
   return (
     <>
-    {isLoading?(
-      <Loading/>
-    ):(
-      <main>
-        <Nav />
-        <Hero />
-        <Words />
-        <AboutHoriz id="about" />
-        <ServicesRev id="services" />
-        <DragCards id="works" />
-        <Faq id="faq" />
-        <Contact id="contact" />
-      </main>
-    )}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <main>
+            <Nav />
+            <Hero />
+            <Words />
+            <AboutHoriz id="about" />
+            <ServicesRev id="services" />
+            <DragCards id="works" />
+            <Faq id="faq" />
+            <Contact id="contact" />
+          </main>
+          <FollowCursor />
+        </>
+      )}
     </>
   );
 }
