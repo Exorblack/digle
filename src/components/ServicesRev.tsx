@@ -176,7 +176,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         <div className="floating absolute top-20 right-20 w-40 md:w-60 lg:w-80 h-40 md:h-60 lg:h-80 bg-[#FFB703]/30 blur-md rounded-full"></div>
         <div className="floating2 absolute top-96 left-20 w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-[#FFB703]/40 blur-md rounded-full"></div>
 
-        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-32 sm:mt-72">
+        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-28 sm:mt-72">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Megaphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
           </div>
