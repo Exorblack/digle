@@ -48,7 +48,7 @@ export const Conversation = () => {
 
 interface open {
   isOpen: boolean;
-  setIsOpen: any
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const SpringModal = ({ isOpen, setIsOpen }:open) => {
   const [selectedService, setSelectedService] = useState("");
