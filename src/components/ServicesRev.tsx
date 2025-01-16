@@ -82,7 +82,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         <div className="floating absolute top-96 right-20 w-40 md:w-60 lg:w-80 h-40 md:h-60 lg:h-80 bg-[#219EBC]/30 blur-md rounded-full"></div>
         <div className="floating2 absolute top-20 left-20 w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-[#219EBC]/50 blur-md rounded-full"></div>
 
-        <div className="text-center z-10 max-w-4xl mx-auto sm:mt-40">
+        <div className="text-center z-10 max-w-4xl mx-auto sm:mt-40 mt-60">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Palette size={32} className="text-[#219EBC]/80 md:w-12 lg:w-16" />
           </div>
@@ -90,17 +90,18 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             Custom Design
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-[#8ECAE6]/90 leading-relaxed text-reveal">
-            All designs crafted by Digle are custom and unique. We create
-            one-of-a-kind designs that make your brand unforgettable. Stand out
-            with a website that&apos;s tailored just for you.
+            All designs crafted by Digle are made just for you. No templates, no
+            cookie-cutter solutions - just unique designs that make your brand
+            unforgettable. We create websites that not only look good but work
+            great for your business.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC]/10 backdrop-blur-lg border border-[#219EBC]/20">
               <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
-                Performance
+                Unique Design
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
-                Lightning-fast load times
+                A website designed around your brand and goals
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC]/10 backdrop-blur-lg border border-[#219EBC]/20">
@@ -108,15 +109,16 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 UX & UI
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
-                Thoughtful design to ensure an intuitive user experience.
+                Clean, modern UI/UX Design that catches the eye
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC]/10 backdrop-blur-lg border border-[#219EBC]/20">
               <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
-                Modern
+                Interactive Design
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
-                Latest tech stack
+                Interactive elements that feel alive. Smooth, engaging
+                animations
               </p>
             </div>
           </div>
@@ -136,29 +138,85 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
             Web Development
           </h1>
-          <p className="text-xl md:text-xl lg:text-2xl text-[#023047]/90 leading-relaxed text-reveal">
-            We build fast, reliable websites using Next.js and Node.js for top
-            performance and SEO optimization. Experience sleek animations and a
-            website that keeps visitors engaged.
+          <p className="text-xl md:text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
+            We build fast, reliable websites using Next.js and the latest tech
+            that puts you ahead of the game. Your site won&apos;t just look good
+            - it&apos;ll perform like a champion.
           </p>
+          <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
+              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+                Performance
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
+                Lightning-fast loading speeds
+              </p>
+            </div>
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg ">
+              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+                Responsive Design
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
+                Perfect display on all devices, from desktops to smartphones
+              </p>
+            </div>
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
+              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+                SEO
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
+                Built-in SEO features
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      {/* responsive Section */}
+      {/* Branding Section */}
       <section className="h-[150vh] border-t-2 border-[#FFB703] bg-[#FB8500] flex pt-52 relative overflow-hidden">
         <div className="floating absolute top-20 right-20 w-40 md:w-60 lg:w-80 h-40 md:h-60 lg:h-80 bg-[#FFB703]/30 blur-md rounded-full"></div>
         <div className="floating2 absolute top-96 left-20 w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-[#FFB703]/40 blur-md rounded-full"></div>
 
         <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-10">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
-            <Smartphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
+            <Megaphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
-            Responsive Web Design
+            Branding
           </h1>
           <p className="text-xl md:text-xl lg:text-2xl text-[#023047]/95 leading-relaxed text-reveal">
-            Ensure your website looks great on all devices, from desktops to
-            smartphones providing a consistent and enjoyable user experience.
+            Your brand is your story, and we help you tell it right. From logos
+            to color schemes, we create a visual identity that makes people
+            remember you.
           </p>
+          <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC]/90 backdrop-blur-lg">
+              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+                Logo & Colors
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+                Eye-catching logos and color schemes that capture your brand's
+                personality
+              </p>
+            </div>
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC] backdrop-blur-lg ">
+              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+                Typography
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+                Typography that speaks your language, even letters should tell
+                your story
+              </p>
+            </div>
+            <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC] backdrop-blur-lg">
+              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+                Brand guidelines
+              </h3>
+              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+                A complete style guide that keeps your brand looking sharp
+                everywhere it shows up
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -168,36 +226,36 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         <div className="floating2 absolute top-1/4 -right-20 w-full h-40 bg-[#219EBC]/10 blur-lg transform -rotate-6"></div>
         <div className="floating absolute top-2/4 -left-20 w-full h-40 bg-[#219EBC]/15 blur-lg transform rotate-3"></div>
 
-        <div className="text-center z-10 max-w-4xl sm:mt-40 mt-16 mx-auto px-4">
+        <div className="text-center z-10 max-w-4xl mt-60 mx-auto px-4">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
-            <Megaphone
+            <Smartphone
               size={48}
-              className="text-[#219EBC]/80 md:w-12 lg:w-16"
+              className="text-[#023047]/80 md:w-12 lg:w-16"
             />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
-            SEO Optimization
+            SEO & Maintenance
           </h1>
           <p className="text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
-            We implement advanced SEO strategies to enhance your online
-            visibility, and boost your search engine rankings and drive organic
-            traffic.
+            Getting found online shouldn't be Hard. We make sure your
+            website ranks well and stays in top shape, month after month. We
+            implement advanced SEO strategies to enhance your online visibility
           </p>
           <div className="mt-2 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg border border-[#219EBC]/20">
               <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
-                Keyword Research
+                SEO Strategies
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/95">
-                Identify the best keywords to attract targeted traffic
+                Smart SEO Strategies that brings the right people
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg border border-[#219EBC]/20">
               <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
-                Website Audit
+                Security
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/95">
-                Conduct a comprehensive analysis to identify areas
+                Security that lets you sleep at night
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg border border-[#219EBC]/20">

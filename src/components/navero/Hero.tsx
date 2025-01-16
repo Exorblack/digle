@@ -104,10 +104,7 @@ const Hero = () => {
           </div>
 
           {/* line */}
-          <svg
-            className="absolute w-full h-full"
-            viewBox="0 0 1000 700"
-          >
+          <svg className="absolute w-full h-full" viewBox="0 0 1000 700">
             <path
               d="M200,300 C400,100 600,500 800,300"
               fill="#023047"
@@ -169,7 +166,7 @@ const Hero = () => {
             <div className="mt-4">
               <button
                 onClick={() => handleScrollToSection("services")}
-                className="px-6 py-3 text-lg font-semibold text-[#219EBC] backdrop-blur-md bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-2xl duration-75"
+                className="px-8 py-3 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
               >
                 Discover Our Services
               </button>

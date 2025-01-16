@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Mail,
-  MessageSquare,
   Sparkles,
 } from "lucide-react";
 import React, { useRef } from "react";
@@ -12,6 +11,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { FaBehance, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
+import Pop from "./popup/pop";
 interface contact{
   id:string
 }
@@ -32,7 +32,6 @@ const Zoomd:React.FC<contact> = ({id}) => {
   const floatingStarsRef = useRef(null);
   const starRef = useRef(null);
   const socialRef = useRef(null);
-  const btnRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   
   useGSAP(() => {
@@ -109,19 +108,14 @@ const Zoomd:React.FC<contact> = ({id}) => {
         stagger: 0.2,
         ease: "back.out",
       });
-      tl.from(btnRef.current, {
-        scale: 0.2,
-        opacity: 0,
-        rotation: 15,
-        stagger: 0.2,
-        ease: "back.out",
-      });
-      
   });
-
   return (
     <>
-      <div ref={zoomdRef} id={id} className="relative h-[300vh] bg-[#FFB703]">
+      <section
+        ref={zoomdRef}
+        id={id}
+        className="relative h-[300vh] bg-[#FFB703]"
+      >
         <div
           ref={introTextRef}
           className="relative h-[100dvh] flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8"
@@ -270,23 +264,16 @@ const Zoomd:React.FC<contact> = ({id}) => {
                     <Sparkles className="absolute -bottom-4 right-3 w-6 h-6 text-[#219EBC]/0 group-hover:text-[#219EBC]/40 transition-all duration-300" />
                   </Link>
                 </div>
-              </div>
-
-              <div ref={btnRef} className="flex justify-center">
-                <Link href="/">
-                  <button className="group relative overflow-hidden px-8 py-4 text-lg font-semibold text-[#219EBC] border-2 backdrop-blur-md border-[#219EBC] bg-gradient-to-b from-[#FFB703]/90 to-[#FB8500]/90 hover:bg-gradient-to-b hover:from-[#FB8500]/90 hover:to-[#FFB703]/90 rounded-full shadow-2xl duration-75">
-                    <div className="relative z-10 flex items-center gap-2">
-                      <MessageSquare className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500" />
-                      <span>Start a Conversation</span>
-                    </div>
-                    <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-200/0 via-blue-200/5 to-blue-200/0"></div>
-                  </button>
-                </Link>
+                <div className="flex justify-center items-center">
+                  <Pop />
+                </div>
               </div>
             </div>
+
+
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

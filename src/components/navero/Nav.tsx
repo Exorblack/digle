@@ -31,7 +31,7 @@ const Nav = () => {
       <div className={`fixed inset-x-0 z-50`}>
         <div className="max-w-fit mx-auto ">
           {/* Desktop & Tablet Navigation */}
-          <div className="mt-8 p-4 sm:p-4 md:p-6 bg-[#219EBC]/50 backdrop-blur-md border-4 border-[#023047]/50 rounded-full">
+          <div className="mt-8 p-4 sm:p-4 md:p-6 bg-[#219EBC]/50 backdrop-blur-2xl border-4 border-[#023047]/50 rounded-full">
             <div className="hidden md:flex justify-center items-center">
               <div className="flex items-center gap-10 text-[#023047]">
                 <a href={"/"}>
@@ -43,24 +43,44 @@ const Nav = () => {
                     className="transform hover:scale-110 duration-300"
                   />
                 </a>
-                <li className="hover:text-[#FFB703] duration-100 font-bold list-none">
-                  <button onClick={() => handleScrollToSection("about")}>
+                <li className="list-none">
+                  <button
+                    onClick={() => handleScrollToSection("about")}
+                    className="hover:text-[#FFB703] duration-100 font-bold"
+                  >
                     About
                   </button>
                 </li>
-                <li className="hover:text-[#FFB703] duration-100 font-bold list-none">
-                  <button onClick={() => handleScrollToSection("works")}>
+                <li className="list-none">
+                  <button
+                    onClick={() => handleScrollToSection("services")}
+                    className="hover:text-[#FFB703] duration-100 font-bold"
+                  >
+                    Services
+                  </button>
+                </li>
+                <li className="list-none">
+                  <button
+                    onClick={() => handleScrollToSection("works")}
+                    className="hover:text-[#FFB703] duration-100 font-bold"
+                  >
                     Portfolio
                   </button>
                 </li>
-                <li className="hover:text-[#FFB703] transition-all duration-100 font-bold list-none">
-                  <button onClick={() => handleScrollToSection("faq")}>
+                <li className="list-none">
+                  <button
+                    onClick={() => handleScrollToSection("faq")}
+                    className="hover:text-[#FFB703] transition-all duration-100 font-bold"
+                  >
                     FAQ
                   </button>
                 </li>
-                <li className="hover:text-[#FFB703] transition-all duration-100 font-bold list-none">
-                  <button onClick={() => handleScrollToSection("contact")}>
-                    Contact
+                <li className="list-none">
+                  <button
+                    onClick={() => handleScrollToSection("contact")}
+                    className="px-8 py-3 font-medium bg-[#FFB703]/90 text-[#219EBC] rounded-full w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+                  >
+                    Contact Us
                   </button>
                 </li>
               </div>
@@ -129,15 +149,18 @@ const Nav = () => {
                   FAQ
                 </button>
               </li>
-              <li className=" font-bold text-2xl">
-                <button onClick={() => handleScrollToSection("contact")}>
+              <li className="list-none">
+                <button
+                  onClick={() => handleScrollToSection("contact")}
+                  className="px-8 py-3 font-medium bg-[#FFB703]/90 text-[#219EBC] rounded-full w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+                >
                   Contact
                 </button>
               </li>
             </ul>
 
             <div className="space-y-6">
-              <h2 className="text-xl font-bold text-[#FB8500]/90">
+              <h2 className="text-xl font-bold text-[#023047]">
                 Get in Touch
               </h2>
               <div className="flex flex-col gap-4">
@@ -210,7 +233,7 @@ const Nav = () => {
             </div>
 
             <div className="mt-1 border-t border-[#023047]/40 pt-4 w-48 mx-auto">
-              <p className="text-sm text-[#023047]/90">© 2025 DIGLE</p>
+              <p className="text-sm text-[#023047]/90">©2025 DIGLE</p>
             </div>
           </div>
         </div>

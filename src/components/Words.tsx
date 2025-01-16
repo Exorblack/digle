@@ -53,7 +53,7 @@ const Words = () => {
                      leading-normal sm:leading-normal md:leading-relaxed
                      tracking-normal sm:tracking-wide md:tracking-wider"
         >
-          we designs websites that reflect your brands unique identity ensuring
+          we build websites that reflect your brands unique identity ensuring
           a visually engaging and user-friendly experience.
         </div>
       </div>

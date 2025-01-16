@@ -36,7 +36,7 @@ const Cards = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="absolute inset-0 z-10" ref={containerRef}>
+    <div className="absolute inset-0" ref={containerRef}>
       <Card
         containerRef={containerRef}
         src="/porto/portf1.jpeg"
@@ -118,7 +118,6 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <>
-
       <motion.img
         onMouseDown={updateZIndex}
         style={{
@@ -128,7 +127,7 @@ const Card: React.FC<CardProps> = ({
           zIndex,
         }}
         className={twMerge(
-          "drag-elements absolute w-48 bg-neutral-200 p-1 pb-4",
+          "drag-elements absolute w-48 bg-[#8ECAE6] p-1 pb-4",
           className
         )}
         src={src}
