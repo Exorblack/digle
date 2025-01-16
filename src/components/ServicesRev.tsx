@@ -82,7 +82,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         <div className="floating absolute top-96 right-20 w-40 md:w-60 lg:w-80 h-40 md:h-60 lg:h-80 bg-[#219EBC]/30 blur-md rounded-full"></div>
         <div className="floating2 absolute top-20 left-20 w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-[#219EBC]/50 blur-md rounded-full"></div>
 
-        <div className="text-center z-10 max-w-4xl mx-auto sm:mt-40 mt-60">
+        <div className="text-center z-10 max-w-4xl mx-auto sm:mt-40 mt-5">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Palette size={32} className="text-[#219EBC]/80 md:w-12 lg:w-16" />
           </div>
@@ -126,12 +126,12 @@ const ServicesRev:React.FC<Services> = ({id}) => {
       </section>
 
       {/* web dev Section */}
-      <section className="h-[150vh] border-t-2 border-[#8ECAE6] bg-[#219EBC] flex pt-52 relative overflow-hidden">
+      <section className="h-[150vh] border-t-2 border-[#8ECAE6] bg-[#219EBC] flex relative overflow-hidden">
         <div className="floating absolute -top-20 left-0 w-full h-20 md:h-32 lg:h-40 bg-[#8ECAE6]/20 blur-lg transform rotate-6"></div>
         <div className="floating2 absolute top-1/4 -right-20 w-full h-20 md:h-32 lg:h-40 bg-[#8ECAE6]/10 blur-lg transform -rotate-6"></div>
         <div className="floating absolute top-2/4 -left-20 w-full h-20 md:h-32 lg:h-40 bg-[#8ECAE6]/15 blur-lg transform rotate-3"></div>
 
-        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-10">
+        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-20 sm:mt-72">
           <div className="text-reveal flex justify-center mb-6">
             <Code size={48} className="text-[#023047]/80 md:w-12 lg:w-16" />
           </div>
@@ -172,11 +172,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         </div>
       </section>
       {/* Branding Section */}
-      <section className="h-[150vh] border-t-2 border-[#FFB703] bg-[#FB8500] flex pt-52 relative overflow-hidden">
+      <section className="h-[150vh] border-t-2 border-[#FFB703] bg-[#FB8500] flex relative overflow-hidden">
         <div className="floating absolute top-20 right-20 w-40 md:w-60 lg:w-80 h-40 md:h-60 lg:h-80 bg-[#FFB703]/30 blur-md rounded-full"></div>
         <div className="floating2 absolute top-96 left-20 w-32 md:w-48 lg:w-64 h-32 md:h-48 lg:h-64 bg-[#FFB703]/40 blur-md rounded-full"></div>
 
-        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-10">
+        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-32 sm:mt-72">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Megaphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
           </div>
@@ -226,7 +226,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         <div className="floating2 absolute top-1/4 -right-20 w-full h-40 bg-[#219EBC]/10 blur-lg transform -rotate-6"></div>
         <div className="floating absolute top-2/4 -left-20 w-full h-40 bg-[#219EBC]/15 blur-lg transform rotate-3"></div>
 
-        <div className="text-center z-10 max-w-4xl mt-60 mx-auto px-4">
+        <div className="text-center z-10 max-w-4xl mx-auto px-4 mt-10 sm:mt-60">
           <div className="text-reveal flex justify-center mb-4 md:mb-6">
             <Smartphone
               size={48}
