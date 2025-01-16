@@ -194,8 +194,8 @@ const ServicesRev:React.FC<Services> = ({id}) => {
                 Logo & Colors
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
-                Eye-catching logos and color schemes that capture your brand's
-                personality
+                Eye-catching logos and color schemes that capture your
+                brand&apos;s personality
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC] backdrop-blur-lg ">
@@ -237,7 +237,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             SEO & Maintenance
           </h1>
           <p className="text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
-            Getting found online shouldn't be Hard. We make sure your
+            Getting found online shouldn&apos;t be Hard. We make sure your
             website ranks well and stays in top shape, month after month. We
             implement advanced SEO strategies to enhance your online visibility
           </p>

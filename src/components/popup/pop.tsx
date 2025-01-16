@@ -46,26 +46,30 @@ export const Conversation = () => {
   );
 };
 
-const SpringModal = ({ isOpen, setIsOpen }: any) => {
-  // const [selectedService, setSelectedService] = useState("");
+interface open {
+  isOpen: boolean;
+  setIsOpen: any
+}
+const SpringModal = ({ isOpen, setIsOpen }:open) => {
+  const [selectedService, setSelectedService] = useState("");
 
-  // const services = [
-  //   {
-  //     id: "web",
-  //     icon: <Globe className="w-5 h-5" />,
-  //     label: "Web Development",
-  //   },
-  //   {
-  //     id: "design",
-  //     icon: <Palette className="w-5 h-5" />,
-  //     label: "UI/UX Design",
-  //   },
-  //   {
-  //     id: "code",
-  //     icon: <Code className="w-5 h-5" />,
-  //     label: "Custom Solutions",
-  //   },
-  // ];
+  const services = [
+    {
+      id: "web",
+      icon: <Globe className="w-5 h-5" />,
+      label: "Web Development",
+    },
+    {
+      id: "design",
+      icon: <Palette className="w-5 h-5" />,
+      label: "UI/UX Design",
+    },
+    {
+      id: "code",
+      icon: <Code className="w-5 h-5" />,
+      label: "Custom Solutions",
+    },
+  ];
 
   return (
     <AnimatePresence>
@@ -85,13 +89,13 @@ const SpringModal = ({ isOpen, setIsOpen }: any) => {
           >
             <div className="relative z-10">
               <h3 className="text-3xl font-bold text-center mb-2 text-[#219EBC] ">
-                Let's Chat!👋
+                Let&apos;s Chat!👋
               </h3>
               <p className="text-center mb-6">
                 Transform your digital presence with our expertise
               </p>
 
-            {/* <div className="mb-6">
+              <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-3">
                   Select Your Service
                 </h4>
@@ -113,7 +117,7 @@ const SpringModal = ({ isOpen, setIsOpen }: any) => {
                     </button>
                   ))}
                 </div>
-            </div> */}
+              </div>
 
               <form className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
