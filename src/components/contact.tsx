@@ -11,7 +11,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { FaBehance, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
-import Pop from "./popup/pop";
+import {Conversation} from "./popup/pop";
 interface contact{
   id:string
 }
@@ -265,12 +265,10 @@ const Zoomd:React.FC<contact> = ({id}) => {
                   </Link>
                 </div>
                 <div className="flex justify-center items-center">
-                  <Pop />
+                  <Conversation />
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>

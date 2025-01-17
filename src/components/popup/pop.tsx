@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { MessageSquare, Send, Code, Palette, Globe } from "lucide-react";
+import { MessageSquare, Send, Code, Palette, Globe, Loader } from "lucide-react";
 import { useState } from "react";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
@@ -64,7 +64,7 @@ const formSchema = z.object({
 
 
 const SpringModal = ({ isOpen, setIsOpen }:open) => {
-
+const [loading, setLoading] = useState(false);  
 type tty = z.infer<typeof formSchema>;
 const {
   register,
@@ -81,6 +81,7 @@ const {
 const selectedService = watch("service");
 
 const onSubmit = async (data: tty) => {
+  setLoading(true);
   const opt = {
     method: "POST",
     headers: {
@@ -95,6 +96,7 @@ const onSubmit = async (data: tty) => {
     }),
   };
   const res = await fetch("/api/send", opt);
+  setLoading(false);
   if (res.ok) {
     toast.success(
       "thanks for sending message to us we will respone you as fast as possible",
@@ -168,8 +170,8 @@ const onSubmit = async (data: tty) => {
                         selectedService === service.label
                           ? "border-[#219EBC] bg-[#219EBC]/10 text-white"
                           : "border-[#219EBC]/30 hover:border-[#219EBC]"
-                        }`}
-                        >
+                      }`}
+                    >
                       <div className="flex flex-col items-center gap-2 text-sm">
                         {service.icon}
                         {service.label}
@@ -250,12 +252,17 @@ const onSubmit = async (data: tty) => {
                   >
                     Cancel
                   </button>
+
                   <button
                     type="submit"
                     className="bg-[#219EBC] hover:opacity-90 transition-opacity text-[#fff] font-semibold w-2/3 py-3 rounded-lg flex items-center justify-center gap-2"
                   >
-                    <Send className="w-5 h-5" />
-                    Submit
+                    {loading ? (
+                      <Loader className="w-5 h-5 animate-spin" />
+                    ) : (
+                      <Send className="w-5 h-5" />
+                    )}
+                    {loading ? "Sending.." : "Submit"}
                   </button>
                 </div>
               </form>
