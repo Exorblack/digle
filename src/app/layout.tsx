@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playpen_Sans} from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "sonner";
 
 const inter = Playpen_Sans({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <SpeedInsights />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );

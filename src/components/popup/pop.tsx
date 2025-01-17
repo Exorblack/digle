@@ -1,7 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageSquare, Send, Code, Palette, Globe } from "lucide-react";
 import { useState } from "react";
-
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
 export const Contacts = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,23 +53,76 @@ interface open {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+const formSchema = z.object({
+  name: z.string().min(3, "Name is required"),
+  email: z.string().email("Invalid email address"),
+  projectname: z.string().min(3, "Project name is required"),
+  message: z.string().min(10, "Message is required"),
+  service: z.string().min(1, "Please select a service"),
+});
+
+
 const SpringModal = ({ isOpen, setIsOpen }:open) => {
-  const [selectedService, setSelectedService] = useState("");
+
+type tty = z.infer<typeof formSchema>;
+const {
+  register,
+  handleSubmit,
+  setValue,
+  watch,
+  formState: { errors },
+} = useForm<tty>({
+  resolver: zodResolver(formSchema),
+  defaultValues:{
+    service:"",
+  }
+});
+const selectedService = watch("service");
+
+const onSubmit = async (data: tty) => {
+  const opt = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: data.name,
+      email: data.email,
+      projectname: data.projectname,
+      message: data.message,
+      service: data.service,
+    }),
+  };
+  const res = await fetch("/api/send", opt);
+  if (res.ok) {
+    toast.success(
+      "thanks for sending message to us we will respone you as fast as possible",
+      {
+        duration: 2000,
+      }
+    );
+  } else {
+    toast.error("some thing went wronge", {
+      duration: 2000,
+    });
+  }
+};
 
   const services = [
     {
       id: "web",
-      icon: <Globe className="w-5 h-5" />,
+      icon: <Code className="w-5 h-5" />,
       label: "Web Development",
     },
     {
-      id: "design",
+      id: "Brand",
       icon: <Palette className="w-5 h-5" />,
-      label: "UI/UX Design",
+      label: "Branding",
     },
     {
       id: "code",
-      icon: <Code className="w-5 h-5" />,
+      icon: <Globe className="w-5 h-5" />,
       label: "Custom Solutions",
     },
   ];
@@ -85,14 +141,14 @@ const SpringModal = ({ isOpen, setIsOpen }:open) => {
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-[#023047] text-[#8ECAE6] p-8 rounded-2xl w-full max-w-lg shadow-2xl cursor-default relative"
+            className="bg-[#023047] text-[#8ECAE6] p-8 rounded-2xl w-full max-w-sm sm:max-w-lg shadow-2xl cursor-default relative"
           >
             <div className="relative z-10">
               <h3 className="text-3xl font-bold text-center mb-2 text-[#219EBC] ">
-                Let&apos;s Chat!👋
+                Hello!👋
               </h3>
               <p className="text-center mb-6">
-                Transform your digital presence with our expertise
+                Let&apos;s Play with Your Ideas and Turn it into Reality
               </p>
 
               <div className="mb-6">
@@ -102,14 +158,18 @@ const SpringModal = ({ isOpen, setIsOpen }:open) => {
                 <div className="grid grid-cols-3 gap-3">
                   {services.map((service) => (
                     <button
-                      key={service.id}
-                      onClick={() => setSelectedService(service.id)}
+                      key={service.label}
+                      onClick={() =>
+                        setValue("service", service.label, {
+                          shouldValidate: true,
+                        })
+                      }
                       className={`p-3 rounded-xl border transition-all ${
-                        selectedService === service.id
+                        selectedService === service.label
                           ? "border-[#219EBC] bg-[#219EBC]/10 text-white"
                           : "border-[#219EBC]/30 hover:border-[#219EBC]"
-                      }`}
-                    >
+                        }`}
+                        >
                       <div className="flex flex-col items-center gap-2 text-sm">
                         {service.icon}
                         {service.label}
@@ -117,48 +177,69 @@ const SpringModal = ({ isOpen, setIsOpen }:open) => {
                     </button>
                   ))}
                 </div>
+                {errors.service && (
+                  <span className="text-red-500 text-xs">
+                    {errors.service.message}
+                  </span>
+                )}
               </div>
 
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <input
+                      {...register("name")}
                       type="text"
-                      name="name"
                       placeholder="Name"
-                      required
                       className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                     />
+                    {errors.name && (
+                      <span className="text-red-500 text-xs">
+                        {errors.name.message}
+                      </span>
+                    )}
                   </div>
                   <div>
                     <input
+                      {...register("email")}
                       type="email"
-                      name="email"
                       placeholder="Email"
-                      required
                       className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                     />
+                    {errors.email && (
+                      <span className="text-red-500 text-xs">
+                        {errors.email.message}
+                      </span>
+                    )}
                   </div>
                 </div>
 
                 <div>
                   <input
+                    {...register("projectname")}
                     type="text"
-                    name="project"
                     placeholder="Project Name"
-                    required
                     className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                   />
+                  {errors.projectname && (
+                    <span className="text-red-500 text-xs">
+                      {errors.projectname.message}
+                    </span>
+                  )}
                 </div>
 
                 <div>
                   <textarea
-                    name="message"
-                    placeholder="Tell us about your project goals and requirements..."
-                    required
+                    {...register("message")}
+                    placeholder="Tell us about your project..."
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                   />
+                  {errors.message && (
+                    <span className="text-red-500 text-xs">
+                      {errors.message.message}
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex gap-2 pt-2">

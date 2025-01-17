@@ -37,6 +37,7 @@ const Nav = () => {
                 <a href={"/"}>
                   <Image
                     src={"/digle-logo.png"}
+                    priority
                     width={160}
                     height={160}
                     alt="Digle Logo"
@@ -160,9 +161,7 @@ const Nav = () => {
             </ul>
 
             <div className="space-y-6">
-              <h2 className="text-xl font-bold text-[#023047]">
-                Get in Touch
-              </h2>
+              <h2 className="text-xl font-bold text-[#023047]">Get in Touch</h2>
               <div className="flex flex-col gap-4">
                 <button className="flex items-center justify-center gap-3 px-8 py-3 bg-[#219EBC]/20 hover:bg-[#219EBC]/30 text-white rounded-full border border-[#023047]/30 hover:scale-105 transition-all duration-300 group">
                   <Mail
