@@ -27,7 +27,7 @@ const FAQ: React.FC<faq> = ({ id }) => {
       question: "How does the whole process work?",
       answer: [
         "1. Initial Discussion: We will have an in-depth discussion to understand your vision and requirements.",
-        "2. Provide Business Information: Share your business concept, logo, social media links, and any other materials that help us learn more about your business.",
+        "2. Branding (if applicable): Share your business concept, logo, social media links, and any other materials that help us learn more about your business.",
         "3. Content Collection: Provide all the content you want to include on your website.",
         "4. Development: We build your site with regular updates",
         "5. Launch: Final review and website goes live",
@@ -118,7 +118,7 @@ const FAQ: React.FC<faq> = ({ id }) => {
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-[8.5rem]" : "max-h-0"
+                    openIndex === index ? "max-h-[10rem]" : "max-h-0"
                   }`}
                 >
                   {Array.isArray(item.answer) ? (
