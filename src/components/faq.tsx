@@ -51,7 +51,7 @@ const FAQ: React.FC<faq> = ({ id }) => {
     {
       question: "How long does it take to build a website?",
       answer:
-        "The timeline for building a website depends on the complexity and specific requirements of the project.\nA standard business website typically takes 1-2 weeks, while more complex sites or SaaS projects can take 4-8 weeks or longer. We will provide a detailed timeline during our initial consultation.",
+        "Most standard business websites take 1-2 weeks to complete. More complex projects might take 4-8 weeks, depending on your specific needs. We'll provide you with a clear timeline during our discussion so you know exactly what to expect.",
     },
     {
       question: "I have another question!",
