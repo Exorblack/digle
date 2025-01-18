@@ -27,7 +27,7 @@ const FAQ: React.FC<faq> = ({ id }) => {
       question: "How does the whole process work?",
       answer: [
         "1. Initial Discussion: We will have an in-depth discussion to understand your vision and requirements.",
-        "2. Branding (if applicable): Share your business concept, logo, social media links, and any other materials that help us learn more about your business.",
+        "2. Brand (if applicable): Share your business concept, logo, social media links, and any other materials that help us learn more about your business.",
         "3. Content Collection: Provide all the content you want to include on your website.",
         "4. Development: We build your site with regular updates",
         "5. Launch: Final review and website goes live",
