@@ -34,22 +34,21 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         });
 
         // Animate floating elements
-        floatingElements.forEach((el, index) => {
+        floatingElements.forEach((el) => {
           gsap.to(el, {
             y: "+=100",
-            x: index % 2 === 0 ? "+=50" : "-=50",
-            rotate: index % 2 === 0 ? "+=15" : "-=15",
+            x: "+=50",
             repeat: -1,
             yoyo: true,
-            duration: 2.5 + index * 0.5,
+            duration: 2.5,
             ease: "power1.inOut",
           });
         });
 
-        floatingElements2.forEach((el, index) => {
+        floatingElements2.forEach((el) => {
           gsap.to(el, {
             y: "+=100",
-            x: index % 2 === 0 ? "+=50" : "-=50",
+            x: "+=50",
             repeat: -1,
             yoyo: true,
             duration: 2.5,

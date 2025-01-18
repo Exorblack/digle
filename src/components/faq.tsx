@@ -1,16 +1,70 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { ChevronsRight } from "lucide-react";
 
-interface faq{
-  id:string
+interface faq {
+  id: string;
 }
 
-const FAQ:React.FC<faq> = ({id}) => {
+const FAQ: React.FC<faq> = ({ id }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const toggleFAQ = (index:number) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const faqItems = [
+    {
+      question: "How do I get started with Digle?",
+      answer:
+        "Getting started is simple! Contact us through our website or email, and we'll set up a conversation to discuss your project. We'll learn about your business needs, provide a clear proposal, and guide you through the entire process of creating your website.",
+    },
+    {
+      question: "How Does the Payment Process Work?",
+      answer:
+        "We keep our payment process straightforward: 50% deposit to begin your project, and the remaining 50% when your website is ready to launch. This ensures that both parties are committed to the project from start to finish.",
+    },
+    {
+      question: "How does the whole process work?",
+      answer: [
+        "1. Initial Discussion: We will have an in-depth discussion to understand your vision and requirements.",
+        "2. Provide Business Information: Share your business concept, logo, social media links, and any other materials that help us learn more about your business.",
+        "3. Content Collection: Provide all the content you want to include on your website.",
+        "4. Development: We build your site with regular updates",
+        "5. Launch: Final review and website goes live",
+      ],
+    },
+    {
+      question: "Can you update my existing website?",
+      answer:
+        "Yes! We can help modernize your existing website. Whether you need a complete redesign or specific updates to improve functionality and appearance, we'll work with you to enhance your current website while maintaining your brand identity.",
+    },
+    {
+      question: "What is web hosting and do I need it?",
+      answer:
+        "Web hosting is essential - it's the service that makes your website accessible on the internet. Your website's files need to be stored on a secure server to be visible online. We can help set up and maintain your hosting, which typically involves a regular monthly or annual fee.",
+    },
+    {
+      question: "What makes Digle different?",
+      answer:
+        "We focus on creating websites that work for your business. Our approach combines modern design with practical functionality. We offer personalized service, regular communication throughout your project, and ongoing support after launch. Plus, we ensure your website looks great on all devices.",
+    },
+    {
+      question: "How long does it take to build a website?",
+      answer:
+        "The timeline for building a website depends on the complexity and specific requirements of the project.\nA standard business website typically takes 1-2 weeks, while more complex sites or SaaS projects can take 4-8 weeks or longer. We will provide a detailed timeline during our initial consultation.",
+    },
+    {
+      question: "I have another question!",
+      answer: (
+        <>
+          We&apos;re here to help! Email us at{" "}
+          <span className="text-[#219EBC] font-bold">contact@digle.org</span> or
+          reach out through social media. We&apos;ll respond quickly to answer
+          any questions you have about your website project.
+        </>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -42,285 +96,45 @@ const FAQ:React.FC<faq> = ({id}) => {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 pb-20">
-          <div className=" border-t-4 border-[#8ECAE6] rounded-3xl p-10 shadow-2xl">
-            {/* FAQ Item 1 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(0)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    How do I get started with Digle?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 0 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
+          <div className="border-t-4 border-[#8ECAE6] rounded-3xl p-10 shadow-2xl">
+            {faqItems.map((item, index) => (
+              <div key={index} className="mb-4">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
+                >
+                  <div className="flex justify-between items-center">
+                    <h3 className="text-[#8ECAE6] text-lg font-semibold">
+                      {item.question}
+                    </h3>
+                    <span
+                      className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
+                        openIndex === index ? "rotate-90" : ""
+                      }`}
+                    >
+                      <ChevronsRight />
+                    </span>
+                  </div>
+                </button>
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? "max-h-[8.5rem]" : "max-h-0"
+                  }`}
+                >
+                  {Array.isArray(item.answer) ? (
+                    <ul className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
+                      {item.answer.map((line, i) => (
+                        <li key={i}>{line}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
+                      {item.answer}
+                    </p>
+                  )}
                 </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 0 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  Getting started with Digle is easy! Simply contact us through
-                  our website. We will discuss your needs, provide a detailed
-                  proposal, and start the journey to creating a powerful digital
-                  presence for your business.
-                </p>
               </div>
-            </div>
-
-            {/* FAQ Item 2 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(1)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    How Does the Payment Process Work?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 1 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 1 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  The project starts with a 50% deposit. The remaining 50% is
-                  due once we are ready to launch your website. This ensures
-                  that both parties are committed to the project from start to
-                  finish.
-                </p>
-              </div>
-            </div>
-
-            {/* FAQ Item 3 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(2)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    How does the whole process work?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 2 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 2 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <ul className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  <li>
-                    1. Discuss the Project: We will have an in-depth discussion
-                    to understand your vision and requirements.
-                  </li>
-                  <li>
-                    2. Provide Business Information: Share your business
-                    concept, logo, social media links, and any other materials
-                    that help us learn more about your business.
-                  </li>
-                  <li>
-                    3. Submit Content: Provide all the content you want to
-                    include on your website.
-                  </li>
-                  <li>
-                    4. Down Payment: Make an initial payment of at least 50% to
-                    kickstart the project.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* FAQ Item 4 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(3)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    I Already Have a Website! Can I Redesign or Update It?
-                  </h3>
-                  <span
-                    className={` text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 3 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 3 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  Absolutely! If you already have a website, we can help
-                  redesign or update it to better meet your needs. Whether
-                  you&apos;re looking for a fresh new look, enhanced
-                  functionality, or improved performance, our team can work with
-                  you to develop a solution that aligns with your goals.
-                </p>
-              </div>
-            </div>
-            {/* FAQ Item 5 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(4)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    What is Web Hosting?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 4 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 4 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  Web hosting is the service that allows your website to be
-                  accessible on the internet. It involves storing your
-                  website&apos;s files on a server. Web hosting services
-                  typically require a monthly or annual fee.
-                </p>
-              </div>
-            </div>
-            {/* FAQ Item 6 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(5)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    What makes Digle different from other web design agencies?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 5 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 5 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  At Digle, we blend creativity with advanced technology to
-                  deliver customized web solutions that meet our clients unique
-                  needs. Our client-centric approach ensures we work closely
-                  with you to bring your vision to life. Additionally, our
-                  comprehensive packages, unlimited revisions, and dedicated
-                  support set us apart from the competition.
-                </p>
-              </div>
-            </div>
-            {/* FAQ Item 7 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(6)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    How long does it take to build a website?
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 6 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 6 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  The timeline for building a website depends on the complexity
-                  and specific requirements of the project.
-                  <br />A standard business website typically takes 1-2 weeks,
-                  while more complex sites or SaaS projects can take 4-8 weeks
-                  or longer. We will provide a detailed timeline during our
-                  initial consultation.
-                </p>
-              </div>
-            </div>
-            {/* FAQ Item 8 */}
-            <div className="mb-4">
-              <button
-                onClick={() => toggleFAQ(7)}
-                className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-[#8ECAE6] text-lg font-semibold">
-                    I have another question!
-                  </h3>
-                  <span
-                    className={`text-[#8ECAE6] text-2xl transform transition-transform duration-300 ${
-                      openIndex === 7 ? "rotate-90" : ""
-                    }`}
-                  >
-                    <ChevronsRight />
-                  </span>
-                </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === 7 ? "max-h-96 mt-2" : "max-h-0"
-                }`}
-              >
-                <p className="text-[#FFB703] p-4 bg-[#023047]/30 rounded-xl">
-                  No problem! Send us an email at{" "}
-                  <span className="text-[#219EBC] font-bold">
-                    contact@digle.org
-                  </span>{" "}
-                  or send message on any social media platform and we will get
-                  back to you with an answer.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

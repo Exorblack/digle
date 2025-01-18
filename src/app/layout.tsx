@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <SpeedInsights />
-        <Toaster position="top-right" richColors />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

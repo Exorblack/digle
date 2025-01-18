@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
 import Image from "next/image";
 
 const Hero = () => {
@@ -11,17 +10,6 @@ const Hero = () => {
   const txt = useRef<HTMLDivElement>(null);
   const heroref = useRef<HTMLDivElement>(null);
   const shapesRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
 
   // mouse move handler
   useEffect(() => {

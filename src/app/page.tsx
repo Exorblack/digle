@@ -10,9 +10,22 @@ import Nav from "@/components/navero/Nav";
 import Faq from "@/components/faq";
 import Loading from "@/components/loading/loading";
 import FollowCursor from "@/components/mouse/FollowCursor";
+import Lenis from "lenis";
 
 
 export default function Home() {
+
+    useEffect(() => {
+      const lenis = new Lenis();
+      
+      function raf(time: number) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+  
+      requestAnimationFrame(raf);
+    }, []);
+    
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {

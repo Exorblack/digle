@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { MessageSquare, Send, Code, Palette, Globe, Loader } from "lucide-react";
+import { MessageSquare, Send, Code, Palette, Globe, Loader, Megaphone } from "lucide-react";
 import { useState } from "react";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
@@ -99,19 +99,24 @@ const onSubmit = async (data: tty) => {
   setLoading(false);
   if (res.ok) {
     toast.success(
-      "thanks for sending message to us we will respone you as fast as possible",
+      "Thank you for reaching out to us! We'll get back to you as soon as possible.",
       {
-        duration: 2000,
+        duration: 6000,
       }
     );
   } else {
     toast.error("some thing went wronge", {
-      duration: 2000,
+      duration: 6000,
     });
   }
 };
 
   const services = [
+    {
+      id: "design",
+      icon: <Palette className="w-5 h-5" />,
+      label: "Web Design",
+    },
     {
       id: "web",
       icon: <Code className="w-5 h-5" />,
@@ -119,7 +124,7 @@ const onSubmit = async (data: tty) => {
     },
     {
       id: "Brand",
-      icon: <Palette className="w-5 h-5" />,
+      icon: <Megaphone className="w-5 h-5" />,
       label: "Branding",
     },
     {
@@ -235,7 +240,7 @@ const onSubmit = async (data: tty) => {
                     {...register("message")}
                     placeholder="Tell us about your project..."
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors resize-none"
                   />
                   {errors.message && (
                     <span className="text-red-500 text-xs">
