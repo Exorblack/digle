@@ -24,19 +24,22 @@ const AboutHoriz:React.FC<about> = ({id}) => {
       const viewRect = container.getBoundingClientRect();
       const totalScrollWidth = cardsRect.width - viewRect.width;
 
-     const scrollTween =  gsap.to(cards, {
-        scrollTrigger: {
-          trigger: container,
-          start: "top top",
-          end: `+=${totalScrollWidth}`,
-          scrub: 1,
-          pin: true,
-        },
-        x: -totalScrollWidth,
-        opacity: 1,
-        ease: "power1.inOut",
-      });
-      
+      let sm = gsap.matchMedia();
+
+sm.add("(min-width: 800px)", () => {
+  gsap.to(cards, {
+    scrollTrigger: {
+      trigger: container,
+      start: "top top",
+      end: `+=${totalScrollWidth}`,
+      scrub: 1,
+      pin: true,
+    },
+    x: -totalScrollWidth,
+    opacity: 1,
+    ease: "power1.inOut",
+  });
+});
       Draggable.create(cards, {
         type: "x",
         inertia: true,
@@ -45,12 +48,10 @@ const AboutHoriz:React.FC<about> = ({id}) => {
         bounds: {
           minX: -totalScrollWidth,
           maxX: 0,
-        },
-        onDrag:()=>{
-          scrollTween.pause(0.3)
-        },
+        }
       });
     }
+    
     
   });
   return (
