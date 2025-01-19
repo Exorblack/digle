@@ -197,13 +197,15 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 {/* Email */}
                 <div
                   ref={contactsRef}
-                  className="group flex items-center cursor-cell justify-center text-2xl sm:text-4xl text-[#023047]/90 hover:text-[#023047]/95 transition-colors duration-300"
+                  className="group flex items-center justify-center text-2xl sm:text-4xl text-[#023047]/90 hover:text-[#023047]/95 transition-colors duration-300"
                 >
-                  <div className="relative flex gap-2 font-semibold ">
-                    Contact@digle.org
-                    <Mail className="w-8 h-8 sm:w-12 sm:h-12 group-hover:rotate-12 transition-transform duration-300" />
-                    <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#023047]/50 group-hover:w-full transition-all duration-300"></span>
-                  </div>
+                  <a href="mailto:Contact@digle.org" className="cursor-cell">
+                    <div className="relative flex gap-2 font-semibold ">
+                      Contact@digle.org
+                      <Mail className="w-8 h-8 sm:w-12 sm:h-12 group-hover:rotate-12 transition-transform duration-300" />
+                      <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#023047]/50 group-hover:w-full transition-all duration-300"></span>
+                    </div>
+                  </a>
                 </div>
 
                 {/* Social Media */}

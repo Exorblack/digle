@@ -137,7 +137,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
             Web Development
           </h1>
-          <p className="text-xl md:text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
+          <p className="text-lg md:text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
             We build fast, reliable websites using Next.js and the latest tech
             that puts you ahead of the game. Your site won&apos;t just look good
             - it&apos;ll perform like a champion.
@@ -182,7 +182,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
             Branding
           </h1>
-          <p className="text-xl md:text-xl lg:text-2xl text-[#023047]/95 leading-relaxed text-reveal">
+          <p className="text-lg md:text-xl lg:text-2xl text-[#023047]/95 leading-relaxed text-reveal">
             Your brand is your story, and we help you tell it right. From logos
             to color schemes, we create a visual identity that makes people
             remember you.
@@ -232,13 +232,15 @@ const ServicesRev:React.FC<Services> = ({id}) => {
               className="text-[#023047]/80 md:w-12 lg:w-16"
             />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
             SEO & Maintenance
           </h1>
-          <p className="text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
-            Getting found online shouldn&apos;t be Hard. We make sure your
-            website ranks well and stays in top shape, month after month. We
-            implement advanced SEO strategies to enhance your online visibility
+          <p className="text-lg lg:text-2xl text-[#023047] leading-relaxed text-reveal">
+            Getting found online shouldn&apos;t be Hard. We make sure Your
+            website ranks well and stays in top shape. We implement advanced SEO
+            strategies to enhance your online visibility, Your website gets
+            continuous monitoring, secure hosting, and regular backups. We are
+            also available for any updates, improvements of Your website
           </p>
           <div className="mt-2 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg border border-[#219EBC]/20">
