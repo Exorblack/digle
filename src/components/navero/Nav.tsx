@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Mail, Sparkles } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 import { FaBehance, FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 
