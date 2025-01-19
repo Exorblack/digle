@@ -39,7 +39,7 @@ sm.add("(min-width: 800px)", () => {
     opacity: 1,
     ease: "power1.inOut",
   });
-});
+}); 
       Draggable.create(cards, {
         type: "x",
         inertia: true,
