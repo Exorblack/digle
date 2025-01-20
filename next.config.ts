@@ -17,10 +17,14 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol:"https",
-        hostname:"**",
-        pathname:"**"
-      }
+        protocol: "https",
+        hostname: "www.digle.org",
+        pathname: "/_next/image",
+      },
+      {
+        protocol: "https",
+        hostname: "www.digle.org",
+      },
     ],
   },
   experimental: {

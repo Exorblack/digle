@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface EmailTemplateProps {
@@ -39,10 +40,12 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({
           borderBottom: "3px solid #FFB703",
         }}
       >
-        <img
+        <Image
           src="https://www.digle.org/_next/image?url=%2Fdigle-logo.png&w=384&q=75"
           alt="Digle Logo"
           style={{ width: "150px", marginBottom: "10px" }}
+          width={150}
+          height={150}
         />
         <h1 style={{ margin: 0, fontSize: "24px" }}>New Project Inquiry</h1>
       </header>
