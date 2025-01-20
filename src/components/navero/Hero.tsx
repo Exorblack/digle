@@ -4,8 +4,21 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Lenis from "lenis";
 
 const Hero = () => {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   gsap.registerPlugin(useGSAP, ScrollTrigger);
   const txt = useRef<HTMLDivElement>(null);
   const heroref = useRef<HTMLDivElement>(null);
@@ -88,6 +101,7 @@ const Hero = () => {
               width={1950}
               height={1080}
               className="object-cover w-full h-full"
+              priority
             ></Image>
           </div>
 

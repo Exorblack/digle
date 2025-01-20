@@ -4,7 +4,11 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "sonner";
 
-const inter = Playpen_Sans({ subsets: ["latin"] });
+const Playpen = Playpen_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
+});
 
 
 export const metadata: Metadata = {
@@ -16,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Digle - Your Digital Journey Starts with Us",
     description:
-      "Your Digital Journey Starts with Us, We Turning Your Ideas into reality",
+      "Your Digital Journey Starts with Us, We build websites that reflect your brands unique identity ensuring a visually engaging and user-friendly experience.",
     type: "website",
     locale: "en_US",
     url: process.env.SITE_URL!,
@@ -31,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={Playpen.className}>
         {children}
         <SpeedInsights />
         <Toaster position="top-center" richColors />

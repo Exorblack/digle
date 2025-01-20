@@ -51,8 +51,6 @@ sm.add("(min-width: 800px)", () => {
         }
       });
     }
-    
-    
   });
   return (
     <>

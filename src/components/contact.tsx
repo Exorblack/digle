@@ -164,6 +164,7 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 alt="digle"
                 width={900}
                 height={900}
+                loading="lazy"
                 className="object-cover mt-72 sm:mt-60 lg:mt-80 ml-4 sm:ml-10 lg:ml-20 opacity-20 lg:opacity-50 xl:opacity-90 md:opacity-20 sm:opacity-20"
               />
             </motion.div>
