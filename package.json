@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@0x21106/splittext": "ayhanexe/gsap-class-based-split-text-plugin",
     "@gsap/react": "^2.1.1",
     "@hookform/resolvers": "^3.10.0",
     "@vercel/speed-insights": "^1.1.0",
