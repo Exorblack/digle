@@ -162,7 +162,7 @@ const onSubmit = async (data: tty) => {
                 <h4 className="text-lg font-semibold mb-3">
                   Select Your Service
                 </h4>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-4 gap-3">
                   {services.map((service) => (
                     <button
                       key={service.label}
@@ -177,7 +177,7 @@ const onSubmit = async (data: tty) => {
                           : "border-[#219EBC]/30 hover:border-[#219EBC]"
                       }`}
                     >
-                      <div className="flex flex-col items-center gap-2 text-sm">
+                      <div className="flex flex-col items-center gap-2 text-[0.5rem] md:text-xs">
                         {service.icon}
                         {service.label}
                       </div>
