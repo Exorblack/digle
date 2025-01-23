@@ -118,7 +118,9 @@ const FAQ: React.FC<faq> = ({ id }) => {
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === index ? "max-h-[10rem]" : "max-h-0"
+                    openIndex === index
+                      ? "max-h-[28rem] sm:max-h-[10rem]"
+                      : "max-h-0"
                   }`}
                 >
                   {Array.isArray(item.answer) ? (

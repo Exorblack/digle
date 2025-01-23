@@ -9,18 +9,18 @@ import { toast } from "sonner";
 export const Contacts = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="grid place-content-center">
+    <>
       <button
         onClick={() => setIsOpen(true)}
         className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
-      >
+        >
         <div className="relative z-10 flex items-center gap-2">
           <MessageSquare className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
           <span>Contact Us</span>
         </div>
       </button>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
-    </div>
+    </>
   );
 };
 
