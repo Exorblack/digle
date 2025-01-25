@@ -183,7 +183,7 @@ const Zoomd:React.FC<contact> = ({id}) => {
                 <h1 className="text-6xl sm:text-6xl lg:text-8xl font-black tracking-tight space-y-2 sm:space-y-4">
                   <div
                     ref={textRef}
-                    className="bg-gradient-to-r from-[#023047] via-[#023047]/90 to-[#023047]/70 bg-clip-text text-transparent"
+                    className="bg-linear-to-r from-[#023047] via-[#023047]/90 to-[#023047]/70 bg-clip-text text-transparent"
                   >
                     Let&apos;s Build
                   </div>

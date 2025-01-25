@@ -141,7 +141,7 @@ const onSubmit = async (data: tty) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="bg-[#023047]/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center"
+          className="bg-[#023047]/20 backdrop-blur-sm p-8 fixed inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
@@ -198,7 +198,7 @@ const onSubmit = async (data: tty) => {
                       {...register("name")}
                       type="text"
                       placeholder="Name"
-                      className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
+                      className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-hidden focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                     />
                     {errors.name && (
                       <span className="text-red-500 text-xs">
@@ -211,7 +211,7 @@ const onSubmit = async (data: tty) => {
                       {...register("email")}
                       type="email"
                       placeholder="Email"
-                      className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
+                      className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-hidden focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                     />
                     {errors.email && (
                       <span className="text-red-500 text-xs">
@@ -226,7 +226,7 @@ const onSubmit = async (data: tty) => {
                     {...register("projectname")}
                     type="text"
                     placeholder="Project Name"
-                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
+                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-hidden focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors"
                   />
                   {errors.projectname && (
                     <span className="text-red-500 text-xs">
@@ -240,7 +240,7 @@ const onSubmit = async (data: tty) => {
                     {...register("message")}
                     placeholder="Tell us about your project..."
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-none focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-[#023047] border border-[#219EBC]/30 focus:border-[#219EBC] focus:outline-hidden focus:ring-1 focus:ring-[#219EBC] placeholder:text-[#8ECAE6]/50 transition-colors resize-none"
                   />
                   {errors.message && (
                     <span className="text-red-500 text-xs">
