@@ -23,8 +23,8 @@ export default function Home() {
           <DragCards id="works" />
           <Faq id="faq" />
           <Contact id="contact" />
+          <FollowCursor />
         </main>
-        <FollowCursor />
       </>
   );
 }
