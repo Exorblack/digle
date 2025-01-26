@@ -168,7 +168,7 @@ const Hero = () => {
             <div className="mt-4">
               <button
                 onClick={() => handleScrollToSection("services")}
-                className="px-8 py-3 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+                className="px-8 py-3 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
               >
                 Discover Our Services
               </button>

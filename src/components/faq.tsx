@@ -101,7 +101,7 @@ const FAQ: React.FC<faq> = ({ id }) => {
               <div key={index} className="mb-4">
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300"
+                  className="w-full text-left p-4 rounded-xl bg-[#023047] hover:bg-[#219EBC]/5 transition-all duration-300 cursor-pointer"
                 >
                   <div className="flex justify-between items-center">
                     <h3 className="text-[#8ECAE6] text-lg font-semibold">

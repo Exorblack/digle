@@ -12,8 +12,8 @@ export const Contacts = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
-        >
+        className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
+      >
         <div className="relative z-10 flex items-center gap-2">
           <MessageSquare className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
           <span>Contact Us</span>
@@ -36,7 +36,7 @@ export const Conversation = () => {
       >
         <button
           onClick={() => setIsOpen(true)}
-          className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+          className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
         >
           <div className="relative z-10 flex items-center gap-2">
             <MessageSquare className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
@@ -171,7 +171,7 @@ const onSubmit = async (data: tty) => {
                           shouldValidate: true,
                         })
                       }
-                      className={`p-3 rounded-xl border transition-all ${
+                      className={`p-3 rounded-xl border transition-all cursor-pointer ${
                         selectedService === service.label
                           ? "border-[#219EBC] bg-[#219EBC]/10 text-white"
                           : "border-[#219EBC]/30 hover:border-[#219EBC]"
@@ -253,14 +253,14 @@ const onSubmit = async (data: tty) => {
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="bg-transparent hover:bg-[#219EBC]/10 transition-colors text-[#fff] font-semibold w-1/3 py-3 rounded-lg border border-[#219EBC]/30"
+                    className="bg-transparent hover:bg-[#219EBC]/10 transition-colors text-[#fff] font-semibold w-1/3 py-3 rounded-lg border border-[#219EBC]/30 cursor-pointer"
                   >
                     Cancel
                   </button>
 
                   <button
                     type="submit"
-                    className="bg-[#219EBC] hover:opacity-90 transition-opacity text-[#fff] font-semibold w-2/3 py-3 rounded-lg flex items-center justify-center gap-2"
+                    className="bg-[#219EBC] hover:opacity-90 transition-opacity text-[#fff] font-semibold w-2/3 py-3 rounded-lg flex items-center justify-center gap-2 cursor-pointer"
                   >
                     {loading ? (
                       <Loader className="w-5 h-5 animate-spin" />

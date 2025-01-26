@@ -7,7 +7,6 @@ import Contact from "@/components/contact";
 import ServicesRev from "@/components/ServicesRev";
 import Nav from "@/components/navero/Nav";
 import Faq from "@/components/faq";
-import FollowCursor from "@/components/mouse/FollowCursor";
 
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
           <DragCards id="works" />
           <Faq id="faq" />
           <Contact id="contact" />
-          <FollowCursor />
         </main>
       </>
   );

@@ -47,7 +47,7 @@ const Nav = () => {
                 <li className="list-none">
                   <button
                     onClick={() => handleScrollToSection("about")}
-                    className="hover:text-[#FFB703] duration-100 font-bold"
+                    className="hover:text-[#FFB703] duration-100 font-bold cursor-pointer"
                   >
                     About
                   </button>
@@ -55,7 +55,7 @@ const Nav = () => {
                 <li className="list-none">
                   <button
                     onClick={() => handleScrollToSection("services")}
-                    className="hover:text-[#FFB703] duration-100 font-bold"
+                    className="hover:text-[#FFB703] duration-100 font-bold cursor-pointer"
                   >
                     Services
                   </button>
@@ -63,7 +63,7 @@ const Nav = () => {
                 <li className="list-none">
                   <button
                     onClick={() => handleScrollToSection("works")}
-                    className="hover:text-[#FFB703] duration-100 font-bold"
+                    className="hover:text-[#FFB703] duration-100 font-bold cursor-pointer"
                   >
                     Portfolio
                   </button>
@@ -71,7 +71,7 @@ const Nav = () => {
                 <li className="list-none">
                   <button
                     onClick={() => handleScrollToSection("faq")}
-                    className="hover:text-[#FFB703] transition-all duration-100 font-bold"
+                    className="hover:text-[#FFB703] transition-all duration-100 font-bold cursor-pointer"
                   >
                     FAQ
                   </button>
@@ -79,7 +79,7 @@ const Nav = () => {
                 <li className="list-none">
                   <button
                     onClick={() => handleScrollToSection("contact")}
-                    className="px-8 py-3 font-medium bg-[#FFB703]/90 text-[#219EBC] rounded-full w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+                    className="px-8 py-3 font-medium bg-[#FFB703]/90 text-[#219EBC] rounded-full w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
                   >
                     Contact Us
                   </button>
@@ -163,7 +163,6 @@ const Nav = () => {
             <div className="space-y-6">
               <h2 className="text-sm font-bold text-[#023047]">Get in Touch</h2>
               <div className="flex flex-col gap-10">
-
                 <a href="mailto:Contact@digle.org">
                   <span className="font-bold text-2xl text-[#023047]">
                     contact@digle.org

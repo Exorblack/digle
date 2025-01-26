@@ -53,7 +53,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
     <div ref={sectionsRef} id={id} className="overflow-hidden">
       {/* custom design Section */}
       <section className="min-h-[100dvh] sm:min-h-[110dvh] bg-[#023047] flex flex-col justify-start pt-20 lg:pt-52 relative overflow-hidden px-4 md:px-6 lg:px-8">
-        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-5xl">
+        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
             <Palette size={32} className="text-[#219EBC]/80 md:w-12 lg:w-16" />
           </div>
@@ -98,7 +98,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
 
       {/* web dev Section */}
       <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#8ECAE6] bg-[#219EBC] flex relative overflow-hidden">
-        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-5xl">
+        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
             <Code size={48} className="text-[#023047]/80 md:w-12 lg:w-16" />
           </div>
@@ -140,7 +140,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
       </section>
       {/* Branding Section */}
       <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#FFB703] bg-[#FB8500] flex relative overflow-hidden">
-        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-5xl">
+        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
             <Megaphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
           </div>
@@ -186,7 +186,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
 
       {/* SEO Optimization Section */}
       <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#219EBC] bg-[#8ECAE6] flex relative overflow-hidden">
-        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-5xl">
+        <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
             <Smartphone
               size={48}
