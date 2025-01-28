@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Code, Smartphone, Palette, Megaphone } from "lucide-react";
+import { Code, Palette, Megaphone, MonitorCog } from "lucide-react";
 
 interface Services{
   id:string
@@ -106,9 +106,9 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             Web Development
           </h1>
           <p className="text-md md:text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
-            We build fast, reliable websites using Next.js and the latest tech
-            that puts you ahead of the game. Your site won&apos;t just look good
-            - it&apos;ll perform like a champion.
+            We build fast, reliable websites using the latest tech that puts you
+            ahead of the game. Your site won&apos;t just look good - it&apos;ll
+            perform like a champion.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
@@ -129,10 +129,11 @@ const ServicesRev:React.FC<Services> = ({id}) => {
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
               <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
-                SEO
+                E-commerce
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
-                Built-in SEO features
+                We build online stores that are easy to use with seamless
+                checkout flows.
               </p>
             </div>
           </div>
@@ -188,7 +189,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
       <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#219EBC] bg-[#8ECAE6] flex relative overflow-hidden">
         <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
-            <Smartphone
+            <MonitorCog
               size={48}
               className="text-[#023047]/80 md:w-12 lg:w-16"
             />

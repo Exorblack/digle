@@ -177,7 +177,7 @@ const onSubmit = async (data: tty) => {
                           : "border-[#219EBC]/30 hover:border-[#219EBC]"
                       }`}
                     >
-                      <div className="flex flex-col items-center gap-2 text-[0.5rem] md:text-xs">
+                      <div className="flex flex-col items-center gap-2 text-[0.5rem] md:text-sm">
                         {service.icon}
                         {service.label}
                       </div>

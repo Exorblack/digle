@@ -90,7 +90,7 @@ const Hero = () => {
     <>
       <div className="relative h-screen bg-[#dddddd] overflow-hidden">
         <div
-          className="absolute w-full h-full rounded-b-3xl overflow-hidden"
+          className="absolute w-full h-full rounded-b-4xl overflow-hidden"
           ref={heroref}
         >
           {/* bg */}

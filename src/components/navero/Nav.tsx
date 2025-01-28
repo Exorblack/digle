@@ -31,7 +31,7 @@ const Nav = () => {
       <div className={`fixed inset-x-0 z-50`}>
         <div className="max-w-fit mx-auto ">
           {/* Desktop & Tablet Navigation */}
-          <div className="mt-8 p-4 sm:p-4 md:p-6 bg-[#219EBC]/50 backdrop-blur-2xl border-4 border-[#023047]/50 rounded-full">
+          <div className="mt-8 p-4 sm:p-4 md:p-6 bg-[#219EBC]/50 backdrop-blur-2xl border-2 border-[#023047]/50 rounded-full">
             <div className="hidden md:flex justify-center items-center">
               <div className="flex items-center gap-10 text-[#023047]">
                 <a href={"/"}>
