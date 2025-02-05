@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Lenis from "lenis";
+import { motion } from "framer-motion";
 
 const Hero = () => {
 
@@ -19,17 +20,23 @@ const Hero = () => {
     requestAnimationFrame(raf);
   }, []);
 
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
-  const txt = useRef<HTMLDivElement>(null);
+  gsap.registerPlugin( ScrollTrigger);
+  const ImgR = useRef<HTMLImageElement>(null);
+  const Imgone = useRef<HTMLDivElement>(null);
+  const ImgR1 = useRef<HTMLImageElement>(null);
+  const Imgone1 = useRef<HTMLImageElement>(null);
+  const ImgsRef = useRef<(HTMLDivElement | null)[]>([]);
   const heroref = useRef<HTMLDivElement>(null);
-  const shapesRef = useRef<(HTMLDivElement | null)[]>([]);
+  const shapeRef = useRef<HTMLDivElement>(null);
+  const shapeRef1 = useRef<HTMLDivElement>(null);
+  const shapeRef2 = useRef<HTMLDivElement>(null);
 
   // mouse move handler
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const { clientX, clientY } = e;
 
-      shapesRef.current.forEach((shape, index) => {
+      ImgsRef.current.forEach((shape, index) => {
         // Calculate the center of the window
         const centerX = window.innerWidth / 2;
         const centerY = window.innerHeight / 2;
@@ -64,17 +71,76 @@ const Hero = () => {
       },
       scale: 0.8,
     });
-    gsap.to(txt.current, {
-      scrollTrigger: {
-        trigger: txt.current,
-        start: "top 40%",
-        end: "bottom 10%",
-        scrub: true,
-      },
-      opacity: 0,
-      y: -150,
-      ease: "power3.out",
+    const sm = gsap.matchMedia();
+
+    sm.add("(min-width: 800px)", () => {
+    gsap.to(ImgR.current, {
+      yoyo: true,
+      repeat: -1,
+      duration: 2,
+      translateY: 100,
+      ease: "power1.inOut",
     });
+
+    gsap.to(Imgone.current, {
+      duration: 5,
+      repeat:-1,
+      repeatDelay: 3,
+      delay:3,
+      rotate:360,
+      yoyo:true,
+      xPercent: 450,
+      yPercent: -300,
+      scale:-3,
+      ease: "power1.inOut",
+    });
+
+    gsap.to(ImgR1.current, {
+      yoyo: true,
+      repeat: -1,
+      duration: 2,
+      translateY: 100,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(Imgone1.current, {
+      duration: 5 ,
+      repeat:-1,
+      delay:3,
+      repeatDelay: 3 ,
+      rotate:360,
+      yoyo:true,
+      xPercent: -350,
+      yPercent: -150,
+      scale:-0.7,
+      ease: "power1.inOut",
+      stagger:0.1
+    });
+
+    gsap.to(shapeRef.current,{
+      translateX: 950,
+      yoyo: true,
+      repeat: -1,
+      duration: 6,
+      ease: "back.inOut",
+    });
+    gsap.to(shapeRef1.current, {
+      translateX: 1200,
+      yoyo: true,
+      repeat: -1,
+      duration: 6,
+      ease: "back.inOut",
+    });
+    gsap.to(shapeRef2.current, {
+      translateX: -1000,
+      scale: 1.2,
+      delay: 0.5,
+      yoyo: true,
+      repeat: -1,
+      duration: 6,
+      ease: "expo.inOut",
+    });
+  });
   });
 
   const handleScrollToSection = (sectionId: string) => {
@@ -88,92 +154,113 @@ const Hero = () => {
 
   return (
     <>
-      <div className="relative h-screen bg-[#dddddd] overflow-hidden">
+      <div className="relative h-screen bg-[#9b9b9b] overflow-hidden">
         <div
           className="absolute w-full h-full rounded-b-4xl overflow-hidden"
           ref={heroref}
         >
           {/* bg */}
-          <div className="absolute w-full h-full ">
-            <Image
-              src={"/bg.svg"}
-              alt={"vbg"}
-              width={1950}
-              height={1080}
-              className="object-cover w-full h-full"
-              priority
-            ></Image>
-          </div>
-
-          {/* line */}
-          <svg className="absolute w-full h-full" viewBox="0 0 1000 700">
-            <path
-              d="M200,300 C400,100 600,500 800,300"
-              fill="#023047"
-              className="stroke-[#023047] stroke-2 opacity-30 fill-none"
-            />
-          </svg>
-
-          {/* wave */}
-          <svg
-            className="absolute bottom-0 left-0 w-full"
-            viewBox="0 0 1440 320"
-            preserveAspectRatio="none"
-          >
-            <path
-              fill="#219EBC"
-              fillOpacity="0.4"
-              d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,234.7C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-            ></path>
-          </svg>
-
-          {/* shapes */}
-          <div
-            ref={(el) => {
-              shapesRef.current[0] = el;
-            }}
-            className="absolute top-32 left-10 md:left-60 w-32 h-32 md:w-60 md:h-60 bg-[#219EBC] shadow-2xl transition-transform"
-          ></div>
-          <div
-            ref={(el) => {
-              shapesRef.current[1] = el;
-            }}
-            className="absolute bottom-40 right-4 md:right-40 w-32 h-32 md:w-60 md:h-60 bg-[#FB8500] rounded-t-full shadow-2xl transition-transform"
-          ></div>
-          <div
-            ref={(el) => {
-              shapesRef.current[2] = el;
-            }}
-            className="absolute top-20 right-8 md:top-32 md:right-72 w-32 h-32 md:w-60 md:h-60 bg-[#FFB703] rounded-t-3xl shadow-2xl transition-transform"
-          ></div>
-          <div
-            ref={(el) => {
-              shapesRef.current[3] = el;
-            }}
-            className="absolute bottom-20 left-4 md:left-20 w-36 h-36 md:w-72 md:h-72 bg-[#023047] rounded-full shadow-2xl transition-transform"
-          ></div>
-        </div>
-
-        {/* hero text */}
-        <div className="absolute flex items-center justify-center w-full h-full pt-16">
-          <div ref={txt} className="text-center">
-            <h1 className="text-8xl sm:text-9xl uppercase font-extrabold text-[#023047]">
-              Digle
-            </h1>
-            <p className="text-lg sm:text-3xl text-[#219EBC] font-semibold py-3">
-              Your Digital Journey Starts with Us, Turning Your Ideas into
-              Reality
-            </p>
-
-            <div className="mt-4">
-              <button
-                onClick={() => handleScrollToSection("services")}
-                className="px-8 py-3 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
-              >
-                Discover Our Services
-              </button>
+          <div className="absolute w-full h-full -z-50 blur-3xl">
+            <div
+              ref={shapeRef}
+              className="absolute -top-20 left-10 sm:-top-60 sm:left-50"
+            >
+              <Image
+                src={"/backg/Vector-3.svg"}
+                alt={"vbg"}
+                width={900}
+                height={900}
+                priority
+              ></Image>
+            </div>
+            <div
+              ref={shapeRef1}
+              className="absolute bottom-20 -left-10 sm:-bottom-110 sm:-left-50"
+            >
+              <Image
+                src={"/backg/Vector-1.svg"}
+                alt={"vbg"}
+                width={900}
+                height={900}
+                priority
+              ></Image>
+            </div>
+            <div ref={shapeRef2} className="absolute -bottom-80 -right-45">
+              <Image
+                src={"/backg/Vector-5.svg"}
+                alt={"vbg"}
+                width={1200}
+                height={1200}
+                priority
+              ></Image>
             </div>
           </div>
+
+          {/* hero text */}
+          <motion.div
+            initial={{ opacity: 0, scaleZ: -100 }}
+            animate={{ opacity: 1, scaleZ: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className="flex items-center justify-between h-full"
+          >
+            <div
+              className="absolute sm:relative z-50 text-center pl-7 sm:pl-30"
+            >
+              <p className="text-lg sm:text-7xl text-[#000] py-7">
+                Your Digital Journey Starts with Us
+              </p>
+              <p className="text-sm sm:text-2xl text-[#ecf39e] font-medium">
+                Turning Your Ideas into Reality
+              </p>
+              <div className="mt-7">
+                <button
+                  onClick={() => handleScrollToSection("services")}
+                  className="px-8 py-3 font-medium bg-[#1a535c] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_10px_5px_#000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
+                >
+                  Discover Our Services
+                </button>
+              </div>
+            </div>
+
+          <div>
+              <div ref={Imgone} className="absolute right-0 sm:right-60 top-16">
+                <div
+                  ref={(el) => {
+                    ImgsRef.current[0] = el;
+                  }}
+                >
+                    <Image
+                      src={"/abb644e89962a186d6a2937e374f7a8f.png"}
+                      alt={"digle"}
+                      width={600}
+                      height={600}
+                      priority
+                      ref={ImgR}
+                      className=" sm:opacity-100 opacity-40"
+                    ></Image>
+                </div>
+              </div>
+
+              <div ref={Imgone1} className="pr-24 sm:pr-60">
+                <div
+                  ref={(el) => {
+                    ImgsRef.current[1] = el;
+                  }} 
+                >
+                    <Image
+                      src={"/86265002b616c02fe011c69af00eb66e.png"}
+                      alt={"digle"}
+                      width={700}
+                      height={700}
+                      priority
+                      ref={ImgR1}
+                      className=" sm:opacity-100 opacity-40"
+                      ></Image>
+                </div>
+              </div>
+            </div>
+
+          </motion.div>
         </div>
       </div>
     </>

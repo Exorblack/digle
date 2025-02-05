@@ -40,21 +40,20 @@ const Words = () => {
 
 
   return (
-    <section className="bg-[#dddddd] relative">
-      
+    <section className="bg-[#9b9b9b] relative">
       <div className="bg-transparent px-2 sm:px-3 md:px-4 max-w-[1550px] mx-auto">
         <div
           ref={mtxt}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[60px] 
-                     text-[#023047]/80
+                     text-[#000]/80
                      pt-4 sm:pt-6 md:pt-8 lg:pt-[35px]
                      w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%]
                      mx-auto text-center
                      leading-normal sm:leading-normal md:leading-relaxed
                      tracking-normal sm:tracking-wide md:tracking-wider"
         >
-          we build websites that reflect your brands unique identity ensuring
-          a visually engaging and user-friendly experience.
+          we build websites that reflect your brands unique identity ensuring a
+          visually engaging and user-friendly experience.
         </div>
       </div>
     </section>

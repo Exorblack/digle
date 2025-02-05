@@ -97,22 +97,22 @@ const ServicesRev:React.FC<Services> = ({id}) => {
       </section>
 
       {/* web dev Section */}
-      <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#8ECAE6] bg-[#219EBC] flex relative overflow-hidden">
+      <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#8ECAE6] bg-[#2d6a4f] flex relative overflow-hidden">
         <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
-            <Code size={48} className="text-[#023047]/80 md:w-12 lg:w-16" />
+            <Code size={48} className="text-[#fff]/80 md:w-12 lg:w-16" />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#d8f3dc] mb-4 md:mb-6 lg:mb-8 text-reveal">
             Web Development
           </h1>
-          <p className="text-md md:text-xl lg:text-2xl text-[#023047] leading-relaxed text-reveal">
+          <p className="text-md md:text-xl lg:text-2xl text-[#d8f3dc] leading-relaxed text-reveal">
             We build fast, reliable websites using the latest tech that puts you
             ahead of the game. Your site won&apos;t just look good - it&apos;ll
             perform like a champion.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
-              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#d8f3dc]">
                 Performance
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
@@ -120,7 +120,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg ">
-              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#d8f3dc]">
                 Responsive Design
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
@@ -128,7 +128,7 @@ const ServicesRev:React.FC<Services> = ({id}) => {
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#023047]/95 backdrop-blur-lg">
-              <h3 className="text-lg md:text-xl font-semibold text-[#219EBC]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#d8f3dc]">
                 E-commerce
               </h3>
               <p className="mt-2 text-sm md:text-base text-[#8ECAE6]/80">
@@ -140,43 +140,43 @@ const ServicesRev:React.FC<Services> = ({id}) => {
         </div>
       </section>
       {/* Branding Section */}
-      <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#FFB703] bg-[#FB8500] flex relative overflow-hidden">
+      <section className="min-h-[100dvh] sm:min-h-[110dvh] border-t-2 border-[#FFB703] bg-[#000] flex relative overflow-hidden">
         <div className="flex flex-col justify-center items-center mx-auto text-center max-w-4xl">
           <div className="text-reveal mb-4 md:mb-6">
-            <Megaphone size={32} className="text-[#023047] md:w-12 lg:w-16" />
+            <Megaphone size={32} className="text-[#fff] md:w-12 lg:w-16" />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#023047] mb-4 md:mb-6 lg:mb-8 text-reveal">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-[#fff] mb-4 md:mb-6 lg:mb-8 text-reveal">
             Branding
           </h1>
-          <p className="text-md md:text-xl lg:text-2xl text-[#023047]/95 leading-relaxed text-reveal">
+          <p className="text-md md:text-xl lg:text-2xl text-[#8ecae6]/95 leading-relaxed text-reveal">
             Your brand is your story, and we help you tell it right. From logos
             to color schemes, we create a visual identity that makes people
             remember you.
           </p>
           <div className="mt-8 md:mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 text-reveal">
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC]/90 backdrop-blur-lg">
-              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#fff]">
                 Logo & Colors
               </h3>
-              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+              <p className="mt-2 text-sm md:text-base text-[#000]/95">
                 Eye-catching logos and color schemes that capture your
                 brand&apos;s personality
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC] backdrop-blur-lg ">
-              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#fff]">
                 Typography
               </h3>
-              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+              <p className="mt-2 text-sm md:text-base text-[#000]/95">
                 Typography that speaks your language, even letters should tell
                 your story
               </p>
             </div>
             <div className="p-2 md:p-5 lg:p-6 rounded-xl bg-[#219EBC] backdrop-blur-lg">
-              <h3 className="text-lg md:text-xl font-semibold text-[#023047]">
+              <h3 className="text-lg md:text-xl font-semibold text-[#fff]">
                 Brand guidelines
               </h3>
-              <p className="mt-2 text-sm md:text-base text-[#FFB703]/95">
+              <p className="mt-2 text-sm md:text-base text-[#000]/95">
                 A complete style guide that keeps your brand looking sharp
                 everywhere it shows up
               </p>

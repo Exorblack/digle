@@ -12,7 +12,7 @@ export const Contacts = () => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
+        className="group relative px-8 py-4 font-medium bg-[#1a535c] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
       >
         <div className="relative z-10 flex items-center gap-2">
           <MessageSquare className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
@@ -36,7 +36,7 @@ export const Conversation = () => {
       >
         <button
           onClick={() => setIsOpen(true)}
-          className="group relative px-8 py-4 font-medium bg-[#219EBC] text-[#fff] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#023047] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
+          className="group relative px-8 py-4 font-medium bg-[#ecf39e] text-[#000] rounded-lg w-fit transition-all shadow-[3px_3px_0px_#000] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] cursor-pointer"
         >
           <div className="relative z-10 flex items-center gap-2">
             <MessageSquare className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
@@ -141,7 +141,7 @@ const onSubmit = async (data: tty) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="bg-[#023047]/20 backdrop-blur-sm p-8 fixed inset-0 z-50 grid place-items-center"
+          className="bg-[#023047]/50 backdrop-blur-lg p-8 fixed inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
