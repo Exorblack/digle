@@ -75,7 +75,7 @@ const Works: React.FC<Works> = ({ id }) => {
       <div>
         <div ref={img1Ref} className='absolute group bottom-150 left-40'>
           <Link href={'/'} >
-            <Image loading='lazy' width={700} height={0} src="/porto/treno.gif" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
+            <Image loading='lazy' unoptimized width={700} height={0} src="/porto/treno.gif" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
               <ArrowUpRight 
                       className="text-[#fff] bg-black rounded-2xl opacity-0 group-hover:opacity-80 duration-300 absolute top-0"
                       size={64}

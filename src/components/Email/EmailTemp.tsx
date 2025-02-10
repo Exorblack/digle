@@ -40,7 +40,7 @@ const EmailTemplate: React.FC<EmailTemplateProps> = ({
         }}
       >
         <img
-          src="https://www.digle.org/_next/image?url=%2Fdigle-logo.png&w=384&q=75"
+          src="https://www.digle.org/logo.svg"
           alt="Digle Logo"
           style={{ width: "150px", marginBottom: "10px" }}
         />
