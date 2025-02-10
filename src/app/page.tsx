@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "@/components/navero/Hero";
 import Words from "@/components/Words";
 import AboutHoriz from "@/components/AboutHoriz";
-import { DragCards } from "@/components/Works";
+import Works from "@/components/Works";
 import Contact from "@/components/contact";
 import ServicesRev from "@/components/ServicesRev";
 import Nav from "@/components/navero/Nav";
@@ -19,7 +19,7 @@ export default function Home() {
           <Words />
           <AboutHoriz id="about" />
           <ServicesRev id="services" />
-          <DragCards id="works" />
+          <Works id="works" />
           <Faq id="faq" />
           <Contact id="contact" />
         </main>

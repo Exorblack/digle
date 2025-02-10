@@ -206,7 +206,7 @@ const Hero = () => {
             <div
               className="absolute sm:relative z-50 text-center pl-7 sm:pl-30"
             >
-              <p className="text-lg sm:text-7xl text-[#000] py-7">
+              <p className="text-lg sm:text-5xl text-[#000] py-7">
                 Your Digital Journey Starts with Us
               </p>
               <p className="text-sm sm:text-2xl text-[#ecf39e] font-medium">

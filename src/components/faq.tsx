@@ -70,10 +70,10 @@ const FAQ: React.FC<faq> = ({ id }) => {
     <>
       <section
         id={id}
-        className="bg-[#023047] min-h-screen relative overflow-hidden "
+        className="bg-[#023047] min-h-[150dvh] relative overflow-hidden "
       >
         <svg
-          className="absolute bottom-0 left-0 w-full h-[12dvh]"
+          className="absolute bottom-0 left-0 w-full h-[25dvh]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
@@ -85,11 +85,13 @@ const FAQ: React.FC<faq> = ({ id }) => {
           ></path>
         </svg>
 
-        <div className="sticky top-0 pb-10">
-          <div className="flex justify-center items-center text-[#8ECAE6] text-7xl font-extrabold pt-10 px-4 text-center">
+        <div className="pt-0 sm:pt-30">
+
+        <div className="text-center pb-10">
+          <div className="flex justify-center items-center text-[#8ECAE6] text-6xl sm:text-7xl font-extrabold pt-10 px-4 text-center">
             FAQ
           </div>
-          <p className="flex justify-center items-center text-[#219EBC] text-2xl font-semibold pt-10 px-4 text-center">
+          <p className="flex justify-center items-center text-[#219EBC] sm:text-2xl text-sm font-semibold pt-10 px-4 text-center">
             We have compiled an FAQ list to help answer some of the most common
             questions you might have.
           </p>
@@ -139,6 +141,8 @@ const FAQ: React.FC<faq> = ({ id }) => {
             ))}
           </div>
         </div>
+        </div>
+
       </section>
     </>
   );

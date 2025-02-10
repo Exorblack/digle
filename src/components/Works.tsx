@@ -1,141 +1,119 @@
-"use client";
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
+"use client"
+import React, { useRef } from 'react'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
-interface works{
-  id:string
-}
-export const DragCards:React.FC<works> = ({id}) => {
-  return (
-    <section
-      id={id}
-      className="relative grid min-h-[100dvh] w-full place-content-center overflow-hidden bg-[#219EBC] border-t-2 border-[#023047] "
-    >
-      <svg
-        className="absolute bottom-0 left-0 w-full h-[12dvh]"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="#023047"
-          fillOpacity="1"
-          d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-      <h2 className="relative text-[20vw] font-black text-[#023047] md:text-[200px]">
-        WORKS<span className="text-[#8ECAE6]">.</span>
-      </h2>
-      <Cards />
-    </section>
-  );
-};
-
-const Cards = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  return (
-    <div className="absolute inset-0" ref={containerRef}>
-      <Card
-        containerRef={containerRef}
-        src="/porto/portf1.jpeg"
-        alt="Example image"
-        rotate="-6deg"
-        top="10%"
-        left="5%"
-        className="w-fit h-[18rem] cursor-grab"
-      />
-      <Card
-        containerRef={containerRef}
-        src="/porto/portf2.jpeg"
-        alt="Example image"
-        rotate="12deg"
-        top="45%"
-        left="70%"
-        className="w-fit h-[18rem] cursor-grab"
-      />
-      <Card
-        containerRef={containerRef}
-        src="/porto/portf4.jpeg"
-        alt="Example image"
-        rotate="6deg"
-        top="10%"
-        left="40%"
-        className="w-fit h-[18rem] cursor-grab"
-      />
-      <Card
-        containerRef={containerRef}
-        src="/porto/portf5.jpeg"
-        alt="Example image"
-        rotate="2deg"
-        top="60%"
-        left="25%"
-        className="w-fit h-[18rem] cursor-grab"
-      />
-    </div>
-  );
-};
-
-interface CardProps {
-  containerRef: React.RefObject<HTMLDivElement | null>;
-  src: string;
-  alt: string;
-  top: string;
-  left: string;
-  rotate: string;
-  className: string;
+interface Works {
+  id: string
 }
 
-const Card: React.FC<CardProps> = ({
-  containerRef,
-  src,
-  alt,
-  top,
-  left,
-  rotate,
-  className,
-}) => {
-  const [zIndex, setZIndex] = useState(0);
+const Works: React.FC<Works> = ({ id }) => {
+  gsap.registerPlugin(ScrollTrigger);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const img1Ref = useRef<HTMLDivElement>(null);
+  const img2Ref = useRef<HTMLDivElement>(null);
+  const img3Ref = useRef<HTMLDivElement>(null);
+  const img4Ref = useRef<HTMLDivElement>(null);
 
-  const updateZIndex = () => {
-    const els = document.querySelectorAll(".drag-elements");
-
-    let maxZIndex = -Infinity;
-
-    els.forEach((el) => {
-      const zIndex = parseInt(
-        window.getComputedStyle(el).getPropertyValue("z-index")
-      );
-
-      if (!isNaN(zIndex) && zIndex > maxZIndex) {
-        maxZIndex = zIndex;
-      }
+  useGSAP(() => {
+    gsap.to(img1Ref.current, {
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: 1.5,
+      },
+      y: 500,
     });
 
-    setZIndex(maxZIndex + 1);
-  };
+    gsap.to(img2Ref.current, {
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: 1,
+      },
+      y: -200,
+    });
+
+    gsap.to(img3Ref.current, {
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: 2,
+      },
+      y: 150,
+    });
+
+    gsap.to(img4Ref.current, {
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: 1.2,
+      },
+      y: 500,
+    });
+  }, []);
 
   return (
     <>
-      <motion.img
-        onMouseDown={updateZIndex}
-        style={{
-          top,
-          left,
-          rotate,
-          zIndex,
-        }}
-        className={twMerge(
-          "drag-elements absolute w-48 bg-[#8ECAE6] p-1 pb-4",
-          className
-        )}
-        src={src}
-        alt={alt}
-        drag
-        dragConstraints={containerRef}
-        dragElastic={0.65}
-      />
-    </>
+    <section ref={sectionRef} id={id} className='relative sm:h-[240dvh] h-[170dvh] border-b-1 border-[#fff] flex flex-col items-center justify-center bg-[#1a428f] overflow-hidden'>
+      {/* Texts */}
+      <div className='text-center z-40 '>
+        <h1 className='text-[#219EBC] text-2xl sm:text-7xl font-extrabold'>Works</h1>
+        <p className='text-white text-md sm:text-2xl max-w-3xl mx-auto mt-2'>
+          Explore our collection of creative projects, Each piece reflects our dedication to crafting exceptional digital experiences.
+        </p>
+      </div>
+      {/* works imgs */}
+      <div>
+        <div ref={img1Ref} className='absolute group bottom-150 left-40'>
+          <Link href={'/'} >
+            <Image loading='lazy' width={700} height={0} src="/porto/treno.gif" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
+              <ArrowUpRight 
+                      className="text-[#fff] bg-black rounded-2xl opacity-0 group-hover:opacity-80 duration-300 absolute top-0"
+                      size={64}
+              />
+          </Link>
+        </div>
+        <div ref={img2Ref} className='absolute group bottom-100 right-40'>
+          <Link href={'/'} >
+            <Image loading='lazy' width={700} height={0} src="/porto/portf2.jpeg" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
+              <ArrowUpRight 
+                      className="text-[#fff] bg-black rounded-2xl opacity-0 group-hover:opacity-80 duration-300 absolute top-0"
+                      size={64}
+              />
+          </Link>
+        </div>
+        <div ref={img3Ref} className='absolute group top-100 right-40'>
+          <Link href={'/'} >
+            <Image loading='lazy' width={700} height={0} src="/porto/portf4.jpeg" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
+              <ArrowUpRight 
+                      className="text-[#fff] bg-black rounded-2xl opacity-0 group-hover:opacity-80 duration-300 absolute top-0"
+                      size={64}
+              />
+          </Link>
+        </div>
+        <div ref={img4Ref} className='absolute group top-40 left-40'>
+          <Link href={'/'} >
+            <Image loading='lazy' width={700} height={0} src="/porto/portf5.jpeg" alt="digle-works" className='rounded-3xl hover:shadow-2xl blur-none sm:blur-[1px] hover:blur-none hover:scale-110 duration-500 '/>
+              <ArrowUpRight 
+                      className="text-[#fff] bg-black rounded-2xl opacity-0 group-hover:opacity-80 duration-300 absolute top-0"
+                      size={64}
+              />
+          </Link>
+        </div>
+      </div>
+
+    </section>
+  </>
   );
 };
+
+export default Works;
